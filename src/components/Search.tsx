@@ -1,18 +1,12 @@
 "use client";
 
 import { InstantSearchNext } from "react-instantsearch-nextjs";
-import {
-  SearchBox,
-  Hits,
-  RefinementList,
-  HierarchicalMenu,
-  DynamicWidgets,
-  Menu,
-} from "react-instantsearch";
+import { SearchBox, Hits } from "react-instantsearch";
 import { searchClient, indexName } from "@/config/typesense";
 import { PropertyHitComponent } from "@/components/PropertyHit";
 import type { PropertyHit } from "@/components/PropertyHit";
 import { useTranslation } from "react-i18next";
+import { TabsMenu } from "@/components/TabsMenu";
 
 export function Search({ lng }: { lng: string }) {
   const { t } = useTranslation();
@@ -36,7 +30,8 @@ export function Search({ lng }: { lng: string }) {
         persistHierarchicalRootCount: true,
       }}
     >
-      <Menu attribute="business_type_id" sortBy={["count"]} />
+      <TabsMenu attribute="business_type_id" sortBy={["count"]} />
+
       <SearchBox
         placeholder={t("searchPlaceholder")}
         classNames={{
