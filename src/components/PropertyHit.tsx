@@ -24,7 +24,7 @@ export function PropertyHitComponent({ hit, lng }: PropertyHitProps) {
   return (
     <div className="p-4 border rounded-lg shadow hover:shadow-md transition-shadow">
       <Image
-        src={hit.cover_photo}
+        src={hit.cover_photo || "/img/placeholder.svg"}
         alt={hit.title}
         width={500}
         height={500}
