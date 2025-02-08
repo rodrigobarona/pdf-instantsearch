@@ -1,0 +1,54 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
+const languages = [
+  { code: "en", name: "English" },
+  { code: "fr", name: "Français" },
+  { code: "pt", name: "Português" },
+];
+
+export function Header() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const currentLang = pathname.split("/")[1] || "en";
+
+  const handleLanguageChange = (newLang: string) => {
+    const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
+    router.push(newPathname);
+  };
+
+  return (
+    <header className="border-b">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href={`/${currentLang}`} className="text-xl font-bold">
+          Your Logo
+        </Link>
+
+        <div className="w-32">
+          <Select value={currentLang} onValueChange={handleLanguageChange}>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {languages.map((lang) => (
+                <SelectItem key={lang.code} value={lang.code}>
+                  {lang.name}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+      </div>
+    </header>
+  );
+}

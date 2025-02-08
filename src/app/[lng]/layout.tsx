@@ -47,7 +47,7 @@ export default async function LocaleLayout({
         suppressHydrationWarning
         className="min-h-screen bg-background text-foreground antialiased"
       >
-        <div className="w-full max-w-md px-4 mx-auto">{children}</div>
+        <div className="w-full max-w-lg px-4 mx-auto">{children}</div>
       </body>
     </html>
   );

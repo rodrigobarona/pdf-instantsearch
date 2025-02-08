@@ -6,34 +6,8 @@ import { InstantSearch, SearchBox, Hits } from "react-instantsearch";
 import { searchClient, indexName } from "../../config/typesense";
 import { useTranslation } from "react-i18next";
 import "../../config/i18n";
-
-type PropertyHit = {
-  title: string;
-  title_en?: string;
-  title_pt?: string;
-  title_fr?: string;
-  category_name: string;
-  category_name_en?: string;
-  category_name_pt?: string;
-  category_name_fr?: string;
-  county: string;
-  price: number;
-};
-
-function HitComponent({ hit, lng }: { hit: PropertyHit; lng: string }) {
-  return (
-    <div className="p-4 border rounded-lg shadow hover:shadow-md transition-shadow">
-      <h2 className="text-xl font-semibold">
-        {hit[`title_${lng}` as keyof PropertyHit] || hit.title}
-      </h2>
-      <p className="text-gray-600">
-        {hit[`category_name_${lng}` as keyof PropertyHit] || hit.category_name}
-      </p>
-      <p className="text-gray-500">{hit.county}</p>
-      <p className="text-lg font-bold mt-2">€{hit.price.toLocaleString()}</p>
-    </div>
-  );
-}
+import { PropertyHitComponent } from "@/components/PropertyHit";
+import type { PropertyHit } from "@/components/PropertyHit";
 
 export default function Page() {
   const { lng } = useParams<{ lng: string }>(); // Read the dynamic [lng] parameter
@@ -88,7 +62,9 @@ export default function Page() {
         }}
       />
       <Hits<PropertyHit>
-        hitComponent={({ hit }) => <HitComponent hit={hit} lng={currentLng} />}
+        hitComponent={({ hit }) => (
+          <PropertyHitComponent hit={hit} lng={currentLng} />
+        )}
       />
     </InstantSearch>
   );
