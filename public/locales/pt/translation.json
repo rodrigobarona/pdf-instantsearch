@@ -6,6 +6,7 @@
   },
   "businessTypeFilter": "Tipo de negócio",
   "price": "Preço",
+  "room": "Quarto",
   "rooms": "Quartos",
   "location": "Localização",
   "clearFilters": "Limpar Filtros",

@@ -15,7 +15,6 @@ import {
   SortBy,
   CurrentRefinements,
   ClearRefinements,
-  Menu,
   Stats,
 } from "react-instantsearch";
 import { searchClient, indexName } from "@/config/typesense";
@@ -99,7 +98,49 @@ export default function PropertiesPage() {
       <InstantSearchNext
         indexName={indexName}
         searchClient={searchClient}
-        routing={true}
+        routing={{
+          stateMapping: {
+            stateToRoute(uiState) {
+              const indexUiState = uiState[indexName] || {};
+              return {
+                q: indexUiState.query,
+                page: indexUiState.page,
+                type: indexUiState.menu?.business_type_id,
+                price: indexUiState.range?.price,
+                rooms: Array.isArray(indexUiState.refinementList?.rooms)
+                  ? indexUiState.refinementList.rooms.join(",")
+                  : undefined,
+                location: Array.isArray(indexUiState.refinementList?.county)
+                  ? indexUiState.refinementList.county.join(",")
+                  : undefined,
+              };
+            },
+            routeToState(routeState) {
+              return {
+                [indexName]: {
+                  query: routeState.q || "",
+                  page: routeState.page,
+                  menu: routeState.type
+                    ? {
+                        business_type_id: routeState.type,
+                      }
+                    : undefined,
+                  range: routeState.price
+                    ? {
+                        price: routeState.price,
+                      }
+                    : undefined,
+                  refinementList: {
+                    rooms: routeState.rooms ? routeState.rooms.split(",") : [],
+                    county: routeState.location
+                      ? routeState.location.split(",")
+                      : [],
+                  },
+                },
+              };
+            },
+          },
+        }}
         future={{
           preserveSharedStateOnUnmount: true,
         }}
@@ -182,11 +223,15 @@ export default function PropertiesPage() {
                 <RefinementList
                   attribute="county"
                   searchable={true}
+                  limit={30}
+                  showMore={true}
+                  showMoreLimit={400}
                   classNames={{
                     list: "space-y-2",
                     searchBox: "mb-4",
                     item: "flex items-center",
                     label: "flex items-center space-x-2 text-sm",
+
                     checkbox:
                       "rounded border-gray-300 text-blue-500 focus:ring-blue-500",
                     count: "ml-2 text-sm text-gray-500",

@@ -8,26 +8,19 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "pt",
-    supportedLngs: ["pt", "en", "fr"],
     debug: process.env.NODE_ENV === "development",
-
-    // Namespace configuration
-    ns: ["common"],
-    defaultNS: "common",
-
-    // Backend configuration
-    backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json",
-    },
-
+    fallbackLng: "en",
+    supportedLngs: ["pt", "en", "fr"],
+    defaultNS: "translation",
+    ns: ["translation"],
     interpolation: {
       escapeValue: false,
     },
-
-    // React specific configuration
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
+    },
     react: {
-      useSuspense: false, // Recommended for SSR
+      useSuspense: false,
     },
   });
 
