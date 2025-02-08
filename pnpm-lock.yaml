@@ -50,6 +50,9 @@ importers:
       react-instantsearch:
         specifier: ^7.15.3
         version: 7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react-instantsearch-nextjs:
+        specifier: ^0.4.4
+        version: 0.4.4(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-instantsearch@7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       tailwind-merge:
         specifier: ^3.0.1
         version: 3.0.1
@@ -1888,6 +1891,12 @@ packages:
     peerDependencies:
       algoliasearch: '>= 3.1 < 6'
       react: '>= 16.8.0 < 20'
+
+  react-instantsearch-nextjs@0.4.4:
+    resolution: {integrity: sha512-q133svbkuGFNyAwpFNIVamDMvyCE+iag9XMDwmHv+LVOK9BV00Nv9JM9ayU80d1R4DzIBns3yIfpD8ThbtfzRQ==}
+    peerDependencies:
+      next: '>= 13.4 < 16'
+      react-instantsearch: '>= 7.1.0 < 8'
 
   react-instantsearch@7.15.3:
     resolution: {integrity: sha512-KDKvLgizxGRrHIy2RfFYvgw/VmyYHXLNk0TJkRpyoUClUhn1zoXwESFjSLz1n4AY/utkZkuhpfmJo9S7NfEqoQ==}
@@ -4251,6 +4260,11 @@ snapshots:
       instantsearch.js: 4.77.3(algoliasearch@5.20.1)
       react: 19.0.0
       use-sync-external-store: 1.4.0(react@19.0.0)
+
+  react-instantsearch-nextjs@0.4.4(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-instantsearch@7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)):
+    dependencies:
+      next: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react-instantsearch: 7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
 
   react-instantsearch@7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
