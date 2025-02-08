@@ -16,6 +16,7 @@ import {
   CurrentRefinements,
   ClearRefinements,
   Menu,
+  Stats,
 } from "react-instantsearch";
 import { searchClient, indexName } from "@/config/typesense";
 import {
@@ -23,6 +24,44 @@ import {
   type PropertyHit,
 } from "@/components/PropertyHit";
 import type { MenuProps } from "react-instantsearch";
+import { useMenu } from "react-instantsearch";
+import { Button } from "@/components/ui/button";
+
+function CustomBusinessTypeMenu(props: MenuProps) {
+  const { items, refine } = useMenu(props);
+  const { t } = useTranslation();
+
+  // Ensure default selection if nothing is selected
+  React.useEffect(() => {
+    const hasSelection = items.some((item) => item.isRefined);
+    if (!hasSelection && items.length > 0) {
+      refine(items[0].value);
+    }
+  }, [items, refine]);
+
+  return (
+    <div className="w-full">
+      <div className="flex flex-row gap-2 justify-between">
+        {items.map((item) => (
+          <Button
+            type="button"
+            key={item.value}
+            onClick={() => refine(item.value)}
+            className={`flex items-center justify-center w-full p-2 ${
+              item.isRefined
+                ? "bg-blue-500 text-white"
+                : "bg-blue-200 hover:bg-blue-300 text-black"
+            } rounded transition-colors`}
+          >
+            <span className="text-sm">
+              {t(`businessType.${item.value.toLowerCase()}`)}
+            </span>
+          </Button>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function PropertiesPage() {
   const { lng } = useParams<{ lng: string }>();
@@ -54,13 +93,6 @@ export default function PropertiesPage() {
   }
 
   const currentLng = i18n.language || "pt";
-
-  const transformBusinessTypes: MenuProps["transformItems"] = (items) => {
-    return items.map((item) => ({
-      ...item,
-      label: t(`businessType.${item.value.toLowerCase()}`),
-    }));
-  };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -116,24 +148,15 @@ export default function PropertiesPage() {
                 />
               </div>
 
-              {/* Business Type - with translations */}
+              {/* Business Type - with custom component */}
               <div className="mt-6">
                 <h3 className="text-lg font-semibold mb-3">
                   {t("businessTypeFilter")}
                 </h3>
-                <Menu
+                <CustomBusinessTypeMenu
                   attribute="business_type_id"
-                  sortBy={["name"]}
+                  sortBy={["count"]}
                   limit={2}
-                  transformItems={transformBusinessTypes}
-                  classNames={{
-                    root: "w-full",
-                    list: "flex flex-row gap-2 justify-between",
-                    item: "flex items-center justify-center w-full p-2 bg-blue-100",
-                    label: "flex items-center space-x-2 text-sm",
-                    selectedItem: "!bg-blue-500 text-white",
-                    count: "hidden",
-                  }}
                 />
               </div>
 
@@ -206,6 +229,11 @@ export default function PropertiesPage() {
                   root: "min-w-[200px]",
                   select:
                     "w-full px-3 py-2 rounded border focus:ring-2 focus:ring-blue-500",
+                }}
+              />
+              <Stats
+                classNames={{
+                  root: "mt-6",
                 }}
               />
             </div>

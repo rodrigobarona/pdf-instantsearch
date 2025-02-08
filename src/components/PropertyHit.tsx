@@ -29,6 +29,8 @@ export function PropertyHitComponent({ hit, lng }: PropertyHitProps) {
         width={500}
         height={500}
         className="w-full h-40 object-cover rounded-lg mb-4"
+        loading="lazy"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <div className="flex justify-between items-center mb-2">
         <p className="text-gray-500">{hit.business_type_id}</p>
