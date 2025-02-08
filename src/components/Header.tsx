@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslation } from "react-i18next";
 import {
   Select,
   SelectContent,
@@ -19,10 +20,15 @@ const languages = [
 export function Header() {
   const pathname = usePathname();
   const router = useRouter();
+  const { i18n } = useTranslation();
 
   const currentLang = pathname.split("/")[1] || "pt";
 
-  const handleLanguageChange = (newLang: string) => {
+  const handleLanguageChange = async (newLang: string) => {
+    // Change i18next language
+    await i18n.changeLanguage(newLang);
+
+    // Update URL
     const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
     router.push(newPathname);
   };
