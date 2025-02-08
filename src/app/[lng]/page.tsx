@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import "@/config/i18n";
-import { Search } from "@/components/Search";
+import { SearchHero } from "@/components/SearchHero";
 
 export const dynamic = "force-dynamic";
 
@@ -27,7 +27,5 @@ export default function Page() {
     return null;
   }
 
-  const currentLng = i18n.language || "pt";
-
-  return <Search lng={currentLng} />;
+  return <SearchHero />;
 }

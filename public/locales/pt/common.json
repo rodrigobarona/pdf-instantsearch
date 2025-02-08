@@ -3,5 +3,13 @@
   "businessType": {
     "sale": "Comprar",
     "lease": "Arrendar"
-  }
+  },
+  "businessTypeFilter": "Tipo de negócio",
+  "price": "Preço",
+  "rooms": "Quartos",
+  "location": "Localização",
+  "clearFilters": "Limpar Filtros",
+  "relevance": "Relevância",
+  "priceLowToHigh": "Preço: Baixo para Alto",
+  "priceHighToLow": "Preço: Alto para Baixo"
 }

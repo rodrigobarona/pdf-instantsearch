@@ -1,7 +1,17 @@
 {
-  "searchPlaceholder": "Search...",
+  "searchPlaceholder": "Search properties...",
+  "search": "Search",
+  "findYourDreamHome": "Find Your Dream Home",
   "businessType": {
     "sale": "Buy",
     "lease": "Rent"
-  }
+  },
+  "businessTypeFilter": "Business Type",
+  "price": "Price",
+  "rooms": "Rooms",
+  "location": "Location",
+  "clearFilters": "Clear Filters",
+  "relevance": "Most Relevant",
+  "priceLowToHigh": "Price: Low to High",
+  "priceHighToLow": "Price: High to Low"
 }

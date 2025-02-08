@@ -48,7 +48,7 @@ export default async function LocaleLayout({
         className="min-h-screen bg-background text-foreground antialiased"
       >
         <Header />
-        <div className="w-full max-w-lg px-4 mx-auto mt-10">{children}</div>
+        <div className="w-full container px-4 mx-auto mt-10">{children}</div>
       </body>
     </html>
   );

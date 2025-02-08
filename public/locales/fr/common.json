@@ -3,5 +3,13 @@
   "businessType": {
     "sale": "Acheter",
     "lease": "Louer"
-  }
+  },
+  "businessTypeFilter": "Type de business",
+  "price": "Prix",
+  "rooms": "Chambres",
+  "location": "Localisation",
+  "clearFilters": "Effacer les filtres",
+  "relevance": "Pertinence",
+  "priceLowToHigh": "Prix : Faible à élevé",
+  "priceHighToLow": "Prix : Élevé à faible"
 }
