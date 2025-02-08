@@ -20,7 +20,7 @@ export function Header() {
   const pathname = usePathname();
   const router = useRouter();
 
-  const currentLang = pathname.split("/")[1] || "en";
+  const currentLang = pathname.split("/")[1] || "pt";
 
   const handleLanguageChange = (newLang: string) => {
     const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
@@ -31,7 +31,7 @@ export function Header() {
     <header className="border-b">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href={`/${currentLang}`} className="text-xl font-bold">
-          Your Logo
+          Porta da Frente Christie&apos;s
         </Link>
 
         <div className="w-32">

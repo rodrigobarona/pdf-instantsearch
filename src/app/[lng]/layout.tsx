@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import { Header } from "@/components/Header";
 // Initialize fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +47,7 @@ export default async function LocaleLayout({
         suppressHydrationWarning
         className="min-h-screen bg-background text-foreground antialiased"
       >
+        <Header />
         <div className="w-full max-w-lg px-4 mx-auto">{children}</div>
       </body>
     </html>
