@@ -1,3 +1,7 @@
 {
-  "searchPlaceholder": "Search..."
+  "searchPlaceholder": "Search...",
+  "businessType": {
+    "sale": "For Sale",
+    "lease": "For Lease"
+  }
 }

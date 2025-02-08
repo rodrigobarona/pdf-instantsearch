@@ -1,3 +1,7 @@
 {
-  "searchPlaceholder": "Rechercher..."
-} 
+  "searchPlaceholder": "Rechercher...",
+  "businessType": {
+    "sale": "À Vendre",
+    "lease": "À Louer"
+  }
+}

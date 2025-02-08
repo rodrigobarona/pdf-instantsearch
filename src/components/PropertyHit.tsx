@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 export type PropertyHit = {
   title: string;
   title_en?: string;
@@ -11,6 +11,8 @@ export type PropertyHit = {
   category_name_fr?: string;
   county: string;
   price: number;
+  business_type_id: "sale" | "lease";
+  cover_photo: string;
 };
 
 interface PropertyHitProps {
@@ -21,6 +23,16 @@ interface PropertyHitProps {
 export function PropertyHitComponent({ hit, lng }: PropertyHitProps) {
   return (
     <div className="p-4 border rounded-lg shadow hover:shadow-md transition-shadow">
+      <Image
+        src={hit.cover_photo}
+        alt={hit.title}
+        width={500}
+        height={500}
+        className="w-full h-40 object-cover rounded-lg mb-4"
+      />
+      <div className="flex justify-between items-center mb-2">
+        <p className="text-gray-500">{hit.business_type_id}</p>
+      </div>
       <h2 className="text-xl font-semibold">
         {hit[`title_${lng}` as keyof PropertyHit] || hit.title}
       </h2>
