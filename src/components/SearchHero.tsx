@@ -4,7 +4,8 @@ import { InstantSearchNext } from "react-instantsearch-nextjs";
 import { searchClient, indexName } from "@/config/typesense";
 import { useTranslation } from "react-i18next";
 import { AutocompleteBox } from "./AutocompleteBox";
-import { ToggleRefinement } from "react-instantsearch";
+import { TabsMenu } from "./TabsMenu";
+
 export function SearchHero() {
   const { t } = useTranslation();
 
@@ -34,11 +35,7 @@ export function SearchHero() {
       <div className="flex flex-col items-center justify-center min-h-[60vh]">
         <h1 className="text-4xl font-bold mb-8">{t("findYourDreamHome")}</h1>
         <div className="w-full max-w-2xl">
-          <ToggleRefinement
-            attribute="business_type_id"
-            on="lease"
-            off="sale"
-          />
+          <TabsMenu />
           <AutocompleteBox />
         </div>
       </div>

@@ -1,31 +1,24 @@
 "use client";
 
 import React from "react";
-import { connectToggleRefinement } from "instantsearch.js/es/connectors";
+import { useToggleRefinement } from "react-instantsearch";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
-interface ToggleProps {
-  value: {
-    isRefined: boolean;
-    count: number | null;
-  };
-  refine: (nextRefinement: { isRefined: boolean }) => void;
-  canRefine: boolean;
-}
-
-const BusinessTypeToggle = ({ value, refine, canRefine }: ToggleProps) => {
+export function TabsMenu() {
   const { t } = useTranslation();
+  const { value, refine, canRefine } = useToggleRefinement({
+    attribute: "business_type_id",
+    on: "lease",
+    off: "sale",
+  });
 
-  if (!canRefine) {
-    return null;
-  }
+  if (!canRefine) return null;
 
   return (
     <div className="flex border-b mb-4">
       <Button
         variant="link"
-        type="button"
         onClick={() => refine({ isRefined: false })}
         className={`px-4 py-2 focus:outline-none transition-colors rounded-none ${
           !value.isRefined
@@ -37,7 +30,6 @@ const BusinessTypeToggle = ({ value, refine, canRefine }: ToggleProps) => {
       </Button>
       <Button
         variant="link"
-        type="button"
         onClick={() => refine({ isRefined: true })}
         className={`px-4 py-2 focus:outline-none transition-colors rounded-none ${
           value.isRefined
@@ -49,10 +41,7 @@ const BusinessTypeToggle = ({ value, refine, canRefine }: ToggleProps) => {
       </Button>
     </div>
   );
-};
-
-// Create the custom widget
-export const TabsMenu = connectToggleRefinement(BusinessTypeToggle);
+}
 
 // Usage example:
 // <TabsMenu attribute="business_type_id" on="lease" off="sale" />

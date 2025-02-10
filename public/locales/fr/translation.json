@@ -1,8 +1,10 @@
 {
-  "searchPlaceholder": "Rechercher...",
+  "findYourDreamHome": "Trouvez la Maison de Vos Rêves",
+  "searchPlaceholder": "Rechercher des propriétés...",
+  "search": "Chercher",
   "businessType": {
-    "sale": "Acheter",
-    "lease": "Louer"
+    "sale": "À Vendre",
+    "lease": "À Louer"
   },
   "businessTypeFilter": "Type de business",
   "price": "Prix",

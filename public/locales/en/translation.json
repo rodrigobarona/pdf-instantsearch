@@ -3,8 +3,8 @@
   "search": "Search",
   "findYourDreamHome": "Find Your Dream Home",
   "businessType": {
-    "sale": "Buy",
-    "lease": "Rent"
+    "sale": "For Sale",
+    "lease": "For Rent"
   },
   "businessTypeFilter": "Business Type",
   "price": "Price",
