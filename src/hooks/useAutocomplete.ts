@@ -19,15 +19,16 @@ type AutocompleteResult = {
   indices: Array<{ hits: Array<Hit<PropertyHit>> }>;
   currentRefinement: string;
   refine: (value: string) => void;
+  $$type: "ais.autocomplete";
 };
 
 export function useAutocomplete(
-  props?: Parameters<typeof connectAutocomplete>[0]
+  props?: AutocompleteConnectorParams
 ): AutocompleteResult {
   "use client";
 
   return useConnector<AutocompleteConnectorParams, AutocompleteResult>(
     connectAutocomplete,
     props
-  );
+  ) as AutocompleteResult;
 }
