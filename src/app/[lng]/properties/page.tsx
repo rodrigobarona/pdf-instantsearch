@@ -7,7 +7,6 @@ import "@/config/i18n";
 import { InstantSearchNext } from "react-instantsearch-nextjs";
 import {
   SearchBox,
-  Hits,
   Configure,
   Pagination,
   RefinementList,
@@ -16,6 +15,9 @@ import {
   CurrentRefinements,
   ClearRefinements,
   Stats,
+  InfiniteHits,
+  HierarchicalMenu,
+  Breadcrumb,
 } from "react-instantsearch";
 import { searchClient, indexName } from "@/config/typesense";
 import {
@@ -160,18 +162,6 @@ export default function PropertiesPage() {
                 }}
               />
 
-              <CurrentRefinements
-                classNames={{
-                  root: "mt-4",
-                  list: "space-y-2",
-                  item: "flex flex-wrap gap-2",
-                  label: "text-sm font-medium",
-                  category:
-                    "inline-flex items-center px-2 py-1 rounded bg-gray-100",
-                  delete: "ml-2 text-gray-500 hover:text-gray-700",
-                }}
-              />
-
               {/* Price Range */}
               <div className="mt-6">
                 <h3 className="text-lg font-semibold mb-3">{t("price")}</h3>
@@ -201,6 +191,51 @@ export default function PropertiesPage() {
                 />
               </div>
 
+              {/* Category */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">{t("category")}</h3>
+                <RefinementList
+                  attribute="category_name"
+                  classNames={{
+                    list: "space-y-2",
+                    item: "flex items-center",
+                    label: "flex items-center space-x-2 text-sm",
+                    checkbox:
+                      "rounded border-gray-300 text-blue-500 focus:ring-blue-500",
+                    count: "ml-2 text-sm text-gray-500",
+                  }}
+                />
+              </div>
+
+              {/* Category Hierarchy */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">
+                  {t("categoryHierarchy")}
+                </h3>
+                <HierarchicalMenu
+                  attributes={[
+                    "category_hierarchy.lvl0",
+                    "category_hierarchy.lvl1",
+                  ]}
+                  sortBy={["name"]}
+                  showParentLevel={true}
+                  classNames={{
+                    root: "space-y-2 -ml-3",
+                    noRefinementRoot: "text-gray-500 italic",
+                    list: "space-y-1 pl-2", // Indentation for nested levels
+                    item: "relative", // For proper positioning
+                    selectedItem: "font-medium text-blue-600",
+                    parentItem: "mb-1",
+                    link: "block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900",
+                    selectedItemLink:
+                      "bg-blue-50 text-blue-600 hover:bg-blue-100",
+                    label: "text-sm",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                  }}
+                />
+              </div>
+
               {/* Rooms */}
               <div className="mt-6">
                 <h3 className="text-lg font-semibold mb-3">{t("rooms")}</h3>
@@ -217,24 +252,38 @@ export default function PropertiesPage() {
                 />
               </div>
 
-              {/* Location */}
+              {/* Location Hierarchy */}
               <div className="mt-6">
-                <h3 className="text-lg font-semibold mb-3">{t("location")}</h3>
-                <RefinementList
-                  attribute="county"
-                  searchable={true}
-                  limit={30}
-                  showMore={true}
-                  showMoreLimit={400}
+                <h3 className="text-lg font-semibold mb-3">
+                  {t("locationParish")}
+                </h3>
+                <HierarchicalMenu
+                  attributes={[
+                    "location_hierarchy.lvl0", // NUT II
+                    "location_hierarchy.lvl1", // NUT III
+                    "location_hierarchy.lvl2", // DISTRITO
+                    "location_hierarchy.lvl3", // CONCELHO
+                    "location_hierarchy.lvl4", // FRAGUESIA
+                  ]}
+                  sortBy={["name"]}
+                  showParentLevel={true}
                   classNames={{
-                    list: "space-y-2",
-                    searchBox: "mb-4",
-                    item: "flex items-center",
-                    label: "flex items-center space-x-2 text-sm",
-
-                    checkbox:
-                      "rounded border-gray-300 text-blue-500 focus:ring-blue-500",
-                    count: "ml-2 text-sm text-gray-500",
+                    root: "space-y-2 -ml-3",
+                    noRefinementRoot: "text-gray-500 italic",
+                    list: "space-y-1 pl-2", // Indentation for nested levels
+                    item: "relative", // For proper positioning
+                    selectedItem: "font-medium text-blue-600",
+                    parentItem: "mb-1",
+                    link: "block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900",
+                    selectedItemLink:
+                      "bg-blue-50 text-blue-600 hover:bg-blue-100",
+                    label: "text-sm",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer",
+                    disabledShowMore:
+                      "text-sm text-gray-400 mt-2 cursor-not-allowed",
                   }}
                 />
               </div>
@@ -253,6 +302,35 @@ export default function PropertiesPage() {
                     "w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-blue-500 focus:border-transparent",
                   submit: "absolute right-3 top-1/2 -translate-y-1/2",
                   reset: "hidden",
+                }}
+              />
+
+              <Breadcrumb
+                attributes={[
+                  "location_hierarchy.lvl0",
+                  "location_hierarchy.lvl1",
+                  "location_hierarchy.lvl2",
+                  "location_hierarchy.lvl3",
+                  "location_hierarchy.lvl4",
+                ]}
+                classNames={{
+                  root: "mt-4",
+                  list: "flex items-center space-x-2",
+                  item: "text-sm text-gray-500",
+                  separator: "text-gray-500 mr",
+                }}
+              />
+
+              <CurrentRefinements
+                excludedAttributes={["business_type_id"]}
+                classNames={{
+                  root: "mt-4",
+                  list: "space-y-2 flex flex-row gap-2",
+                  item: "flex flex-wrap gap-2",
+                  label: "text-sm font-medium",
+                  category:
+                    "inline-flex items-center px-2 py-1 rounded bg-gray-100",
+                  delete: "ml-2 text-gray-500 hover:text-gray-700",
                 }}
               />
             </div>
@@ -283,9 +361,9 @@ export default function PropertiesPage() {
               />
             </div>
 
-            <Configure hitsPerPage={12} />
+            <Configure hitsPerPage={36} />
 
-            <Hits<PropertyHit>
+            <InfiniteHits<PropertyHit>
               hitComponent={({ hit }) => (
                 <PropertyHitComponent hit={hit} lng={currentLng} />
               )}

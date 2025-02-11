@@ -1,0 +1,693 @@
+{
+  "document": {
+    "address": "Urbanização Soltroia ,lote 151",
+    "areas": [
+      {
+        "category": "Casa de Banho",
+        "display_name": "Casa de Banho Suite 2"
+      },
+      {
+        "category": "Quarto",
+        "display_name": "Suite 1"
+      },
+      {
+        "category": "Quarto",
+        "display_name": "Suite 2"
+      },
+      {
+        "category": "Quarto",
+        "display_name": "Suite 3"
+      },
+      {
+        "category": "Quarto",
+        "display_name": "Suite 4"
+      },
+      {
+        "category": "Casa de Banho",
+        "display_name": "Casa de Banho Suite 1"
+      },
+      {
+        "category": "Casa de Banho",
+        "display_name": "Casa de Banho Suite 3"
+      },
+      {
+        "category": "Casa de Banho",
+        "display_name": "Casa de Banho Suite 4"
+      },
+      {
+        "category": "Estacionamento",
+        "display_name": "Garagem Subterrânea"
+      },
+      {
+        "category": "Estacionamento",
+        "display_name": "Estacionamento Exterior á moradia"
+      },
+      {
+        "category": "Estacionamento",
+        "display_name": "Garagem Subterrânea"
+      },
+      {
+        "category": "Estacionamento",
+        "display_name": "Garagem Subterrânea"
+      },
+      {
+        "category": "Estacionamento",
+        "display_name": "Garagem Subterrânea"
+      },
+      {
+        "category": "Estacionamento",
+        "display_name": "Garagem Subterrânea"
+      },
+      {
+        "category": "Estacionamento",
+        "display_name": "Estacionamento Exterior á moradia"
+      }
+    ],
+    "availability_id": "disponivel",
+    "bathrooms": 4,
+    "business_type_id": "sale",
+    "category_hierarchy": [
+      {
+        "lvl0": "Moradia",
+        "lvl1": "Moradia > Moradia Isolada"
+      }
+    ],
+    "category_hierarchy_en": [
+      {
+        "lvl0": "House",
+        "lvl1": "House > Detached house"
+      }
+    ],
+    "category_hierarchy_fr": [
+      {
+        "lvl0": "Maison normal",
+        "lvl1": "Maison normal > Maison isolée"
+      }
+    ],
+    "category_id": "house",
+    "category_name": "Moradia",
+    "category_name_en": "House",
+    "category_name_fr": "Maison normal",
+    "code": "PF34374",
+    "county": "Grandola",
+    "county_id": "grandola",
+    "cover_photo": "https://static.portadafrente.com/PF34374/DSC_7050_1725829273625.jpg",
+    "description": "Inserida num lote de 1160 m², com 725 m² de área bruta de construção, a moradia de 4 quartos, piscina e jardim a 50 metros da praia. Tem um enquadramento paisagístico de excelência e está inserida numa urbanização de moradias de luxo. A moradia com 2 pisos e ainda uma cave com estacionamento para 5 carros, zona técnica de máquinas, lavandaria completa, casa de banho de serviço e sala de jogos.\r\nNo piso térreo, encontra uma sala de estar e jantar com lareira , cozinha com sala de pequenos almoços, uma sala de spa com jacuzzi e banho turco e uma casa de banho de serviço.\r\nAs salas dão para o jardim com um enorme deck em madeira onde se encontra a piscina aquecida de 12x6 com jacuzzi, duche exterior, zona para refeições com churrasco revestido a xisto.  \r\nNo 1º andar, apresenta um hall de entrada com acesso para  os  4 quartos em suíte,  e um terraço com uma área bastante generosa e uma fantástica vista mar.\r\nA moradia possui painéis solares térmicos para AQS e aquecimento da piscina assim como painéis fotovoltaicos com ligação á rede de distribuição eléctrica, furo artesiano com tratamento automático de água, instalação eléctrica suportada por um sistema de domótica, estores eléctricos e ar condicionado que podem ser comandados centralmente. Tem ainda uma instalação prévia para elevador e para câmaras de vigilância. \r\nA praia Atlântica fica a 3 minutos a pé e o terminal de Ferries a 160 m em linha reta. Tem ligação via aqua taxi ou ferryboat, a partir do porto de Setúbal por dois terminais fluviais, a doca do comércio (ferries) e cais 3 (catamarãs) que garantem a ligação mais curta a Tróia e ao Aeroporto Humberto Delgado Lisboa. A poucos quilómetros está a Comporta e Carvalhal, e a menos de 40 min fica Alcácer do Sal e Grândola.",
+    "description_en": "Inserida num lote de 1160 m², com 725 m² de área bruta de construção, a moradia de 4 quartos, piscina e jardim a 50 metros da praia. Tem um enquadramento paisagístico de excelência e está inserida numa urbanização de moradias de luxo. A moradia com 2 pisos e ainda uma cave com estacionamento para 5 carros, zona técnica de máquinas, lavandaria completa, casa de banho de serviço e sala de jogos.\r\nNo piso térreo, encontra uma sala de estar e jantar com lareira , cozinha com sala de pequenos almoços, uma sala de spa com jacuzzi e banho turco e uma casa de banho de serviço.\r\nAs salas dão para o jardim com um enorme deck em madeira onde se encontra a piscina aquecida de 12x6 com jacuzzi, duche exterior, zona para refeições com churrasco revestido a xisto.  \r\nNo 1º andar, apresenta um hall de entrada com acesso para  os  4 quartos em suíte,  e um terraço com uma área bastante generosa e uma fantástica vista mar.\r\nA moradia possui painéis solares térmicos para AQS e aquecimento da piscina assim como painéis fotovoltaicos com ligação á rede de distribuição eléctrica, furo artesiano com tratamento automático de água, instalação eléctrica suportada por um sistema de domótica, estores eléctricos e ar condicionado que podem ser comandados centralmente. Tem ainda uma instalação prévia para elevador e para câmaras de vigilância. \r\nA praia Atlântica fica a 3 minutos a pé e o terminal de Ferries a 160 m em linha reta. Tem ligação via aqua taxi ou ferryboat, a partir do porto de Setúbal por dois terminais fluviais, a doca do comércio (ferries) e cais 3 (catamarãs) que garantem a ligação mais curta a Tróia e ao Aeroporto Humberto Delgado Lisboa. A poucos quilómetros está a Comporta e Carvalhal, e a menos de 40 min fica Alcácer do Sal e Grândola.",
+    "description_fr": "Inserida num lote de 1160 m², com 725 m² de área bruta de construção, a moradia de 4 quartos, piscina e jardim a 50 metros da praia. Tem um enquadramento paisagístico de excelência e está inserida numa urbanização de moradias de luxo. A moradia com 2 pisos e ainda uma cave com estacionamento para 5 carros, zona técnica de máquinas, lavandaria completa, casa de banho de serviço e sala de jogos.\r\nNo piso térreo, encontra uma sala de estar e jantar com lareira , cozinha com sala de pequenos almoços, uma sala de spa com jacuzzi e banho turco e uma casa de banho de serviço.\r\nAs salas dão para o jardim com um enorme deck em madeira onde se encontra a piscina aquecida de 12x6 com jacuzzi, duche exterior, zona para refeições com churrasco revestido a xisto.  \r\nNo 1º andar, apresenta um hall de entrada com acesso para  os  4 quartos em suíte,  e um terraço com uma área bastante generosa e uma fantástica vista mar.\r\nA moradia possui painéis solares térmicos para AQS e aquecimento da piscina assim como painéis fotovoltaicos com ligação á rede de distribuição eléctrica, furo artesiano com tratamento automático de água, instalação eléctrica suportada por um sistema de domótica, estores eléctricos e ar condicionado que podem ser comandados centralmente. Tem ainda uma instalação prévia para elevador e para câmaras de vigilância. \r\nA praia Atlântica fica a 3 minutos a pé e o terminal de Ferries a 160 m em linha reta. Tem ligação via aqua taxi ou ferryboat, a partir do porto de Setúbal por dois terminais fluviais, a doca do comércio (ferries) e cais 3 (catamarãs) que garantem a ligação mais curta a Tróia e ao Aeroporto Humberto Delgado Lisboa. A poucos quilómetros está a Comporta e Carvalhal, e a menos de 40 min fica Alcácer do Sal e Grândola.",
+    "equipments": [
+      "Acesso para Deficientes",
+      "Alarme",
+      "Aquecimento Central",
+      "Ar Condicionado",
+      "Arrecadação",
+      "Aspiração Central",
+      "Banheira",
+      "Banheira com Hidromassagem",
+      "Banho Turco",
+      "Barbecue",
+      "Bicicletário",
+      "Blackouts",
+      "Caldeira",
+      "Cozinha Equipada",
+      "Detector de Fumos",
+      "Domótica",
+      "Elevador",
+      "Estores Electricos",
+      "Exaustor",
+      "Fogão",
+      "Garagem",
+      "Lareira",
+      "Máquina de Lavar Roupa",
+      "Máquina de Secar Roupa",
+      "Painéis fotovoltaicos",
+      "Piscina aquecida",
+      "Piscina Privada",
+      "Placa Vitrocerâmica",
+      "Poliban",
+      "Porta Alta Segurança",
+      "Portão Eléctrico",
+      "Roupeiros",
+      "Salão de Jogos",
+      "Sauna",
+      "Painéis Solares",
+      "Termoacumulador",
+      "Terraço",
+      "Vidros Duplos",
+      "Microondas",
+      "Carregamento Veículos Eléctricos",
+      "Circuito Fechado",
+      "Vídeo vigilância",
+      "Água",
+      "Animais permitidos",
+      "Gás",
+      "Iluminação Pública",
+      "Internet Disponível",
+      "Mobilado",
+      "TV por Cabo disponível"
+    ],
+    "equipments_en": [
+      "Disabled People Access",
+      "Alarm",
+      "Central Heating",
+      "Air Conditioning",
+      "Storage Room",
+      "Central Vacuum Cleaning System",
+      "Bathtub",
+      "Hydromassage Bathtub",
+      "Turkish Bath",
+      "Barbecue",
+      "Bicycle Stand",
+      "Blackouts",
+      "Hot Water Tank",
+      "Equipped kitchen",
+      "Smoke Detector",
+      "Home automation",
+      "Elevator",
+      "Electric blinds",
+      "Exhaust",
+      "Stove",
+      "Garage",
+      "Fireplace",
+      "Washing Machine",
+      "Drier machine",
+      "Photovoltaic panels",
+      "Heated Swimming Pool",
+      "Private Swimming Pool",
+      "Vitroceramic Cooktop",
+      "Shower",
+      "High Security Door",
+      "Electric gate",
+      "Wardrobes",
+      "Games room",
+      "Sauna",
+      "Solar panels",
+      "Heater",
+      "Terrace",
+      "Double Glazed",
+      "Microwave Oven",
+      "EV charging station",
+      "Closed TV Circuit",
+      "Video surveillance",
+      "Water",
+      "Pets are allowed",
+      "Gas",
+      "Street lighting",
+      "Internet",
+      "Furnished",
+      "Cable TV"
+    ],
+    "equipments_fr": [
+      "Accès mobilité réduite",
+      "Alarme",
+      "Chauffage central",
+      "Climatisation",
+      "Rangement",
+      "Aspirateur centralisé",
+      "Baignoire",
+      "Baignoire d'hydromassage",
+      "Bain turc",
+      "Barbecue",
+      "Support à bicyclette",
+      "Coupures de courant",
+      "Réservoir d'eau chaude",
+      "Cuisine équipée",
+      "Détecteur de fumée",
+      "Automatisation de la maison",
+      "Ascenseur",
+      "Stores électriques",
+      "Échappement",
+      "Le fourneau",
+      "Garage",
+      "Cheminée",
+      "Machine à laver",
+      "Machine sécheuse",
+      "Panneaux photovoltaïques",
+      "Piscine chauffée",
+      "Piscine privée",
+      "Table de cuisson vitrocéramique",
+      "Douche",
+      "Porte haute sécurité",
+      "Portail électrique",
+      "Armoires",
+      "Salle de jeux",
+      "Sauna",
+      "Panneaux solaires",
+      "Chauffe-eau",
+      "Terrasse",
+      "Double vitrage",
+      "Micro-ondes",
+      "Borne de recharge pour voitures électriques",
+      "Circuit TV fermé",
+      "Vidéosurveillance",
+      "Eau",
+      "Les animaux sont admis",
+      "Gaz",
+      "Réverbères",
+      "l'Internet",
+      "Meublé",
+      "Télévision par câble"
+    ],
+    "floor": null,
+    "gross_build_area": 725,
+    "gross_private_area": 521,
+    "id": "a0cTg000002wJKTIA2",
+    "is_exclusive": false,
+    "land_area": 1160,
+    "languages": ["pt", "en", "fr"],
+    "last_updated": "2025-02-11T07:14:13.585Z",
+    "latitude": 38.449042838461544,
+    "location_hierarchy": [
+      {
+        "lvl0": "Alentejo",
+        "lvl1": "Alentejo > Alentejo Litoral",
+        "lvl2": "Alentejo > Alentejo Litoral > Setúbal",
+        "lvl3": "Alentejo > Alentejo Litoral > Setúbal > Grândola",
+        "lvl4": "Alentejo > Alentejo Litoral > Setúbal > Grândola > Carvalhal",
+        "lvl5": "Alentejo > Alentejo Litoral > Setúbal > Grândola > Carvalhal > Soltroia"
+      }
+    ],
+    "longitude": -8.851936661538462,
+    "outdoor_area": 435,
+    "parish": "Carvalhal",
+    "parish_id": "grandola_carvalhal",
+    "parking_spaces": 7,
+    "phone": "+351 213 806 112",
+    "photos": [
+      {
+        "main_photo": false,
+        "sequence": 1,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7076_1725829273628.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 2,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7079_GEN_1725829273629.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 3,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6852_1725829273600.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 4,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6868_1725829273602.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 5,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6876_1725829273603.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 6,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6858_1725829273601.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 7,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6893_1725829273606.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 8,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6895_1725829273607.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 9,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6923_1725829273609.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 10,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6928_1725829273609.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 11,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6908_1725829273608.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 12,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6918_1725829273608.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 13,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6937_1725829273610.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 14,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7012_1725829273615.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 15,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7017_1725829273615.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 16,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6973_1725829273613.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 17,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6968_1725829273613.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 18,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7019_1725829273616.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 19,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6983_1725829273614.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 20,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6988_1725829273614.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 21,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7018_1725829273615.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 22,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6998_1725829273614.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 23,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6993_1725829273614.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 24,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7031_1725829273620.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 25,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7008_1725829273615.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 26,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7003_1725829273614.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 27,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7032_1725829273621.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 28,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7020_1725829273616.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 29,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7027_1725829273619.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 30,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6950_1725829273611.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 31,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6948_1725829273611.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 32,
+        "url": "https://static.portadafrente.com/PF34374/DSC_6943_1725829273611.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 33,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7033_1725829273621.JPG"
+      },
+      {
+        "main_photo": false,
+        "sequence": 34,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7048_1725829273625.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 35,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7047_1725829273624.jpg"
+      },
+      {
+        "main_photo": true,
+        "sequence": 36,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7050_1725829273625.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 37,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7054_1725829273626.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 38,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7070_1725829273628.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 39,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7071_1725829273628.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 40,
+        "url": "https://static.portadafrente.com/PF34374/DSC_7073_1725829273628.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 41,
+        "url": "https://static.portadafrente.com/PF34374/DJI_0552_1725829273600.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 42,
+        "url": "https://static.portadafrente.com/PF34374/DJI_0533_1725829273599.jpg"
+      }
+    ],
+    "postal_code": "7570-788",
+    "price": 2590000,
+    "price_on_application": false,
+    "published_at": "2024-09-08",
+    "revelance_score": null,
+    "rooms": 4,
+    "slug_url": "moradia-t4-soltroia-venda-a0cTg000002wJKTIA2",
+    "slug_url_en": "4-bedroom-house-soltroia-venda-a0cTg000002wJKTIA2",
+    "slug_url_fr": "maison-t4-soltroia-venda-a0cTg000002wJKTIA2",
+    "state_id": "used",
+    "sub_category_id": "moradia-isolada",
+    "sub_category_name": "Moradia Isolada",
+    "sub_category_name_en": "Detached house",
+    "sub_category_name_fr": "Maison isolée",
+    "surroundings": [
+      "Banco",
+      "Campo de Golfe",
+      "Centro Comercial",
+      "Condomínio Fechado",
+      "Escola",
+      "Espaços Verdes",
+      "Farmácia",
+      "Ginásio",
+      "Hipermercado",
+      "Polícia",
+      "Posto de Combustível",
+      "Praia",
+      "Vista para Praia",
+      "Zona Comercial",
+      "Estacionamento"
+    ],
+    "surroundings_en": [
+      "Bank",
+      "Golf course",
+      "Shopping center",
+      "Closed condominium",
+      "School",
+      "Green spaces",
+      "Pharmacy",
+      "Gym",
+      "Hypermarket",
+      "Police",
+      "Gas station",
+      "Beach",
+      "Beach View",
+      "Commercial Area",
+      "Parking"
+    ],
+    "surroundings_fr": [
+      "Banque",
+      "Terrain de golf",
+      "Centre commercial",
+      "Copropriété fermée",
+      "École",
+      "Espaces verts",
+      "Pharmacie",
+      "Gym",
+      "grande surface",
+      "Police",
+      "Station-essence",
+      "Plage",
+      "Vue sur la plage",
+      "Zone commerciale",
+      "Parking"
+    ],
+    "title": "Moradia T4 - Soltroia",
+    "title_en": "4-bedroom house - Soltroia",
+    "title_fr": "Maison T4 - Soltroia",
+    "updated_at": "2025-02-07",
+    "video_url": "https://www.youtube.com/embed/KO7isN2P1_I",
+    "zone": "Soltroia",
+    "zone_id": "grandola_soltroia"
+  },
+  "highlight": {
+    "areas": [
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Casa de Banho Suite 2",
+          "value": "Casa de Banho Suite 2"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Suite 1",
+          "value": "Suite 1"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Suite 2",
+          "value": "Suite 2"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Suite 3",
+          "value": "Suite 3"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Suite 4",
+          "value": "Suite 4"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Casa de Banho Suite 1",
+          "value": "Casa de Banho Suite 1"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Casa de Banho Suite 3",
+          "value": "Casa de Banho Suite 3"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Casa de Banho Suite 4",
+          "value": "Casa de Banho Suite 4"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Garagem Subterrânea",
+          "value": "Garagem Subterrânea"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": ["moradia"],
+          "snippet": "Estacionamento Exterior á <mark>moradia</mark>",
+          "value": "Estacionamento Exterior á <mark>moradia</mark>"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Garagem Subterrânea",
+          "value": "Garagem Subterrânea"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Garagem Subterrânea",
+          "value": "Garagem Subterrânea"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Garagem Subterrânea",
+          "value": "Garagem Subterrânea"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": [],
+          "snippet": "Garagem Subterrânea",
+          "value": "Garagem Subterrânea"
+        }
+      },
+      {
+        "display_name": {
+          "matched_tokens": ["moradia"],
+          "snippet": "Estacionamento Exterior á <mark>moradia</mark>",
+          "value": "Estacionamento Exterior á <mark>moradia</mark>"
+        }
+      }
+    ],
+    "sub_category_name": {
+      "matched_tokens": ["Moradia", "Isolada"],
+      "snippet": "<mark>Moradia</mark> <mark>Isolada</mark>",
+      "value": "<mark>Moradia</mark> <mark>Isolada</mark>"
+    }
+  },
+  "highlights": [
+    {
+      "field": "sub_category_name",
+      "matched_tokens": ["Moradia", "Isolada"],
+      "snippet": "<mark>Moradia</mark> <mark>Isolada</mark>",
+      "value": "<mark>Moradia</mark> <mark>Isolada</mark>"
+    }
+  ],
+  "text_match": 1157451471441625000,
+  "text_match_info": {
+    "best_field_score": "2211897868544",
+    "best_field_weight": 12,
+    "fields_matched": 2,
+    "num_tokens_dropped": 0,
+    "score": "1157451471441625186",
+    "tokens_matched": 2,
+    "typo_prefix_score": 0
+  }
+}

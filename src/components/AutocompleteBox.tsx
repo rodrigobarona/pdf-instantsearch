@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { PropertyHit } from "@/hooks/useAutocomplete";
 import type { Hit } from "instantsearch.js";
+
 export function AutocompleteBox() {
   const { t } = useTranslation();
   const router = useRouter();

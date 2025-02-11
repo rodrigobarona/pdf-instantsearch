@@ -1,7 +1,7 @@
 {
+  "findYourDreamHome": "Find Your Dream Home",
   "searchPlaceholder": "Search properties...",
   "search": "Search",
-  "findYourDreamHome": "Find Your Dream Home",
   "businessType": {
     "sale": "For Sale",
     "lease": "For Rent"
@@ -14,5 +14,6 @@
   "clearFilters": "Clear Filters",
   "relevance": "Most Relevant",
   "priceLowToHigh": "Price: Low to High",
-  "priceHighToLow": "Price: High to Low"
+  "priceHighToLow": "Price: High to Low",
+  "locationParish": "Location"
 }

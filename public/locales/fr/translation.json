@@ -14,5 +14,6 @@
   "clearFilters": "Effacer les filtres",
   "relevance": "Pertinence",
   "priceLowToHigh": "Prix : Faible à élevé",
-  "priceHighToLow": "Prix : Élevé à faible"
+  "priceHighToLow": "Prix : Élevé à faible",
+  "locationParish": "Location"
 }

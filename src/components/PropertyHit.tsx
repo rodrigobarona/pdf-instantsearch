@@ -13,6 +13,7 @@ export type PropertyHit = {
   price: number;
   business_type_id: "sale" | "lease";
   cover_photo: string;
+  rooms: number;
 };
 
 interface PropertyHitProps {
@@ -43,6 +44,7 @@ export function PropertyHitComponent({ hit, lng }: PropertyHitProps) {
       </p>
       <p className="text-gray-500">{hit.county}</p>
       <p className="text-lg font-bold mt-2">€{hit.price.toLocaleString()}</p>
+      <p className="text-gray-500">{hit.rooms} rooms</p>
     </div>
   );
 }

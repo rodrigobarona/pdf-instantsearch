@@ -3,8 +3,8 @@
   "searchPlaceholder": "Procurar imóveis...",
   "search": "Buscar",
   "businessType": {
-    "sale": "Para Venda",
-    "lease": "Para Alugar"
+    "sale": "Comprar",
+    "lease": "Alugar"
   },
   "businessTypeFilter": "Tipo de negócio",
   "price": "Preço",
@@ -14,5 +14,6 @@
   "clearFilters": "Limpar Filtros",
   "relevance": "Relevância",
   "priceLowToHigh": "Preço: Baixo para Alto",
-  "priceHighToLow": "Preço: Alto para Baixo"
+  "priceHighToLow": "Preço: Alto para Baixo",
+  "locationParish": "Localização"
 }
