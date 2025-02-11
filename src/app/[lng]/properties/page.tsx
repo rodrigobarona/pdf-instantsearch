@@ -191,6 +191,44 @@ export default function PropertiesPage() {
                 />
               </div>
 
+              {/* Location Hierarchy */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">
+                  {t("locationParish")}
+                </h3>
+                <HierarchicalMenu
+                  attributes={[
+                    "location_hierarchy.lvl0", // NUT II
+                    "location_hierarchy.lvl1", // NUT III
+                    "location_hierarchy.lvl2", // DISTRITO
+                    "location_hierarchy.lvl3", // CONCELHO
+                    "location_hierarchy.lvl4", // FRAGUESIA
+                    "location_hierarchy.lvl5", // ZONA
+                  ]}
+                  rootPath="location_hierarchy.lvl2"
+                  sortBy={["name"]}
+                  showParentLevel={true}
+                  classNames={{
+                    root: "space-y-2 -ml-3",
+                    noRefinementRoot: "text-gray-500 italic",
+                    list: "space-y-1 pl-2", // Indentation for nested levels
+                    item: "relative", // For proper positioning
+                    selectedItem: "font-medium text-blue-600",
+                    parentItem: "mb-1",
+                    link: "block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900",
+                    selectedItemLink:
+                      "bg-blue-50 text-blue-600 hover:bg-blue-100",
+                    label: "text-sm",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer",
+                    disabledShowMore:
+                      "text-sm text-gray-400 mt-2 cursor-not-allowed",
+                  }}
+                />
+              </div>
+
               {/* Category */}
               <div className="mt-6">
                 <h3 className="text-lg font-semibold mb-3">{t("category")}</h3>
@@ -248,42 +286,6 @@ export default function PropertiesPage() {
                     checkbox:
                       "rounded border-gray-300 text-blue-500 focus:ring-blue-500",
                     count: "ml-2 text-sm text-gray-500",
-                  }}
-                />
-              </div>
-
-              {/* Location Hierarchy */}
-              <div className="mt-6">
-                <h3 className="text-lg font-semibold mb-3">
-                  {t("locationParish")}
-                </h3>
-                <HierarchicalMenu
-                  attributes={[
-                    "location_hierarchy.lvl0", // NUT II
-                    "location_hierarchy.lvl1", // NUT III
-                    "location_hierarchy.lvl2", // DISTRITO
-                    "location_hierarchy.lvl3", // CONCELHO
-                    "location_hierarchy.lvl4", // FRAGUESIA
-                  ]}
-                  sortBy={["name"]}
-                  showParentLevel={true}
-                  classNames={{
-                    root: "space-y-2 -ml-3",
-                    noRefinementRoot: "text-gray-500 italic",
-                    list: "space-y-1 pl-2", // Indentation for nested levels
-                    item: "relative", // For proper positioning
-                    selectedItem: "font-medium text-blue-600",
-                    parentItem: "mb-1",
-                    link: "block py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900",
-                    selectedItemLink:
-                      "bg-blue-50 text-blue-600 hover:bg-blue-100",
-                    label: "text-sm",
-                    count:
-                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                    showMore:
-                      "text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer",
-                    disabledShowMore:
-                      "text-sm text-gray-400 mt-2 cursor-not-allowed",
                   }}
                 />
               </div>
