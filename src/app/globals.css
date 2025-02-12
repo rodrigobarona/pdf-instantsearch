@@ -70,3 +70,50 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.ais-RefinementList-searchBox .ais-SearchBox-form {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.ais-RefinementList-searchBox .ais-SearchBox-input {
+  width: 100%;
+  padding: 0.375rem 2rem 0.375rem 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: white;
+  transition: all 0.15s;
+}
+
+.ais-RefinementList-searchBox .ais-SearchBox-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.ais-RefinementList-searchBox .ais-SearchBox-submit,
+.ais-RefinementList-searchBox .ais-SearchBox-reset {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0.125rem;
+}
+
+.ais-RefinementList-searchBox .ais-SearchBox-submit {
+  right: 1.5rem;
+}
+
+.ais-RefinementList-searchBox .ais-SearchBox-reset {
+  right: 0.25rem;
+}
+
+.ais-RefinementList-searchBox .ais-SearchBox-submitIcon,
+.ais-RefinementList-searchBox .ais-SearchBox-resetIcon {
+  width: 10px;
+  height: 10px;
+  fill: #94a3b8;
+}
