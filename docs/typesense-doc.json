@@ -1,264 +1,306 @@
 {
   "document": {
-    "address": "Rua Braancamp n 40 1C",
-    "areas": [
-      {
-        "category": "Quarto"
-      },
-      {
-        "category": "Casa de Banho"
-      },
-      {
-        "category": "Estacionamento"
-      },
-      {
-        "category": "Casa de Banho"
-      }
-    ],
+    "address": "Empreendimento Rio Mirear - Lote 16, fração 1D – Casal das Romeiras Miraflores",
+    "alternate_zone": "Miraflores",
+    "areas": [],
     "availability_id": "disponivel",
-    "bathrooms": 2,
-    "business_type_id": "lease",
+    "bathrooms": 0,
+    "business_type_id": "sale",
     "category_hierarchy": [
       {
-        "lvl0": "Apartamento"
+        "lvl0": "Empreendimento"
       }
     ],
     "category_hierarchy_en": [
       {
-        "lvl0": "Apartment"
+        "lvl0": "Development"
       }
     ],
     "category_hierarchy_fr": [
       {
-        "lvl0": "Appartement"
+        "lvl0": "Complexes immobiliers"
       }
     ],
-    "category_id": "apartment",
-    "category_name": "Apartamento",
-    "category_name_en": "Apartment",
-    "category_name_fr": "Appartement",
-    "code": "PF36213",
-    "county": "Lisboa",
-    "county_id": "lisboa",
-    "cover_photo": "https://static.portadafrente.com/PF36213/03_1739210186714.jpg",
-    "description": "Apartamento T1 totalmente mobilado para arrendamento na Rua Braancamp, Lisboa \r\n\r\nAs áreas dividem-se por:\r\n\r\nHall de entrada\r\nWc Social\r\nSuite \r\nSala de estar \r\nCozinha totalmente equipada\r\n\r\nImóvel com boas áreas, bons acabamentos, equipado com ar condicionado, janelas duplas, e vidros duplos, em prédio com elevador, estacionamento e portaria.\r\n\r\nProjectado em 1921 pelo arq. Norte Júnior, o Heron Castilho, edifício de gaveto e planta em L, associa elementos decorativos tardios ao gosto Arte Nova. Fica numa localização estratégica - por um lado no ponto mais central da cidade, próximo ao Marquês de Pombal e Avenida da Liberdade, por outro, junto ao principal acesso de saída da cidade, a auto estrada A5, proporcionando um melhor estilo de vida.\r\n\r\nA envolvência dispõe de todos os serviços e comodidades, desde espaços verdes - o icónico Parque Eduardo VII -, transportes públicos - a estação de metro do Marquês de Pombal a 200m -, ginásio, bancos, restaurantes e comércio, estando a poucos minutos a pé da Avenida da Liberdade e do Príncipe Real.",
-    "description_en": "Projected in 1921 by the architect Norte Júnior, Heron Castilho is a building with a L-plan configuration that blends late decorative elements, typical of the art noveau style. This building is placed in a strategic location – on the one side, it is located in the heart of the city, close to Marquês de Pombal and Avenida da Liberdade. On the other side, it is close to the main access of the city´s exit, the A5 motorway, providing an excellent lifestyle.\r\n\r\nIn the vicinities there are all sorts of services and facilities, from verdant areas – the iconic Parque Eduardo VII -, to public transportation - the Marquês de Pombal subway station is 200 metres away – gym, banks, restaurants and local business, being only a few minutes away, on foot, from Avenida da Liberdade and Príncipe Real.",
-    "description_fr": "Apartamento T1 totalmente mobilado para arrendamento na Rua Braancamp, Lisboa \r\n\r\nAs áreas dividem-se por:\r\n\r\nHall de entrada\r\nWc Social\r\nSuite \r\nSala de estar \r\nCozinha totalmente equipada\r\n\r\nImóvel com boas áreas, bons acabamentos, equipado com ar condicionado, janelas duplas, e vidros duplos, em prédio com elevador, estacionamento e portaria.\r\n\r\nProjectado em 1921 pelo arq. Norte Júnior, o Heron Castilho, edifício de gaveto e planta em L, associa elementos decorativos tardios ao gosto Arte Nova. Fica numa localização estratégica - por um lado no ponto mais central da cidade, próximo ao Marquês de Pombal e Avenida da Liberdade, por outro, junto ao principal acesso de saída da cidade, a auto estrada A5, proporcionando um melhor estilo de vida.\r\n\r\nA envolvência dispõe de todos os serviços e comodidades, desde espaços verdes - o icónico Parque Eduardo VII -, transportes públicos - a estação de metro do Marquês de Pombal a 200m -, ginásio, bancos, restaurantes e comércio, estando a poucos minutos a pé da Avenida da Liberdade e do Príncipe Real.",
+    "category_id": "development",
+    "category_name": "Empreendimento",
+    "category_name_en": "Development",
+    "category_name_fr": "Complexes immobiliers",
+    "code": "PF29530",
+    "county": "Oeiras",
+    "county_id": "oeiras",
+    "cover_photo": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.53_1733142231055.jpeg",
+    "description": "O projeto Rio Mirear vem somar mais um edifício emblemático a Oeiras com uma localização privilegiada no coração de Miraflores, Algés.\r\n\r\nSituado junto ao Rio e ao verde do Monsanto, o Rio Mirear pauta pela proximidade ao centro de Algés onde tudo acontece: restauração, escolas, espaços verdes, serviços de saúde, comércio e polos empresariais. Em meros 10 minutos consegue chegar ora ao centro de Lisboa, ora às belíssimas praias da linha de Cascais. Viver no Rio Mirear é ter efetivamente o melhor de dois mundos.\r\n\r\nO edifício é composto por apartamentos divididos em tipologias T2 a T5 com áreas entre os 92 e 183 m², sendo que os pisos mais altos oferecem vista rio. Todas as unidades contemplam varandas, sem dúvida a característica mais desejada pelos residentes atuais, bem como acabamentos premium e com design sofisticado.\r\n\r\nAs valências do condomínio incluem ginásio, sala multiusos e estacionamento para todos os apartamentos.",
+    "description_en": "The Rio Mirear project adds yet another emblematic building in Oeiras, with a privileged location in the heart of Miraflores, Algés.\r\n\r\nLocated next to the river and the green of Monsanto, Rio Mirear stands out for its proximity to the center of Algés where everything happens: restaurants, schools, public gardens, health services, commerce and business centers. In a mere 10 minutes you can reach either the center of Lisbon or the beautiful beaches along the Cascais ocean line. Living in Rio Mirear is effectively having the best of both worlds.\r\n\r\nThe building consists of apartments divided into T2 to T5 typologies with areas between 92 and 183sqm, with the highest floors offering river views. All units have balconies, undoubtedly the feature most desired by current residents, as well as premium finishes and sophisticated design.\r\n\r\nThe condominium features include a gym, multipurpose room and parking for all apartments.",
+    "description_fr": "Le projet Rio Mirear ajoute un autre bâtiment emblématique à Oeiras, avec un emplacement privilégié au cœur de Miraflores, Algés.\r\n\r\nSitué à côté de la rivière et de la verdure de Monsanto, Rio Mirear se distingue par sa proximité avec le centre d'Algés où tout se passe : restaurants, écoles, services de santé, commerces et centres d'affaires. En seulement 10 minutes, vous pourrez rejoindre le centre de Lisbonne ou les belles plages le long de la ligne Cascais. Vivre à Rio Mirear, c'est effectivement avoir le meilleur des deux mondes.\r\n\r\nLe bâtiment se compose d'appartements divisés en typologies 3 à 6 pièces avec des superficies comprises entre 92 et 183 m², les étages les plus élevés offrant une vue sur la rivière. Toutes les unités ont des balcons, sans aucun doute la caractéristique la plus recherchée par les résidents actuels, ainsi que des finitions haut de gamme et un design sophistiqué.\r\n\r\nLes caractéristiques de la copropriété comprennent une salle de sport, une salle polyvalente et un parking pour tous les appartements.",
     "equipments": [
       "Elevador",
-      "Frigorífico",
       "Garagem",
-      "Video Porteiro",
+      "Sauna",
+      "Painéis Solares",
+      "Terraço",
       "Vidros Duplos",
-      "Portaria",
-      "Vídeo vigilância",
-      "Mobilado"
+      "Sala de Condomínio",
+      "Varanda"
     ],
     "equipments_en": [
       "Elevator",
-      "Fridge",
       "Garage",
-      "Video Doorman",
+      "Sauna",
+      "Solar panels",
+      "Terrace",
       "Double Glazed",
-      "Lobby",
-      "Video surveillance",
-      "Furnished"
+      "Condominium Room",
+      "Balcony"
     ],
     "equipments_fr": [
       "Ascenseur",
-      "Frigo",
       "Garage",
-      "Portier vidéo",
+      "Sauna",
+      "Panneaux solaires",
+      "Terrasse",
       "Double vitrage",
-      "Hall",
-      "Vidéosurveillance",
-      "Meublé"
+      "Salle de condominium",
+      "Balcon"
     ],
-    "floor": 1,
-    "gross_private_area": 101,
-    "id": "a0cTg000006FkBxIAK",
-    "is_exclusive": false,
-    "languages": ["pt", "en", "fr"],
-    "last_updated": "2025-02-12T05:18:52.849Z",
-    "latitude": 38.7269417,
+    "floor": null,
+    "id": "a0c3Y00000V3rrXQAR",
+    "is_exclusive": true,
+    "languages": [
+      "pt",
+      "en",
+      "fr"
+    ],
+    "last_updated": "2025-02-12T19:30:29.209Z",
+    "latitude": 38.71064232499356,
     "location_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
         "lvl1": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa",
         "lvl2": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa",
-        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa",
-        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa > Santo Antonio",
-        "lvl5": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa > Santo Antonio > Marquês de Pombal"
+        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras",
+        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo",
+        "lvl5": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo > Miraflores"
       }
     ],
-    "longitude": -9.1482606,
-    "parish": "Santo Antonio",
+    "longitude": -9.224411910678942,
+    "parish": "Algés, Linda-a-velha e Cruz Quebrada-dafundo",
     "parish_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Santo Antonio"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo"
       }
     ],
     "parish_hierarchy_en": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Santo Antonio"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo"
       }
     ],
     "parish_hierarchy_fr": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Santo Antonio"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo"
       }
     ],
-    "parish_id": "lisboa_santo-antonio",
-    "parking_spaces": 1,
-    "phone": "+351 213 806 111",
+    "parish_id": "oeiras_alges-linda-a-velha-e-cruz-quebrada-dafundo",
+    "parking_spaces": 0,
+    "phone": "+351 214 688 891",
     "photos": [
       {
         "main_photo": true,
         "sequence": 1,
-        "url": "https://static.portadafrente.com/PF36213/03_1739210186714.jpg"
+        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.53_1733142231055.jpeg"
       },
       {
         "main_photo": false,
         "sequence": 2,
-        "url": "https://static.portadafrente.com/PF36213/05_1739210186715.jpg"
+        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54_1733142231054.jpeg"
       },
       {
         "main_photo": false,
         "sequence": 3,
-        "url": "https://static.portadafrente.com/PF36213/08_1739210186716.jpg"
+        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54%20%281%29_1733142231056.jpeg"
       },
       {
         "main_photo": false,
         "sequence": 4,
-        "url": "https://static.portadafrente.com/PF36213/10_1739210186716.jpg"
+        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54%20%283%29_1733142231057.jpeg"
       },
       {
         "main_photo": false,
         "sequence": 5,
-        "url": "https://static.portadafrente.com/PF36213/11_1739210186717.jpg"
+        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54%20%282%29_1733142231056.jpeg"
       },
       {
         "main_photo": false,
         "sequence": 6,
-        "url": "https://static.portadafrente.com/PF36213/09_1739210186716.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0003_1733142119079.jpg"
       },
       {
         "main_photo": false,
         "sequence": 7,
-        "url": "https://static.portadafrente.com/PF36213/04_1739210186714.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0004_1733142119079.jpg"
       },
       {
         "main_photo": false,
         "sequence": 8,
-        "url": "https://static.portadafrente.com/PF36213/06_1739210186715.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0006_1733142119080.jpg"
       },
       {
         "main_photo": false,
         "sequence": 9,
-        "url": "https://static.portadafrente.com/PF36213/07_1739210186716.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0005_1733142119079.jpg"
       },
       {
         "main_photo": false,
         "sequence": 10,
-        "url": "https://static.portadafrente.com/PF36213/02_1739210186713.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0007_1733142119080.jpg"
       },
       {
         "main_photo": false,
         "sequence": 11,
-        "url": "https://static.portadafrente.com/PF36213/12_1739210186717.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0021_1733142119078.jpg"
       },
       {
         "main_photo": false,
         "sequence": 12,
-        "url": "https://static.portadafrente.com/PF36213/15_1739210186719.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0008_1733142119080.jpg"
       },
       {
         "main_photo": false,
         "sequence": 13,
-        "url": "https://static.portadafrente.com/PF36213/14_1739210186718.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0017_1733142119077.jpg"
       },
       {
         "main_photo": false,
         "sequence": 14,
-        "url": "https://static.portadafrente.com/PF36213/13_1739210186718.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0018_1733142119077.jpg"
       },
       {
         "main_photo": false,
         "sequence": 15,
-        "url": "https://static.portadafrente.com/PF36213/01_1739210186713.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0019_1733142119077.jpg"
       },
       {
         "main_photo": false,
         "sequence": 16,
-        "url": "https://static.portadafrente.com/PF36213/17_1739210186705.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0010_1733142119080.jpg"
       },
       {
         "main_photo": false,
         "sequence": 17,
-        "url": "https://static.portadafrente.com/PF36213/16_1739210186719.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0009_1733142119080.jpg"
       },
       {
         "main_photo": false,
         "sequence": 18,
-        "url": "https://static.portadafrente.com/PF36213/18_1739210186708.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0011_1733142119081.jpg"
       },
       {
         "main_photo": false,
         "sequence": 19,
-        "url": "https://static.portadafrente.com/PF36213/19_1739210186709.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0012_1733142119076.jpg"
       },
       {
         "main_photo": false,
         "sequence": 20,
-        "url": "https://static.portadafrente.com/PF36213/20_1739210186710.jpg"
+        "url": "https://static.portadafrente.com/PF29530/0020_1733142119078.jpg"
       },
       {
         "main_photo": false,
         "sequence": 21,
-        "url": "https://static.portadafrente.com/PF36213/21_1739210186710.jpg"
+        "url": "https://static.portadafrente.com/PF29530/Ext_Frontal_Edificio_Novo_03_1704500230097.jpg"
       },
       {
         "main_photo": false,
         "sequence": 22,
-        "url": "https://static.portadafrente.com/PF36213/22_1739210186711.jpg"
+        "url": "https://static.portadafrente.com/PF29530/EXT_Tardoz_Edificio_Novo_03_1704500230098.jpg"
       },
       {
         "main_photo": false,
         "sequence": 23,
-        "url": "https://static.portadafrente.com/PF36213/23_1739210186711.jpg"
+        "url": "https://static.portadafrente.com/PF29530/Varanda_1704500230099.jpg"
       },
       {
         "main_photo": false,
         "sequence": 24,
-        "url": "https://static.portadafrente.com/PF36213/24_1739210186712.jpg"
+        "url": "https://static.portadafrente.com/PF29530/08_P13_Cozinha_04_1671121344314.jpg"
       },
       {
         "main_photo": false,
         "sequence": 25,
-        "url": "https://static.portadafrente.com/PF36213/25_1739210186712.jpg"
+        "url": "https://static.portadafrente.com/PF29530/06_P0_Quarto_05_1671121344314.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 26,
+        "url": "https://static.portadafrente.com/PF29530/13_P13_Quarto_03_1671121344315.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 27,
+        "url": "https://static.portadafrente.com/PF29530/11_P13_Quarto_04_1671121344315.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 28,
+        "url": "https://static.portadafrente.com/PF29530/04_P-1_Gym_04_1671121344313.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 29,
+        "url": "https://static.portadafrente.com/PF29530/07_P0_Sala_Multiusos_04_1671121344314.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 30,
+        "url": "https://static.portadafrente.com/PF29530/12_P2_IS_02_1671121344315.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 31,
+        "url": "https://static.portadafrente.com/PF29530/03_P0_Hall_05_1671121344316.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 32,
+        "url": "https://static.portadafrente.com/PF29530/14_P13_Sala_03_1671121344315.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 33,
+        "url": "https://static.portadafrente.com/PF29530/09_P13_Sala_03_1671121344314.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 34,
+        "url": "https://static.portadafrente.com/PF29530/05_P0_Sala_04_1671121344314.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 35,
+        "url": "https://static.portadafrente.com/PF29530/10_P13_Sala_1671121344315.jpg"
       }
     ],
-    "postal_code": "1050-002",
-    "price": 3000,
+    "postal_code": "1495-117",
+    "price": 0,
     "price_on_application": false,
-    "published_at": "2025-02-10",
-    "revelance_score": 230946,
-    "rooms": 1,
-    "slug_url": "apartamento-t1-lisboa-arrendamento-a0cTg000006FkBxIAK",
-    "slug_url_en": "1-bedroom-apartment-lisboa-arrendamento-a0cTg000006FkBxIAK",
-    "slug_url_fr": "appartement-2-pieces-lisboa-arrendamento-a0cTg000006FkBxIAK",
-    "state_id": "used",
-    "sub_category_id": "apartamento",
-    "sub_category_name": "Apartamento",
-    "sub_category_name_en": "Apartment",
-    "sub_category_name_fr": "Appartement",
+    "published_at": "2022-12-14",
+    "revelance_score": 114000,
+    "rooms": 0,
+    "slug_url": "rio-mirear-a0c3Y00000V3rrXQAR",
+    "slug_url_en": "rio-mirear-a0c3Y00000V3rrXQAR",
+    "slug_url_fr": "rio-mirear-a0c3Y00000V3rrXQAR",
+    "state_id": "under-construction",
+    "sub_category_name": "",
     "surroundings": [
+      "Áreas de Lazer Infantil",
+      "Auto-Estrada",
+      "Banco",
+      "Bombeiros",
       "Centro Comercial",
       "Centro da Cidade",
       "Escola",
@@ -266,11 +308,20 @@
       "Farmácia",
       "Ginásio",
       "Hipermercado",
+      "Hospital",
+      "Mercado",
+      "Piscinas",
+      "Polícia",
+      "Posto de Combustível",
+      "Praça Táxis",
       "Transportes Públicos",
-      "Vista para Cidade",
       "Zona Comercial"
     ],
     "surroundings_en": [
+      "Children's play areas",
+      "Freeway",
+      "Bank",
+      "Fire department",
       "Shopping center",
       "Town centre",
       "School",
@@ -278,11 +329,20 @@
       "Pharmacy",
       "Gym",
       "Hypermarket",
+      "Hospital",
+      "Mart",
+      "Pools",
+      "Police",
+      "Gas station",
+      "Taxis Square",
       "Public Transportation",
-      "City View",
       "Commercial Area"
     ],
     "surroundings_fr": [
+      "Aires de jeux pour enfants",
+      "Autoroute",
+      "Banque",
+      "Pompiers",
       "Centre commercial",
       "Centre-ville",
       "École",
@@ -290,37 +350,43 @@
       "Pharmacie",
       "Gym",
       "grande surface",
+      "Hôpital",
+      "Marché",
+      "Piscines",
+      "Police",
+      "Station-essence",
+      "Taxis Square",
       "Transport public",
-      "Vue de la ville",
       "Zone commerciale"
     ],
-    "title": "Apartamento T1, Lisboa",
-    "title_en": "1 Bedroom Apartment, Lisboa",
-    "title_fr": "Appartement 2 pièces, Lisboa",
-    "updated_at": "2025-02-11",
-    "zone": "Marquês de Pombal",
+    "title": "Rio Mirear",
+    "title_en": "Rio Mirear",
+    "title_fr": "Rio Mirear",
+    "updated_at": "2025-01-24",
+    "video_url": "https://www.youtube.com/embed/pYtcAbt9UOk",
+    "zone": "Miraflores",
     "zone_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Marquês de Pombal"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Miraflores"
       }
     ],
     "zone_hierarchy_en": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Marquês de Pombal"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Miraflores"
       }
     ],
     "zone_hierarchy_fr": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Marquês de Pombal"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Miraflores"
       }
     ],
-    "zone_id": "lisboa_marques-de-pombal"
+    "zone_id": "oeiras_miraflores"
   },
   "highlight": {},
   "highlights": [],
