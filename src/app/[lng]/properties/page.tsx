@@ -203,12 +203,14 @@ export default function PropertiesPage() {
                   searchable={true}
                   showMore={true}
                   sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
                   classNames={{
-                    root: "space-y-2",
+                    root: "space-y-2 ",
                     noRefinementRoot: "text-gray-500 italic",
                     searchBox: "relative",
                     noResults: "text-gray-500 text-sm italic px-2",
-                    list: "space-y-1",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
                     item: "relative",
                     selectedItem: "font-medium text-blue-600",
                     label:
@@ -235,12 +237,15 @@ export default function PropertiesPage() {
                   attribute="parish"
                   showMore={true}
                   searchable={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
                   classNames={{
                     root: "space-y-2",
                     noRefinementRoot: "text-gray-500 italic",
                     searchBox: "relative",
                     noResults: "text-gray-500 text-sm italic px-2",
-                    list: "space-y-1",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
                     item: "relative",
                     selectedItem: "font-medium text-blue-600",
                     label:
@@ -266,12 +271,15 @@ export default function PropertiesPage() {
                   attribute="zone"
                   showMore={true}
                   searchable={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
                   classNames={{
                     root: "space-y-2",
                     noRefinementRoot: "text-gray-500 italic",
                     searchBox: "relative",
                     noResults: "text-gray-500 text-sm italic px-2",
-                    list: "space-y-1",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
                     item: "relative",
                     selectedItem: "font-medium text-blue-600",
                     label:
@@ -414,6 +422,9 @@ export default function PropertiesPage() {
                   attribute="category_name"
                   searchable={true}
                   showMore={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
                   classNames={{
                     root: "space-y-2",
                     noRefinementRoot: "text-gray-500 italic",
@@ -446,12 +457,15 @@ export default function PropertiesPage() {
                   attribute="sub_category_name"
                   searchable={true}
                   showMore={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
                   classNames={{
                     root: "space-y-2",
                     noRefinementRoot: "text-gray-500 italic",
                     searchBox: "relative",
                     noResults: "text-gray-500 text-sm italic px-2",
-                    list: "space-y-1",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
                     item: "relative",
                     selectedItem: "font-medium text-blue-600",
                     label:
@@ -516,12 +530,15 @@ export default function PropertiesPage() {
                   attribute="rooms"
                   searchable={true}
                   showMore={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
                   classNames={{
                     root: "space-y-2",
                     noRefinementRoot: "text-gray-500 italic",
                     searchBox: "relative",
                     noResults: "text-gray-500 text-sm italic px-2",
-                    list: "space-y-1",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
                     item: "relative",
                     selectedItem: "font-medium text-blue-600",
                     label:
