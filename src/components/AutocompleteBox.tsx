@@ -10,17 +10,19 @@ import Link from "next/link";
 import { useSearchBox } from "react-instantsearch";
 import { useHierarchicalMenu } from "react-instantsearch";
 import { INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES } from "@/config/constants";
+import { SearchIcon } from "lucide-react";
 
 export function AutocompleteBox() {
   const { t } = useTranslation();
   const router = useRouter();
   const { lng } = useParams<{ lng: string }>();
-  const { query } = useSearchBox();
+  const { query, refine: setQuery } = useSearchBox();
   const { items: parishes } = useHierarchicalMenu({
     attributes: INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES,
   });
 
-  const { hits, getInputProps, getItemProps, inputValue } = useAutocomplete();
+  const { hits, getInputProps, getItemProps, inputValue, recentSearches } =
+    useAutocomplete();
 
   const currentParish = parishes.find(({ isRefined }) => isRefined)?.value;
 
@@ -54,8 +56,35 @@ export function AutocompleteBox() {
         </button>
       </form>
 
-      {hits.length > 0 && inputValue && (
-        <div className="absolute w-full mt-1 bg-white rounded-lg shadow-lg border border-gray-200 max-h-[80vh] overflow-auto z-50">
+      {(hits.length > 0 || recentSearches.length > 0) && inputValue && (
+        <div className="absolute w-full mt-1 bg-white shadow-md border border-gray-200 max-h-[80vh] overflow-auto z-50">
+          {recentSearches.length > 0 && (
+            <div className="p-2 border-b border-gray-100">
+              <div className="text-xs font-medium text-gray-500 px-2 mb-1">
+                Recent Searches
+              </div>
+              {recentSearches.map((search) => (
+                <Button
+                  key={search.timestamp}
+                  onClick={() => {
+                    setQuery(search.label);
+                  }}
+                  className="w-full text-left p-2 hover:bg-gray-50 flex items-center gap-2"
+                >
+                  <span className="text-gray-400">
+                    <SearchIcon className="h-4 w-4" />
+                  </span>
+                  <span>{search.label}</span>
+                  {search.category && (
+                    <span className="text-xs text-gray-500">
+                      in {search.category}
+                    </span>
+                  )}
+                </Button>
+              ))}
+            </div>
+          )}
+
           {hits.map((hit: PropertyHit) => {
             const itemProps = getItemProps({
               item: hit,
@@ -65,26 +94,36 @@ export function AutocompleteBox() {
             const { key: _key, ...restItemProps } = itemProps;
 
             return (
-              <Button key={hit.objectID} {...restItemProps} asChild>
+              <Button
+                key={hit.objectID}
+                {...restItemProps}
+                asChild
+                variant="ghost"
+                className="w-full text-left p-0  hover:bg-gray-50 transition-colors h-auto border-b-2 border-gray-100 rounded-none"
+              >
                 <Link
                   href={`/${lng}/properties/${hit.slug_url}`}
-                  className="flex items-start gap-4 w-full hover:bg-gray-50/50 transition-colors"
+                  className="flex items-start gap-4 w-full hover:bg-gray-50 transition-colors"
                 >
-                  <div className="relative w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
-                    {hit.photos?.[0]?.url && (
+                  {hit.photos?.[0]?.url && (
+                    <div className="w-20 h-20 flex-shrink-0 overflow-hidden">
                       <Image
                         src={hit.photos[0].url}
                         alt={hit.title}
-                        className="object-cover rounded-lg"
+                        className="object-cover object-center w-full h-full"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority
                         loading="eager"
-                        fill
+                        width={64}
+                        height={64}
+                        quality={50}
+                        style={{ objectFit: "cover" }}
                       />
-                    )}
-                  </div>
+                    </div>
+                  )}
+
                   <div className="flex-1 min-w-0 py-1">
-                    <h3 className="font-semibold text-gray-900 truncate">
+                    <h3 className="font-medium text-gray-900 truncate">
                       {hit.title}
                     </h3>
                     <div className="text-sm text-gray-600 mt-1">
@@ -98,17 +137,17 @@ export function AutocompleteBox() {
                     </div>
                     <div className="flex flex-wrap gap-1.5 mt-2">
                       {hit.zone_hierarchy?.[0]?.lvl0 && (
-                        <span className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">
+                        <span className="px-2 py-0.5 bg-gray-100 text-gray-700 text-xs">
                           {hit.zone_hierarchy[0].lvl0}
                         </span>
                       )}
                       {hit.category_name && (
-                        <span className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">
+                        <span className="px-2 py-0.5 bg-gray-100 text-gray-700 text-xs">
                           {hit.category_name}
                         </span>
                       )}
                       {hit.business_type_id && (
-                        <span className="px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">
+                        <span className="px-2 py-0.5 bg-blue-100 text-blue-700 text-xs">
                           {hit.business_type_id}
                         </span>
                       )}
