@@ -18,12 +18,22 @@ export type PropertyHit = BaseHit & {
   query?: string;
   cover_photo: string;
   title: string;
+  title_en?: string;
+  title_fr?: string;
   county?: string;
   price?: number;
   slug_url?: string;
+  slug_url_en?: string;
+  slug_url_fr?: string;
+  category_name: string;
+  category_name_en?: string;
+  category_name_fr?: string;
   zone_hierarchy?: Array<{ lvl0: string }>;
-  [key: `title_${string}`]: string;
-  [key: `slug_url_${string}`]: string;
+  photos?: Array<{ url: string }>;
+  zone?: string;
+  alternate_zone?: string;
+  business_type_id?: string;
+  parish_hierarchy?: Array<{ lvl2: string }>;
 };
 
 type RecentSearch = {

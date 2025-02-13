@@ -15,5 +15,7 @@
   "relevance": "Relevância",
   "priceLowToHigh": "Preço: Baixo para Alto",
   "priceHighToLow": "Preço: Alto para Baixo",
-  "locationParish": "Localização"
+  "locationParish": "Localização",
+  "buy": "Comprar",
+  "rent": "Alugar"
 }

@@ -35,6 +35,12 @@ export function AutocompleteBox() {
     );
   };
 
+  const getLocalizedField = (hit: PropertyHit, field: string) => {
+    if (lng === "pt") return hit[field];
+    const localizedField = hit[`${field}_${lng}`];
+    return localizedField || hit[field]; // Fallback to default if translation not available
+  };
+
   return (
     <div className="relative w-full" aria-label="Property search">
       <form
@@ -90,7 +96,6 @@ export function AutocompleteBox() {
               item: hit,
               className: "w-full text-left p-4 hover:bg-gray-50",
             });
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { key: _key, ...restItemProps } = itemProps;
 
             return (
@@ -99,17 +104,20 @@ export function AutocompleteBox() {
                 {...restItemProps}
                 asChild
                 variant="ghost"
-                className="w-full text-left p-0  hover:bg-gray-50 transition-colors h-auto border-b-2 border-gray-100 rounded-none"
+                className="w-full text-left p-0 hover:bg-gray-50 transition-colors h-auto border-b-2 border-gray-100 rounded-none"
               >
                 <Link
-                  href={`/${lng}/properties/${hit.slug_url}`}
+                  href={`/${lng}/properties/${getLocalizedField(
+                    hit,
+                    "slug_url"
+                  )}`}
                   className="flex items-start gap-4 w-full hover:bg-gray-50 transition-colors"
                 >
                   {hit.photos?.[0]?.url && (
                     <div className="w-20 h-20 flex-shrink-0 overflow-hidden">
                       <Image
                         src={hit.photos[0].url}
-                        alt={hit.title}
+                        alt={getLocalizedField(hit, "title")}
                         className="object-cover object-center w-full h-full"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         priority
@@ -124,7 +132,7 @@ export function AutocompleteBox() {
 
                   <div className="flex-1 min-w-0 py-1">
                     <h3 className="font-medium text-gray-900 truncate">
-                      {hit.title}
+                      {getLocalizedField(hit, "title")}
                     </h3>
                     <div className="text-sm text-gray-600 mt-1">
                       {hit.zone}
@@ -136,14 +144,14 @@ export function AutocompleteBox() {
                       )}
                     </div>
                     <div className="flex flex-wrap gap-1.5 mt-2">
-                      {hit.zone_hierarchy?.[0]?.lvl0 && (
+                      {hit.parish_hierarchy?.[0]?.lvl2 && (
                         <span className="px-2 py-0.5 bg-gray-100 text-gray-700 text-xs">
-                          {hit.zone_hierarchy[0].lvl0}
+                          {hit.parish_hierarchy[0].lvl2}
                         </span>
                       )}
                       {hit.category_name && (
                         <span className="px-2 py-0.5 bg-gray-100 text-gray-700 text-xs">
-                          {hit.category_name}
+                          {getLocalizedField(hit, "category_name")}
                         </span>
                       )}
                       {hit.business_type_id && (
