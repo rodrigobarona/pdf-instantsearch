@@ -27,7 +27,6 @@ import {
 import type { MenuProps } from "react-instantsearch";
 import { useMenu } from "react-instantsearch";
 import { Button } from "@/components/ui/button";
-import type { ViewType } from "@/types";
 import MapModal from "@/components/MapModal";
 
 function CustomBusinessTypeMenu(props: MenuProps) {
@@ -96,18 +95,19 @@ export default function PropertiesPage() {
     return null;
   }
 
-  // Determine current view (this file represents list view)
-  const currentView: ViewType = "list";
-
   // Toggle bar to switch between List and Map view
   const viewToggle = (
     <div className="flex gap-4 mb-4">
-      <button className={`px-4 py-2 rounded bg-blue-500 text-white`}>
+      <button
+        className="px-4 py-2 rounded bg-blue-500 text-white"
+        type="button"
+      >
         List
       </button>
       <button
         onClick={() => setIsMapModalOpen(true)}
         className="px-4 py-2 rounded bg-gray-200 text-gray-700 hover:bg-gray-300"
+        type="button"
       >
         Map
       </button>
