@@ -13,7 +13,7 @@ function CustomToggleRefinement(props: {
 }) {
   const { value, refine } = useToggleRefinement(props);
   const { t } = useTranslation();
-  
+
   return (
     <div className="flex mb-4">
       <Button
@@ -23,7 +23,7 @@ function CustomToggleRefinement(props: {
             ? "bg-blue-600 text-white border-blue-600"
             : "bg-white text-gray-700 hover:bg-gray-50"
         }`}
-        onClick={() => refine({ isRefined: false })}
+        onClick={() => refine({ isRefined: true })}
       >
         {t("buy")}
       </Button>
@@ -34,7 +34,7 @@ function CustomToggleRefinement(props: {
             ? "bg-blue-600 text-white border-blue-600"
             : "bg-white text-gray-700 hover:bg-gray-50"
         }`}
-        onClick={() => refine({ isRefined: true })}
+        onClick={() => refine({ isRefined: false })}
       >
         {t("rent")}
       </Button>
@@ -49,6 +49,7 @@ export function SearchHero() {
     <InstantSearch
       indexName={indexName}
       searchClient={searchClient}
+      routing={true}
       future={{
         preserveSharedStateOnUnmount: true,
       }}
