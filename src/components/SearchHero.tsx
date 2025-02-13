@@ -1,44 +1,33 @@
 "use client";
 
-import { InstantSearchNext } from "react-instantsearch-nextjs";
+import { InstantSearch } from "react-instantsearch";
 import { searchClient, indexName } from "@/config/typesense";
 import { useTranslation } from "react-i18next";
+import { Autocomplete } from "./Autocomplete";
 import { AutocompleteBox } from "./AutocompleteBox";
-import { TabsMenu } from "./TabsMenu";
 
 export function SearchHero() {
   const { t } = useTranslation();
 
   return (
-    <InstantSearchNext
+    <InstantSearch
       indexName={indexName}
       searchClient={searchClient}
-      routing={{
-        stateMapping: {
-          stateToRoute(uiState) {
-            const indexUiState = uiState[indexName] || {};
-            return {
-              q: indexUiState.query,
-            };
-          },
-          routeToState(routeState) {
-            return {
-              [indexName]: {
-                query: routeState.q,
-              },
-            };
-          },
-        },
+      future={{
+        preserveSharedStateOnUnmount: true,
       }}
-      insights={true}
     >
       <div className="flex flex-col items-center justify-center min-h-[60vh]">
         <h1 className="text-4xl font-bold mb-8">{t("findYourDreamHome")}</h1>
         <div className="w-full max-w-2xl">
-          <TabsMenu />
-          <AutocompleteBox />
+          <AutocompleteBox
+            className="w-full"
+            placeholder={t("searchPlaceholder")}
+            openOnFocus={true}
+            detachedMediaQuery="none"
+          />
         </div>
       </div>
-    </InstantSearchNext>
+    </InstantSearch>
   );
 }

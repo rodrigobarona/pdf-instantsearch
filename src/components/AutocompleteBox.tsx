@@ -1,62 +1,35 @@
 "use client";
 
-import type React from "react";
-import { useState, useRef, useEffect } from "react";
-import { useAutocomplete } from "@/hooks/useAutocomplete";
+import type { FormEvent } from "react";
+import { type PropertyHit, useAutocomplete } from "@/hooks/useAutocomplete";
 import { useTranslation } from "react-i18next";
 import { useRouter, useParams } from "next/navigation";
-import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import type { PropertyHit } from "@/hooks/useAutocomplete";
-import type { Hit } from "instantsearch.js";
+import { useSearchBox } from "react-instantsearch";
+import { useHierarchicalMenu } from "react-instantsearch";
+import { INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES } from "@/config/constants";
 
 export function AutocompleteBox() {
   const { t } = useTranslation();
   const router = useRouter();
   const { lng } = useParams<{ lng: string }>();
-  const [inputValue, setInputValue] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-  const { indices, refine } = useAutocomplete();
+  const { query } = useSearchBox();
+  const { items: parishes } = useHierarchicalMenu({
+    attributes: INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES,
+  });
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node) &&
-        !inputRef.current?.contains(event.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    };
+  const { hits, getInputProps, getItemProps, inputValue } = useAutocomplete();
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  const currentParish = parishes.find(({ isRefined }) => isRefined)?.value;
 
-  const handleSubmit = (event: React.FormEvent, query = inputValue) => {
+  const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    setIsOpen(false);
     router.push(
-      `/${lng}/properties${query ? `?q=${encodeURIComponent(query)}` : ""}`
-    );
-  };
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    setInputValue(value);
-    refine(value);
-    setIsOpen(Boolean(value));
-  };
-
-  const handleSuggestionClick = (suggestion: PropertyHit) => {
-    setInputValue(suggestion.query || "");
-    handleSubmit(
-      { preventDefault: () => {} } as React.FormEvent,
-      suggestion.query
+      `/${lng}/properties${query ? `?q=${encodeURIComponent(query)}` : ""}${
+        currentParish ? `&parish=${encodeURIComponent(currentParish)}` : ""
+      }`
     );
   };
 
@@ -67,15 +40,11 @@ export function AutocompleteBox() {
         className="relative flex items-center w-full"
       >
         <input
-          ref={inputRef}
-          type="text"
-          value={inputValue}
-          onChange={handleInputChange}
-          onFocus={() => setIsOpen(Boolean(inputValue))}
-          placeholder={t("searchPlaceholder")}
-          aria-controls="search-suggestions"
-          aria-label={t("searchPlaceholder")}
-          className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500"
+          {...getInputProps({
+            placeholder: t("searchPlaceholder"),
+            className:
+              "w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500",
+          })}
         />
         <button
           type="submit"
@@ -85,63 +54,70 @@ export function AutocompleteBox() {
         </button>
       </form>
 
-      {isOpen && indices[0]?.hits.length > 0 && (
-        <div
-          ref={dropdownRef}
-          id="search-suggestions"
-          className="absolute z-50 w-full mt-1 bg-white rounded-lg shadow-lg border"
-        >
-          {indices[0].hits.map((hit: Hit<PropertyHit>, index: number) => (
-            <Button
-              variant="ghost"
-              key={hit.objectID}
-              className={cn(
-                "w-full  text-left hover:bg-gray-100 transition-colors h-auto",
-                index === 0 && "rounded-t-lg",
-                index === indices[0].hits.length - 1 && "rounded-b-lg"
-              )}
-              onClick={() => handleSuggestionClick(hit)}
-            >
-              <Link
-                href={`/${lng}/property/${
-                  hit[`slug_url_${lng}` as keyof typeof hit] || hit.slug_url
-                }`}
-                className="w-full"
-              >
-                <div className="flex items-start justify-start gap-4 w-full">
-                  <div className="w-12 h-12 shrink-0 relative overflow-hidden">
-                    <Image
-                      src={hit.cover_photo}
-                      alt={String(
-                        hit[`title_${lng}` as keyof typeof hit] || hit.title
-                      )}
-                      objectFit="cover"
-                      sizes="(max-width: 768px) 100vw, 160px"
-                      height={48}
-                      width={48}
-                    />
+      {hits.length > 0 && inputValue && (
+        <div className="absolute w-full mt-1 bg-white rounded-lg shadow-lg border border-gray-200 max-h-[80vh] overflow-auto z-50">
+          {hits.map((hit: PropertyHit) => {
+            const itemProps = getItemProps({
+              item: hit,
+              className: "w-full text-left p-4 hover:bg-gray-50",
+            });
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { key: _key, ...restItemProps } = itemProps;
+
+            return (
+              <Button key={hit.objectID} {...restItemProps} asChild>
+                <Link
+                  href={`/${lng}/properties/${hit.slug_url}`}
+                  className="flex items-start gap-4 w-full hover:bg-gray-50/50 transition-colors"
+                >
+                  <div className="relative w-28 h-28 flex-shrink-0 overflow-hidden rounded-lg">
+                    {hit.photos?.[0]?.url && (
+                      <Image
+                        src={hit.photos[0].url}
+                        alt={hit.title}
+                        className="object-cover rounded-lg"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority
+                        loading="eager"
+                        fill
+                      />
+                    )}
                   </div>
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="text-gray-800 font-medium truncate">
-                      {String(
-                        hit[`title_${lng}` as keyof typeof hit] || hit.title
+                  <div className="flex-1 min-w-0 py-1">
+                    <h3 className="font-semibold text-gray-900 truncate">
+                      {hit.title}
+                    </h3>
+                    <div className="text-sm text-gray-600 mt-1">
+                      {hit.zone}
+                      {hit.alternate_zone && (
+                        <span className="text-gray-500">
+                          {" "}
+                          ({hit.alternate_zone})
+                        </span>
                       )}
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm text-gray-500">
-                        {hit.county && hit.county}
-                      </span>
-                      {hit.price && (
-                        <div className="text-sm font-semibold text-blue-600">
-                          €{hit.price.toLocaleString()}
-                        </div>
+                    </div>
+                    <div className="flex flex-wrap gap-1.5 mt-2">
+                      {hit.zone_hierarchy?.[0]?.lvl0 && (
+                        <span className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">
+                          {hit.zone_hierarchy[0].lvl0}
+                        </span>
+                      )}
+                      {hit.category_name && (
+                        <span className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">
+                          {hit.category_name}
+                        </span>
+                      )}
+                      {hit.business_type_id && (
+                        <span className="px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">
+                          {hit.business_type_id}
+                        </span>
                       )}
                     </div>
                   </div>
-                </div>
-              </Link>
-            </Button>
-          ))}
+                </Link>
+              </Button>
+            );
+          })}
         </div>
       )}
     </div>
