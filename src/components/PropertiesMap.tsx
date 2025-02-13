@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { useHits, useGeoSearch, useSearchBox } from "react-instantsearch";
+import {
+  useGeoSearch,
+  useSearchBox,
+  useInstantSearch,
+} from "react-instantsearch";
 import {
   MapContainer,
   TileLayer,
@@ -94,8 +98,9 @@ function MapEvents() {
   return null;
 }
 
-function PropertiesMap() {
-  const { hits } = useHits<PropertyHit>();
+export default function PropertiesMap() {
+  const { results } = useInstantSearch();
+  const hits = (results?.hits || []) as PropertyHit[];
   const defaultCenter: LatLngExpression = [38.736946, -9.142685];
 
   return (
@@ -103,7 +108,8 @@ function PropertiesMap() {
       center={defaultCenter}
       zoom={10}
       scrollWheelZoom={true}
-      style={{ height: "700px", width: "100%" }}
+      className="w-full h-full"
+      style={{ height: "100%" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -208,5 +214,3 @@ function PropertiesMap() {
     </MapContainer>
   );
 }
-
-export default PropertiesMap;

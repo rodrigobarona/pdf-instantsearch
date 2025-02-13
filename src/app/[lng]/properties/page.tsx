@@ -27,8 +27,8 @@ import {
 import type { MenuProps } from "react-instantsearch";
 import { useMenu } from "react-instantsearch";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import type { ViewType } from "@/types";
+import MapModal from "@/components/MapModal";
 
 function CustomBusinessTypeMenu(props: MenuProps) {
   const { items, refine } = useMenu(props);
@@ -70,6 +70,7 @@ export default function PropertiesPage() {
   const { lng } = useParams<{ lng: string }>();
   const [mounted, setMounted] = useState(false);
   const { t, i18n } = useTranslation();
+  const [isMapModalOpen, setIsMapModalOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -101,22 +102,15 @@ export default function PropertiesPage() {
   // Toggle bar to switch between List and Map view
   const viewToggle = (
     <div className="flex gap-4 mb-4">
-      <Link
-        href={`/${lng}/properties`}
-        className={`px-4 py-2 rounded ${
-          currentView === "list"
-            ? "bg-blue-500 text-white"
-            : "bg-gray-200 text-gray-700"
-        }`}
-      >
+      <button className={`px-4 py-2 rounded bg-blue-500 text-white`}>
         List
-      </Link>
-      <Link
-        href={`/${lng}/properties/map`}
-        className="px-4 py-2 rounded bg-gray-200 text-gray-700"
+      </button>
+      <button
+        onClick={() => setIsMapModalOpen(true)}
+        className="px-4 py-2 rounded bg-gray-200 text-gray-700 hover:bg-gray-300"
       >
         Map
-      </Link>
+      </button>
     </div>
   );
 
@@ -681,6 +675,12 @@ export default function PropertiesPage() {
             />
           </div>
         </div>
+
+        {/* Map Modal */}
+        <MapModal
+          isOpen={isMapModalOpen}
+          onClose={() => setIsMapModalOpen(false)}
+        />
       </InstantSearchNext>
     </div>
   );
