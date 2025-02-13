@@ -27,6 +27,8 @@ import {
 import type { MenuProps } from "react-instantsearch";
 import { useMenu } from "react-instantsearch";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import type { ViewType } from "@/types";
 
 function CustomBusinessTypeMenu(props: MenuProps) {
   const { items, refine } = useMenu(props);
@@ -93,10 +95,36 @@ export default function PropertiesPage() {
     return null;
   }
 
+  // Determine current view (this file represents list view)
+  const currentView: ViewType = "list";
+
+  // Toggle bar to switch between List and Map view
+  const viewToggle = (
+    <div className="flex gap-4 mb-4">
+      <Link
+        href={`/${lng}/properties`}
+        className={`px-4 py-2 rounded ${
+          currentView === "list"
+            ? "bg-blue-500 text-white"
+            : "bg-gray-200 text-gray-700"
+        }`}
+      >
+        List
+      </Link>
+      <Link
+        href={`/${lng}/properties/map`}
+        className="px-4 py-2 rounded bg-gray-200 text-gray-700"
+      >
+        Map
+      </Link>
+    </div>
+  );
+
   const currentLng = i18n.language || "pt";
 
   return (
     <div className="container mx-auto px-4 py-8">
+      {viewToggle}
       <InstantSearchNext
         indexName={indexName}
         searchClient={searchClient}

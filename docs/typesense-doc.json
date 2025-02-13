@@ -1,306 +1,350 @@
 {
   "document": {
-    "address": "Empreendimento Rio Mirear - Lote 16, fração 1D – Casal das Romeiras Miraflores",
-    "alternate_zone": "Miraflores",
-    "areas": [],
-    "availability_id": "disponivel",
-    "bathrooms": 0,
+    "_geoloc": {
+      "lat": 38.752586359999995,
+      "lng": -9.1797912
+    },
+    "address": "Unique Benfica | Rua João de Freitas Branco",
+    "alternate_zone": "Benfica",
+    "areas": [
+      {
+        "area": 8.65,
+        "category": "Hall"
+      },
+      {
+        "area": 3.75,
+        "category": "Varanda"
+      },
+      {
+        "category": "Estacionamento"
+      },
+      {
+        "area": 19.1,
+        "category": "Quarto"
+      },
+      {
+        "area": 12.8,
+        "category": "Cozinha"
+      },
+      {
+        "area": 14.3,
+        "category": "Quarto"
+      },
+      {
+        "area": 32.1,
+        "category": "Sala"
+      },
+      {
+        "area": 3.65,
+        "category": "Casa de Banho"
+      },
+      {
+        "area": 6.45,
+        "category": "Casa de Banho"
+      },
+      {
+        "area": 6.9,
+        "category": "Casa de Banho"
+      },
+      {
+        "category": "Estacionamento"
+      },
+      {
+        "area": 18.2,
+        "category": "Quarto"
+      },
+      {
+        "area": 7.65,
+        "category": "Zonas de Circulação"
+      },
+      {
+        "area": 13,
+        "category": "Varanda"
+      },
+      {
+        "area": 4,
+        "category": "Varanda"
+      },
+      {
+        "area": 3.35,
+        "category": "Varanda"
+      }
+    ],
+    "availability_id": "reservado-visivel-no-site",
+    "bathrooms": 3,
     "business_type_id": "sale",
     "category_hierarchy": [
       {
-        "lvl0": "Empreendimento"
+        "lvl0": "Apartamento"
       }
     ],
     "category_hierarchy_en": [
       {
-        "lvl0": "Development"
+        "lvl0": "Apartment"
       }
     ],
     "category_hierarchy_fr": [
       {
-        "lvl0": "Complexes immobiliers"
+        "lvl0": "Appartement"
       }
     ],
-    "category_id": "development",
-    "category_name": "Empreendimento",
-    "category_name_en": "Development",
-    "category_name_fr": "Complexes immobiliers",
-    "code": "PF29530",
-    "county": "Oeiras",
-    "county_id": "oeiras",
-    "cover_photo": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.53_1733142231055.jpeg",
-    "description": "O projeto Rio Mirear vem somar mais um edifício emblemático a Oeiras com uma localização privilegiada no coração de Miraflores, Algés.\r\n\r\nSituado junto ao Rio e ao verde do Monsanto, o Rio Mirear pauta pela proximidade ao centro de Algés onde tudo acontece: restauração, escolas, espaços verdes, serviços de saúde, comércio e polos empresariais. Em meros 10 minutos consegue chegar ora ao centro de Lisboa, ora às belíssimas praias da linha de Cascais. Viver no Rio Mirear é ter efetivamente o melhor de dois mundos.\r\n\r\nO edifício é composto por apartamentos divididos em tipologias T2 a T5 com áreas entre os 92 e 183 m², sendo que os pisos mais altos oferecem vista rio. Todas as unidades contemplam varandas, sem dúvida a característica mais desejada pelos residentes atuais, bem como acabamentos premium e com design sofisticado.\r\n\r\nAs valências do condomínio incluem ginásio, sala multiusos e estacionamento para todos os apartamentos.",
-    "description_en": "The Rio Mirear project adds yet another emblematic building in Oeiras, with a privileged location in the heart of Miraflores, Algés.\r\n\r\nLocated next to the river and the green of Monsanto, Rio Mirear stands out for its proximity to the center of Algés where everything happens: restaurants, schools, public gardens, health services, commerce and business centers. In a mere 10 minutes you can reach either the center of Lisbon or the beautiful beaches along the Cascais ocean line. Living in Rio Mirear is effectively having the best of both worlds.\r\n\r\nThe building consists of apartments divided into T2 to T5 typologies with areas between 92 and 183sqm, with the highest floors offering river views. All units have balconies, undoubtedly the feature most desired by current residents, as well as premium finishes and sophisticated design.\r\n\r\nThe condominium features include a gym, multipurpose room and parking for all apartments.",
-    "description_fr": "Le projet Rio Mirear ajoute un autre bâtiment emblématique à Oeiras, avec un emplacement privilégié au cœur de Miraflores, Algés.\r\n\r\nSitué à côté de la rivière et de la verdure de Monsanto, Rio Mirear se distingue par sa proximité avec le centre d'Algés où tout se passe : restaurants, écoles, services de santé, commerces et centres d'affaires. En seulement 10 minutes, vous pourrez rejoindre le centre de Lisbonne ou les belles plages le long de la ligne Cascais. Vivre à Rio Mirear, c'est effectivement avoir le meilleur des deux mondes.\r\n\r\nLe bâtiment se compose d'appartements divisés en typologies 3 à 6 pièces avec des superficies comprises entre 92 et 183 m², les étages les plus élevés offrant une vue sur la rivière. Toutes les unités ont des balcons, sans aucun doute la caractéristique la plus recherchée par les résidents actuels, ainsi que des finitions haut de gamme et un design sophistiqué.\r\n\r\nLes caractéristiques de la copropriété comprennent une salle de sport, une salle polyvalente et un parking pour tous les appartements.",
+    "category_id": "apartment",
+    "category_name": "Apartamento",
+    "category_name_en": "Apartment",
+    "category_name_fr": "Appartement",
+    "code": "PF30794",
+    "county": "Lisboa",
+    "county_id": "lisboa",
+    "cover_photo": "https://static.portadafrente.com/PF30789/UBenfica_Quarto%20%281%29_1684856746642.jpg",
+    "description": "Benfica foi um dos bairros escolhidos por lisboa para a cidade se reinventar. Nas últimas 3 décadas, aqui tem nascido uma nova realidade. Empresas, universidades, um dos maiores centros comerciais da Europa, o Colombo, e alguns dos melhores hospitais de Portugal, todos eles escolheram este espaço para viver.\r\n\r\nEstamos perante uma nova centralidade, bem servida de acessibilidades, ao lado do pulmão da cidade, o parque de Monsanto, repleto de ciclovias, entre outras comodidades.\r\n\r\nCom apenas 38 apartamentos de tipologia T1 a T4 com varandas e terraços, o Unique Benfica é uma soma de privilégios. Arquitetonicamente destacam-se as linhas elegantes marcadas por uma fachada em pedra mármore com estereotomia distinta;\r\n\r\nSão também de assinalar os azulejos do interior das varandas que surgem em profundidades diferentes, com uma volumetria única, criando uma\r\nsensação de movimento em conjunto com os planos laterais das salas e suites;\r\n\r\nA nobreza dos acabamentos selecionados para cada espaço, a consciência ambiental, a ergonomia e o conforto desta localização, entre outros detalhes, acompanham este verdadeiro luxo. Cada apartamento dispõe de um sistema de climatização com renovação do ar, temperatura controlada e aquecimento das águas sanitárias, através de bomba de calor com painéis fotovoltaicos.\r\n\r\nJardim de enquadramento com relvado\r\nPiscina aquecida e zona deck adjacente\r\nSauna Ginásio\r\nGaragem com boxes\r\nArrecadações\r\n\r\nSubindo até à cobertura, ainda encontramos dois T3 e dois T4, em formato duplex, com terraços privativos, piscina e zona ajardinada. Regalias próprias\r\nde quem está mais perto do céu.",
+    "description_en": "Benfica was one of the neighborhoods chosen by Lisbon for the city to reinvent itself. In the last 3 decades, a new reality has been born here. Companies, universities, one of the biggest shopping centers in Europe, Colombo, and some of the best hospitals in Portugal, all of them chose this space to live.\r\n\r\nWe are facing a new centrality, well served by accessibility, next to the lung of the city, the Monsanto park, full of cycle paths, among other amenities.\r\n\r\nWith only 38 T1 to T4 apartments with balconies and terraces, Unique Benfica is a sum of privileges. Architecturally, the elegant lines stand out, marked by a marble stone facade with a distinct stereotomy;\r\n\r\nAlso noteworthy are the tiles inside the verandas that appear at different depths, with a unique volume, creating a\r\nsensation of movement in conjunction with the lateral planes of the rooms and suites;\r\n\r\nThe nobility of the finishes selected for each space, environmental awareness, ergonomics and the comfort of this location, among other details, accompany this true luxury. Each apartment has an air conditioning system with air renewal, controlled temperature and heating of sanitary water, through a heat pump with photovoltaic panels.\r\n\r\nSurrounding garden with lawn\r\nHeated pool and adjacent deck area\r\nGym\r\nSauna\r\nGarage with boxes\r\nStorages\r\n\r\nGoing up to the roof, we still find two T3 and two T4, in duplex format, with private terraces, swimming pool and garden area. Own perks who is closest to heaven.",
+    "description_fr": "Benfica a été l'un des quartiers choisis par Lisbonne pour que la ville se réinvente. Au cours des 3 dernières décennies, une nouvelle réalité est née ici. Les entreprises, les universités, l'un des plus grands centres commerciaux d'Europe, Colombo, et certains des meilleurs hôpitaux du Portugal, ont tous choisi cet espace pour vivre.\r\n\r\nNous sommes face à une nouvelle centralité, bien desservie par l'accessibilité, à côté du poumon de la ville, le parc Monsanto, plein de pistes cyclables, entre autres commodités.\r\n\r\nAvec seulement 38 appartements du 2 à 5 pièces avec balcons et terrasses, Unique Benfica est une somme de privilèges. Sur le plan architectural, les lignes élégantes se distinguent, marquées par une façade en pierre de marbre avec une stéréotomie distincte ;\r\n\r\nA noter également les tuiles à l'intérieur des vérandas qui apparaissent à différentes profondeurs, avec un volume unique, créant un sensation de mouvement en conjonction avec les plans latéraux des chambres et des suites;\r\n\r\nLa noblesse des finitions choisies pour chaque espace, la conscience environnementale, l'ergonomie et le confort de cet emplacement, entre autres détails, accompagnent ce vrai luxe. Chaque appartement dispose d'un système de climatisation avec renouvellement d'air, température contrôlée et chauffage de l'eau sanitaire, grâce à une pompe à chaleur avec panneaux photovoltaïques.\r\n\r\nJardin environnant avec pelouse\r\nPiscine chauffée et terrasse adjacente\r\nSalle de sport sauna\r\nGarage avec box\r\nStockage\r\n\r\nEn montant sur le toit, on trouve encore deux 4 pièces et deux 5 pièces, en format duplex, avec terrasses privatives, piscine et coin jardin.",
     "equipments": [
+      "Ar Condicionado",
+      "Arrecadação",
+      "Banheira",
+      "Cozinha Equipada",
+      "Detector de Fumos",
+      "Detector de Incêndio",
+      "Detector de Inundação",
+      "Domótica",
       "Elevador",
+      "Estores Electricos",
+      "Exaustor",
+      "Forno",
+      "Frigorífico",
       "Garagem",
-      "Sauna",
-      "Painéis Solares",
-      "Terraço",
+      "Ginásio",
+      "Isolamento Acústico",
+      "Isolamento Térmico",
+      "Jardim",
+      "Máquina de Lavar Louça",
+      "Máquina de Lavar Roupa",
+      "Máquina de Secar Roupa",
+      "Painéis fotovoltaicos",
+      "Piscina",
+      "Piscina aquecida",
+      "Placa Vitrocerâmica",
+      "Porta Alta Segurança",
+      "Portão Eléctrico",
+      "Video Porteiro",
       "Vidros Duplos",
-      "Sala de Condomínio",
-      "Varanda"
+      "Microondas",
+      "Carregamento Veículos Eléctricos",
+      "Varanda",
+      "Vídeo vigilância"
     ],
     "equipments_en": [
+      "Air Conditioning",
+      "Storage Room",
+      "Bathtub",
+      "Equipped kitchen",
+      "Smoke Detector",
+      "Fire Detector",
+      "Flood detector",
+      "Home automation",
       "Elevator",
+      "Electric blinds",
+      "Exhaust",
+      "Oven",
+      "Fridge",
       "Garage",
-      "Sauna",
-      "Solar panels",
-      "Terrace",
+      "Gym",
+      "Acoustic Insulation",
+      "Thermal Insulation",
+      "Garden",
+      "Dishwasher",
+      "Washing Machine",
+      "Drier machine",
+      "Photovoltaic panels",
+      "Swimming Pool",
+      "Heated Swimming Pool",
+      "Vitroceramic Cooktop",
+      "High Security Door",
+      "Electric gate",
+      "Video Doorman",
       "Double Glazed",
-      "Condominium Room",
-      "Balcony"
+      "Microwave Oven",
+      "EV charging station",
+      "Balcony",
+      "Video surveillance"
     ],
     "equipments_fr": [
+      "Climatisation",
+      "Rangement",
+      "Baignoire",
+      "Cuisine équipée",
+      "Détecteur de fumée",
+      "Détecteur d'incendie",
+      "Détecteur d'inondation",
+      "Automatisation de la maison",
       "Ascenseur",
+      "Stores électriques",
+      "Échappement",
+      "Four",
+      "Frigo",
       "Garage",
-      "Sauna",
-      "Panneaux solaires",
-      "Terrasse",
+      "Gym",
+      "Isolation sonore",
+      "Isolation thermique",
+      "Jardin",
+      "Lave-vaisselle",
+      "Machine à laver",
+      "Machine sécheuse",
+      "Panneaux photovoltaïques",
+      "Piscine",
+      "Piscine chauffée",
+      "Table de cuisson vitrocéramique",
+      "Porte haute sécurité",
+      "Portail électrique",
+      "Portier vidéo",
       "Double vitrage",
-      "Salle de condominium",
-      "Balcon"
+      "Micro-ondes",
+      "Borne de recharge pour voitures électriques",
+      "Balcon",
+      "Vidéosurveillance"
     ],
-    "floor": null,
-    "id": "a0c3Y00000V3rrXQAR",
-    "is_exclusive": true,
-    "languages": [
-      "pt",
-      "en",
-      "fr"
-    ],
-    "last_updated": "2025-02-12T19:30:29.209Z",
-    "latitude": 38.71064232499356,
+    "floor": 1,
+    "fraction": "B1C",
+    "gross_private_area": 149.4,
+    "id": "a0c3Y00000WOhLKQA1",
+    "is_exclusive": false,
+    "languages": ["pt", "en", "fr"],
+    "last_updated": "2025-02-12T23:40:05.414Z",
+    "latitude": 38.752586359999995,
     "location_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
         "lvl1": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa",
         "lvl2": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa",
-        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras",
-        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo",
-        "lvl5": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo > Miraflores"
+        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa",
+        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa > Benfica",
+        "lvl5": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa > Benfica > Alto dos Moinhos"
       }
     ],
-    "longitude": -9.224411910678942,
-    "parish": "Algés, Linda-a-velha e Cruz Quebrada-dafundo",
+    "longitude": -9.1797912,
+    "outdoor_area": 24.1,
+    "parent_property_id": "a0c3Y00000WOhKvQAL",
+    "parish": "Benfica",
     "parish_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Benfica"
       }
     ],
     "parish_hierarchy_en": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Benfica"
       }
     ],
     "parish_hierarchy_fr": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Algés, Linda-a-velha e Cruz Quebrada-dafundo"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Benfica"
       }
     ],
-    "parish_id": "oeiras_alges-linda-a-velha-e-cruz-quebrada-dafundo",
-    "parking_spaces": 0,
-    "phone": "+351 214 688 891",
+    "parish_id": "lisboa_benfica",
+    "parking_spaces": 2,
+    "phone": "+351 213 806 110",
     "photos": [
       {
         "main_photo": true,
         "sequence": 1,
-        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.53_1733142231055.jpeg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Quarto%20%281%29_1684856746642.jpg"
       },
       {
         "main_photo": false,
         "sequence": 2,
-        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54_1733142231054.jpeg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Piscina_Jardim%20%281%29_1684856746640.jpg"
       },
       {
         "main_photo": false,
         "sequence": 3,
-        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54%20%281%29_1733142231056.jpeg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica%20_Vista_Piscina_Est%C3%A1dio%20%281%29_1684856746643.jpg"
       },
       {
         "main_photo": false,
         "sequence": 4,
-        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54%20%283%29_1733142231057.jpeg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Fachada%20nascente%20%281%29_1684856746644.jpg"
       },
       {
         "main_photo": false,
         "sequence": 5,
-        "url": "https://static.portadafrente.com/PF29530/WhatsApp%20Image%202024-11-23%20at%2015.31.54%20%282%29_1733142231056.jpeg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Varanda_1684856746643.jpg"
       },
       {
         "main_photo": false,
         "sequence": 6,
-        "url": "https://static.portadafrente.com/PF29530/0003_1733142119079.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Sala2_carpintarias%20lacadas%20branco_1684856746643.jpg"
       },
       {
         "main_photo": false,
         "sequence": 7,
-        "url": "https://static.portadafrente.com/PF29530/0004_1733142119079.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Sala2_carpintarias%20carvalho_1684856746643.jpg"
       },
       {
         "main_photo": false,
         "sequence": 8,
-        "url": "https://static.portadafrente.com/PF29530/0006_1733142119080.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Sala_1684856746643.jpg"
       },
       {
         "main_photo": false,
         "sequence": 9,
-        "url": "https://static.portadafrente.com/PF29530/0005_1733142119079.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica%20_Cozinha_Branca%20%281%29_1684856746643.jpg"
       },
       {
         "main_photo": false,
         "sequence": 10,
-        "url": "https://static.portadafrente.com/PF29530/0007_1733142119080.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Cozinha_madeira%20%281%29_1684856746644.jpg"
       },
       {
         "main_photo": false,
         "sequence": 11,
-        "url": "https://static.portadafrente.com/PF29530/0021_1733142119078.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Entrada%20%281%29_1684856746644.jpg"
       },
       {
         "main_photo": false,
         "sequence": 12,
-        "url": "https://static.portadafrente.com/PF29530/0008_1733142119080.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_IS%20%281%29_1684856746645.jpg"
       },
       {
         "main_photo": false,
         "sequence": 13,
-        "url": "https://static.portadafrente.com/PF29530/0017_1733142119077.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Garagem%20%281%29_1684856746645.jpg"
       },
       {
         "main_photo": false,
         "sequence": 14,
-        "url": "https://static.portadafrente.com/PF29530/0018_1733142119077.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Fachada-vista%20aerea%20%281%29_1684856746644.jpg"
       },
       {
         "main_photo": false,
         "sequence": 15,
-        "url": "https://static.portadafrente.com/PF29530/0019_1733142119077.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 16,
-        "url": "https://static.portadafrente.com/PF29530/0010_1733142119080.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 17,
-        "url": "https://static.portadafrente.com/PF29530/0009_1733142119080.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 18,
-        "url": "https://static.portadafrente.com/PF29530/0011_1733142119081.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 19,
-        "url": "https://static.portadafrente.com/PF29530/0012_1733142119076.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 20,
-        "url": "https://static.portadafrente.com/PF29530/0020_1733142119078.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 21,
-        "url": "https://static.portadafrente.com/PF29530/Ext_Frontal_Edificio_Novo_03_1704500230097.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 22,
-        "url": "https://static.portadafrente.com/PF29530/EXT_Tardoz_Edificio_Novo_03_1704500230098.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 23,
-        "url": "https://static.portadafrente.com/PF29530/Varanda_1704500230099.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 24,
-        "url": "https://static.portadafrente.com/PF29530/08_P13_Cozinha_04_1671121344314.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 25,
-        "url": "https://static.portadafrente.com/PF29530/06_P0_Quarto_05_1671121344314.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 26,
-        "url": "https://static.portadafrente.com/PF29530/13_P13_Quarto_03_1671121344315.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 27,
-        "url": "https://static.portadafrente.com/PF29530/11_P13_Quarto_04_1671121344315.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 28,
-        "url": "https://static.portadafrente.com/PF29530/04_P-1_Gym_04_1671121344313.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 29,
-        "url": "https://static.portadafrente.com/PF29530/07_P0_Sala_Multiusos_04_1671121344314.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 30,
-        "url": "https://static.portadafrente.com/PF29530/12_P2_IS_02_1671121344315.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 31,
-        "url": "https://static.portadafrente.com/PF29530/03_P0_Hall_05_1671121344316.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 32,
-        "url": "https://static.portadafrente.com/PF29530/14_P13_Sala_03_1671121344315.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 33,
-        "url": "https://static.portadafrente.com/PF29530/09_P13_Sala_03_1671121344314.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 34,
-        "url": "https://static.portadafrente.com/PF29530/05_P0_Sala_04_1671121344314.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 35,
-        "url": "https://static.portadafrente.com/PF29530/10_P13_Sala_1671121344315.jpg"
+        "url": "https://static.portadafrente.com/PF30789/UBenfica_Piscina_Cobertura%20%281%29_1684856746637.jpg"
       }
     ],
-    "postal_code": "1495-117",
-    "price": 0,
+    "plan_url": "https://portadafrente.my.salesforce.com/sfc/p/1t000000D6v6/a/3Y000002b1Hm/xkN5rMdSqkvHBCb.rPmqaxHS.VoLVtqIu5nk1Np4Tb4",
+    "postal_code": "1500-359",
+    "price": 1100000,
     "price_on_application": false,
-    "published_at": "2022-12-14",
-    "revelance_score": 114000,
-    "rooms": 0,
-    "slug_url": "rio-mirear-a0c3Y00000V3rrXQAR",
-    "slug_url_en": "rio-mirear-a0c3Y00000V3rrXQAR",
-    "slug_url_fr": "rio-mirear-a0c3Y00000V3rrXQAR",
+    "published_at": "2023-05-23",
+    "revelance_score": null,
+    "rooms": 3,
+    "slug_url": "apartamento-t3-lisboa-venda-a0c3Y00000WOhLKQA1",
+    "slug_url_en": "3-bedroom-apartment-lisboa-venda-a0c3Y00000WOhLKQA1",
+    "slug_url_fr": "appartement-4-pieces-lisboa-venda-a0c3Y00000WOhLKQA1",
     "state_id": "under-construction",
     "sub_category_name": "",
     "surroundings": [
-      "Áreas de Lazer Infantil",
+      "Aeroporto",
       "Auto-Estrada",
       "Banco",
       "Bombeiros",
+      "Campo de Golfe",
       "Centro Comercial",
       "Centro da Cidade",
       "Escola",
@@ -309,19 +353,22 @@
       "Ginásio",
       "Hipermercado",
       "Hospital",
-      "Mercado",
+      "Orientação Solar Nascente",
+      "Orientação Solar Poente",
       "Piscinas",
       "Polícia",
       "Posto de Combustível",
-      "Praça Táxis",
       "Transportes Públicos",
-      "Zona Comercial"
+      "Vista para Cidade",
+      "Zona Comercial",
+      "Estacionamento"
     ],
     "surroundings_en": [
-      "Children's play areas",
+      "Airport",
       "Freeway",
       "Bank",
       "Fire department",
+      "Golf course",
       "Shopping center",
       "Town centre",
       "School",
@@ -330,19 +377,22 @@
       "Gym",
       "Hypermarket",
       "Hospital",
-      "Mart",
+      "Rising Solar Orientation",
+      "Solar Orientation West",
       "Pools",
       "Police",
       "Gas station",
-      "Taxis Square",
       "Public Transportation",
-      "Commercial Area"
+      "City View",
+      "Commercial Area",
+      "Parking"
     ],
     "surroundings_fr": [
-      "Aires de jeux pour enfants",
+      "Aéroport",
       "Autoroute",
       "Banque",
       "Pompiers",
+      "Terrain de golf",
       "Centre commercial",
       "Centre-ville",
       "École",
@@ -351,42 +401,43 @@
       "Gym",
       "grande surface",
       "Hôpital",
-      "Marché",
+      "Orientation solaire croissante",
+      "Orientation solaire Ouest",
       "Piscines",
       "Police",
       "Station-essence",
-      "Taxis Square",
       "Transport public",
-      "Zone commerciale"
+      "Vue de la ville",
+      "Zone commerciale",
+      "Parking"
     ],
-    "title": "Rio Mirear",
-    "title_en": "Rio Mirear",
-    "title_fr": "Rio Mirear",
+    "title": "Apartamento T3, Lisboa",
+    "title_en": "3 Bedroom Apartment, Lisboa",
+    "title_fr": "Appartement 4 pièces, Lisboa",
     "updated_at": "2025-01-24",
-    "video_url": "https://www.youtube.com/embed/pYtcAbt9UOk",
-    "zone": "Miraflores",
+    "zone": "Alto dos Moinhos",
     "zone_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Miraflores"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Alto dos Moinhos"
       }
     ],
     "zone_hierarchy_en": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Miraflores"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Alto dos Moinhos"
       }
     ],
     "zone_hierarchy_fr": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Miraflores"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Alto dos Moinhos"
       }
     ],
-    "zone_id": "oeiras_miraflores"
+    "zone_id": "lisboa_alto-dos-moinhos"
   },
   "highlight": {},
   "highlights": [],

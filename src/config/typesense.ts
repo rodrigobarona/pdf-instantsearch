@@ -7,9 +7,27 @@ import TypesenseInstantSearchAdapter from "typesense-instantsearch-adapter";
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   server: {
     apiKey: process.env.NEXT_PUBLIC_TYPESENSE_SEARCH_ONLY_API_KEY || "", // Use a search-only API key
+    nearestNode: {
+      // This is the special Load Balanced hostname that you'll see in the Typesense Cloud dashboard if you turn on High Availability
+      host: process.env.NEXT_PUBLIC_TYPESENSE_HOST || "",
+      port: Number.parseInt(process.env.NEXT_PUBLIC_TYPESENSE_PORT || "443"),
+      protocol: process.env.NEXT_PUBLIC_TYPESENSE_PROTOCOL || "https",
+    },
     nodes: [
       {
-        host: process.env.NEXT_PUBLIC_TYPESENSE_HOST || "",
+        host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_NODE_1 || "",
+        port: Number.parseInt(process.env.NEXT_PUBLIC_TYPESENSE_PORT || "443"),
+        path: "", // Adjust if Typesense is hosted on a subpath
+        protocol: process.env.NEXT_PUBLIC_TYPESENSE_PROTOCOL || "https",
+      },
+      {
+        host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_NODE_2 || "",
+        port: Number.parseInt(process.env.NEXT_PUBLIC_TYPESENSE_PORT || "443"),
+        path: "", // Adjust if Typesense is hosted on a subpath
+        protocol: process.env.NEXT_PUBLIC_TYPESENSE_PROTOCOL || "https",
+      },
+      {
+        host: process.env.NEXT_PUBLIC_TYPESENSE_HOST_NODE_3 || "",
         port: Number.parseInt(process.env.NEXT_PUBLIC_TYPESENSE_PORT || "443"),
         path: "", // Adjust if Typesense is hosted on a subpath
         protocol: process.env.NEXT_PUBLIC_TYPESENSE_PROTOCOL || "https",

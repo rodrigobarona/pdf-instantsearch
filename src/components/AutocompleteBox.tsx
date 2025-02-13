@@ -73,7 +73,6 @@ export function AutocompleteBox() {
           onChange={handleInputChange}
           onFocus={() => setIsOpen(Boolean(inputValue))}
           placeholder={t("searchPlaceholder")}
-          aria-expanded={isOpen}
           aria-controls="search-suggestions"
           aria-label={t("searchPlaceholder")}
           className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500"

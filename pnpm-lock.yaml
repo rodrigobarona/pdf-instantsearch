@@ -71,9 +71,15 @@ importers:
       react-instantsearch:
         specifier: ^7.15.3
         version: 7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react-instantsearch-hooks-web:
+        specifier: ^6.47.3
+        version: 6.47.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-instantsearch-nextjs:
         specifier: ^0.4.4
         version: 0.4.4(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-instantsearch@7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
+      react-leaflet:
+        specifier: ^5.0.0
+        version: 5.0.0(leaflet@1.9.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       tailwind-merge:
         specifier: ^3.0.1
         version: 3.0.1
@@ -90,6 +96,9 @@ importers:
       '@types/i18next':
         specifier: ^13.0.0
         version: 13.0.0
+      '@types/leaflet':
+        specifier: ^1.9.16
+        version: 1.9.16
       '@types/node':
         specifier: ^20.17.17
         version: 20.17.17
@@ -211,6 +220,12 @@ packages:
   '@algolia/requester-node-http@5.20.1':
     resolution: {integrity: sha512-4npKo1qpLG5xusFoFUj4xIIR/6y3YoCuS/uhagv2blGFotDj+D6OLTML3Pp6JCVcES4zDbkoY7pmNBA8ARtidQ==}
     engines: {node: '>= 14.0.0'}
+
+  '@algolia/ui-components-highlight-vdom@1.2.3':
+    resolution: {integrity: sha512-gNlPkCwX2M7LnNhCSAjvQkOhdeYDu+FP0ISc0IY297Kw9EmGeUxpce8lvKGByYglz7ifW3qTWRxrtCV3is5+Ag==}
+
+  '@algolia/ui-components-shared@1.2.3':
+    resolution: {integrity: sha512-Nk4stv4FW9qIpvmdkJMf6oS49xA8Ns/IAAYNngpaFFQTErZupegXvyr8W+6NVvBSzHzeE4H8YO7spg3xWR8e8A==}
 
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -740,6 +755,13 @@ packages:
   '@radix-ui/rect@1.1.0':
     resolution: {integrity: sha512-A9+lCBZoaMJlVKcRBz2YByCG+Cp2t6nAnMnNba+XiWxnj6r4JUFqfsgwocMBZU9LPtdxC6wB56ySYpc7LQIoJg==}
 
+  '@react-leaflet/core@3.0.0':
+    resolution: {integrity: sha512-3EWmekh4Nz+pGcr+xjf0KNyYfC3U2JjnkWsh0zcqaexYqmmB5ZhH37kz41JXGmKzpaMZCnPofBBm64i+YrEvGQ==}
+    peerDependencies:
+      leaflet: ^1.9.0
+      react: ^19.0.0
+      react-dom: ^19.0.0
+
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
@@ -758,6 +780,9 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
+  '@types/geojson@7946.0.16':
+    resolution: {integrity: sha512-6C8nqWur3j98U6+lXDfTUWIfgvZU+EumvpHKcYjujKH7woYyLj2sUmff0tRhrqM7BohUw7Pz3ZB1jj2gW9Fvmg==}
+
   '@types/google.maps@3.58.1':
     resolution: {integrity: sha512-X9QTSvGJ0nCfMzYOnaVs/k6/4L+7F5uCS+4iUmkLEls6J9S/Phv+m/i3mDeyc49ZBgwab3EFO1HEoBY7k98EGQ==}
 
@@ -773,6 +798,9 @@ packages:
 
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+
+  '@types/leaflet@1.9.16':
+    resolution: {integrity: sha512-wzZoyySUxkgMZ0ihJ7IaUIblG8Rdc8AbbZKLneyn+QjYsj5q1QU7TEKYqwTr10BGSzY5LI7tJk9Ifo+mEjdFRw==}
 
   '@types/node@20.17.17':
     resolution: {integrity: sha512-/WndGO4kIfMicEQLTi/mDANUu/iVUhT7KboZPdEqqHQ4aTS+3qT3U5gIqWDFV+XouorjfgGqvKILJeHhuQgFYg==}
@@ -850,6 +878,11 @@ packages:
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
+
+  algoliasearch-helper@3.14.0:
+    resolution: {integrity: sha512-gXDXzsSS0YANn5dHr71CUXOo84cN4azhHKUbg71vAWnH+1JBiR4jf7to3t3JHXknXkbV0F7f055vUSBKrltHLQ==}
+    peerDependencies:
+      algoliasearch: '>= 3.1 < 6'
 
   algoliasearch-helper@3.24.1:
     resolution: {integrity: sha512-knYRACqLH9UpeR+WRUrBzBFR2ulGuOjI2b525k4PNeqZxeFMHJE7YcL7s6Jh12Qza0rtHqZdgHMfeuaaAkf4wA==}
@@ -1473,6 +1506,11 @@ packages:
   instantsearch-ui-components@0.11.1:
     resolution: {integrity: sha512-ZqUbJYYgObQ47J08ftXV1KNC1vdEoiD4/49qrkCdW46kRzLxLgYXJGuEuk48DQwK4aBtIoccgTyfbMGfcqNjxg==}
 
+  instantsearch.js@4.56.8:
+    resolution: {integrity: sha512-40DJ5l70ZzVzWPK3qrHTKlJLaHGq1PRZpzfL6281P2mz8G19WOHQHKAP4Zh6a4lOZaRtJQUiPjQwqCHSurXZ5g==}
+    peerDependencies:
+      algoliasearch: '>= 3.1 < 6'
+
   instantsearch.js@4.77.3:
     resolution: {integrity: sha512-nlNDHpRa15lXw6HEzCyEtickhRZOzmWXiLuhlfRazC/LjqbmmfE2ZMfGUp8YMeLIrP9i4HuK02/+esd2MsnrKA==}
     peerDependencies:
@@ -1642,6 +1680,9 @@ packages:
   language-tags@1.0.9:
     resolution: {integrity: sha512-MbjN408fEndfiQXbFQ1vnd+1NoLDsnQW41410oQBXiyXDMYH5z505juWa4KUE1LqxRC7DgOgZDbKLxHIwm27hA==}
     engines: {node: '>=0.10'}
+
+  leaflet@1.9.4:
+    resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -1953,6 +1994,21 @@ packages:
       algoliasearch: '>= 3.1 < 6'
       react: '>= 16.8.0 < 20'
 
+  react-instantsearch-hooks-web@6.47.3:
+    resolution: {integrity: sha512-JTkPm11xwCX9eO4FgeeJ4v4O98wz1L7cAa2LkspgzDD1MPjMLtmiRVzvGxuYnOayQTtfC5+0GOBwuJEN8TDI8A==}
+    deprecated: package has moved to react-instantsearch
+    peerDependencies:
+      algoliasearch: '>= 3.1 < 5'
+      react: '>= 16.8.0 < 19'
+      react-dom: '>= 16.8.0 < 19'
+
+  react-instantsearch-hooks@6.47.3:
+    resolution: {integrity: sha512-QuGSwZ664MHrzvndXGnsyPhpKHywGqyDgqOVorYpEE24Y063OPv5XtmJaZqn27MIvvByUormTb6dbPgbjqkd8w==}
+    deprecated: package has moved to react-instantsearch-core
+    peerDependencies:
+      algoliasearch: '>= 3.1 < 5'
+      react: '>= 16.8.0 < 19'
+
   react-instantsearch-nextjs@0.4.4:
     resolution: {integrity: sha512-q133svbkuGFNyAwpFNIVamDMvyCE+iag9XMDwmHv+LVOK9BV00Nv9JM9ayU80d1R4DzIBns3yIfpD8ThbtfzRQ==}
     peerDependencies:
@@ -1968,6 +2024,13 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-leaflet@5.0.0:
+    resolution: {integrity: sha512-CWbTpr5vcHw5bt9i4zSlPEVQdTVcML390TjeDG0cK59z1ylexpqC6M1PJFjV8jD7CF+ACBFsLIDs6DRMoLEofw==}
+    peerDependencies:
+      leaflet: ^1.9.0
+      react: ^19.0.0
+      react-dom: ^19.0.0
 
   react-remove-scroll-bar@2.3.8:
     resolution: {integrity: sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==}
@@ -2520,6 +2583,13 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.20.1
 
+  '@algolia/ui-components-highlight-vdom@1.2.3':
+    dependencies:
+      '@algolia/ui-components-shared': 1.2.3
+      '@babel/runtime': 7.26.7
+
+  '@algolia/ui-components-shared@1.2.3': {}
+
   '@alloc/quick-lru@5.2.0': {}
 
   '@babel/runtime@7.26.7':
@@ -2965,6 +3035,12 @@ snapshots:
 
   '@radix-ui/rect@1.1.0': {}
 
+  '@react-leaflet/core@3.0.0(leaflet@1.9.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+    dependencies:
+      leaflet: 1.9.4
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+
   '@rtsao/scc@1.1.0': {}
 
   '@rushstack/eslint-patch@1.10.5': {}
@@ -2979,6 +3055,8 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
+  '@types/geojson@7946.0.16': {}
+
   '@types/google.maps@3.58.1': {}
 
   '@types/hogan.js@3.0.5': {}
@@ -2990,6 +3068,10 @@ snapshots:
   '@types/json-schema@7.0.15': {}
 
   '@types/json5@0.0.29': {}
+
+  '@types/leaflet@1.9.16':
+    dependencies:
+      '@types/geojson': 7946.0.16
 
   '@types/node@20.17.17':
     dependencies:
@@ -3096,6 +3178,11 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
+
+  algoliasearch-helper@3.14.0(algoliasearch@5.20.1):
+    dependencies:
+      '@algolia/events': 4.0.1
+      algoliasearch: 5.20.1
 
   algoliasearch-helper@3.24.1(algoliasearch@5.20.1):
     dependencies:
@@ -3912,6 +3999,23 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.7
 
+  instantsearch.js@4.56.8(algoliasearch@5.20.1):
+    dependencies:
+      '@algolia/events': 4.0.1
+      '@algolia/ui-components-highlight-vdom': 1.2.3
+      '@algolia/ui-components-shared': 1.2.3
+      '@types/dom-speech-recognition': 0.0.1
+      '@types/google.maps': 3.58.1
+      '@types/hogan.js': 3.0.5
+      '@types/qs': 6.9.18
+      algoliasearch: 5.20.1
+      algoliasearch-helper: 3.14.0(algoliasearch@5.20.1)
+      hogan.js: 3.0.2
+      htm: 3.1.1
+      preact: 10.25.4
+      qs: 6.9.7
+      search-insights: 2.17.3
+
   instantsearch.js@4.77.3(algoliasearch@5.20.1):
     dependencies:
       '@algolia/events': 4.0.1
@@ -4105,6 +4209,8 @@ snapshots:
   language-tags@1.0.9:
     dependencies:
       language-subtag-registry: 0.3.23
+
+  leaflet@1.9.4: {}
 
   levn@0.4.1:
     dependencies:
@@ -4386,6 +4492,24 @@ snapshots:
       react: 19.0.0
       use-sync-external-store: 1.4.0(react@19.0.0)
 
+  react-instantsearch-hooks-web@6.47.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      '@babel/runtime': 7.26.7
+      algoliasearch: 5.20.1
+      instantsearch.js: 4.56.8(algoliasearch@5.20.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+      react-instantsearch-hooks: 6.47.3(algoliasearch@5.20.1)(react@19.0.0)
+
+  react-instantsearch-hooks@6.47.3(algoliasearch@5.20.1)(react@19.0.0):
+    dependencies:
+      '@babel/runtime': 7.26.7
+      algoliasearch: 5.20.1
+      algoliasearch-helper: 3.14.0(algoliasearch@5.20.1)
+      instantsearch.js: 4.56.8(algoliasearch@5.20.1)
+      react: 19.0.0
+      use-sync-external-store: 1.4.0(react@19.0.0)
+
   react-instantsearch-nextjs@0.4.4(next@15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-instantsearch@7.15.3(algoliasearch@5.20.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)):
     dependencies:
       next: 15.1.6(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -4402,6 +4526,13 @@ snapshots:
       react-instantsearch-core: 7.15.3(algoliasearch@5.20.1)(react@19.0.0)
 
   react-is@16.13.1: {}
+
+  react-leaflet@5.0.0(leaflet@1.9.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+    dependencies:
+      '@react-leaflet/core': 3.0.0(leaflet@1.9.4)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      leaflet: 1.9.4
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
 
   react-remove-scroll-bar@2.3.8(@types/react@19.0.8)(react@19.0.0):
     dependencies:
