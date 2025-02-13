@@ -96,18 +96,17 @@ export function AutocompleteBox() {
               item: hit,
               className: "w-full text-left p-4 hover:bg-gray-50",
             });
-            const { key: _key, ...restItemProps } = itemProps;
 
             return (
               <Button
                 key={hit.objectID}
-                {...restItemProps}
+                {...itemProps}
                 asChild
                 variant="ghost"
                 className="w-full text-left p-0 hover:bg-gray-50 transition-colors h-auto border-b-2 border-gray-100 rounded-none"
               >
                 <Link
-                  href={`/${lng}/properties/${getLocalizedField(
+                  href={`/${lng}/property/${getLocalizedField(
                     hit,
                     "slug_url"
                   )}`}

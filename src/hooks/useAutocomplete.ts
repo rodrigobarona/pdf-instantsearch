@@ -103,7 +103,6 @@ export function useAutocomplete() {
   const getItemProps = useCallback(
     ({ item, className }: { item: PropertyHit; className?: string }) => ({
       className,
-      key: item.objectID,
       onClick: () => {
         setQuery(item.query || "");
         if (item.query) {
