@@ -1,443 +1,434 @@
 {
   "document": {
-    "_geoloc": {
-      "lat": 38.752586359999995,
-      "lng": -9.1797912
-    },
-    "address": "Unique Benfica | Rua João de Freitas Branco",
-    "alternate_zone": "Benfica",
+    "_geoloc": [38.699735679999996, -9.280214820000001],
+    "address": "Av. Salvador Allende",
+    "alternate_zone": "Caxias",
     "areas": [
       {
-        "area": 8.65,
-        "category": "Hall"
-      },
-      {
-        "area": 3.75,
-        "category": "Varanda"
-      },
-      {
-        "category": "Estacionamento"
-      },
-      {
-        "area": 19.1,
-        "category": "Quarto"
-      },
-      {
         "area": 12.8,
+        "category": "Suite",
+        "display_name": "Suite 3"
+      },
+      {
+        "area": 3.8,
+        "category": "Lavabo"
+      },
+      {
+        "area": 12.6,
+        "category": "Suite",
+        "display_name": "Suite 2"
+      },
+      {
+        "area": 26.8,
+        "category": "Suite",
+        "display_name": "Master Suite"
+      },
+      {
+        "area": 21,
         "category": "Cozinha"
       },
       {
-        "area": 14.3,
-        "category": "Quarto"
+        "area": 5.1,
+        "category": "Casa de Banho"
       },
       {
-        "area": 32.1,
+        "area": 51.7,
         "category": "Sala"
       },
       {
-        "area": 3.65,
+        "area": 4.4,
         "category": "Casa de Banho"
       },
       {
-        "area": 6.45,
+        "area": 3.4,
         "category": "Casa de Banho"
       },
       {
-        "area": 6.9,
-        "category": "Casa de Banho"
+        "area": 6.4,
+        "category": "Hall"
       },
       {
+        "area": 7.5,
+        "category": "Lavandaria"
+      },
+      {
+        "area": 8.05,
+        "category": "Hall"
+      },
+      {
+        "area": 15.5,
         "category": "Estacionamento"
       },
       {
-        "area": 18.2,
-        "category": "Quarto"
+        "area": 3.1,
+        "category": "Arrecadação"
       },
       {
-        "area": 7.65,
+        "area": 9.6,
+        "category": "Varanda"
+      },
+      {
+        "area": 7.3,
+        "category": "Casa de Banho"
+      },
+      {
+        "area": 3.5,
+        "category": "Casa de Banho"
+      },
+      {
+        "area": 22.15,
+        "category": "Sala"
+      },
+      {
+        "area": 17.5,
+        "category": "Suite",
+        "display_name": "Suite 1"
+      },
+      {
+        "area": 17,
+        "category": "Suite",
+        "display_name": "Suite 4"
+      },
+      {
+        "area": 15.5,
+        "category": "Estacionamento"
+      },
+      {
+        "area": 15.5,
+        "category": "Estacionamento"
+      },
+      {
+        "area": 21.3,
+        "category": "Terraço"
+      },
+      {
+        "area": 15.8,
+        "category": "Terraço"
+      },
+      {
+        "area": 104,
+        "category": "Terraço"
+      },
+      {
+        "area": 6.65,
         "category": "Zonas de Circulação"
       },
       {
-        "area": 13,
-        "category": "Varanda"
+        "area": 13.3,
+        "category": "Hall"
       },
       {
-        "area": 4,
-        "category": "Varanda"
+        "area": 2.05,
+        "category": "Hall"
       },
       {
-        "area": 3.35,
-        "category": "Varanda"
+        "area": 10.75,
+        "category": "Estacionamento"
       }
     ],
     "availability_id": "reservado-visivel-no-site",
-    "bathrooms": 3,
+    "bathrooms": 5,
     "business_type_id": "sale",
     "category_hierarchy": [
       {
-        "lvl0": "Apartamento"
+        "lvl0": "Moradia"
       }
     ],
     "category_hierarchy_en": [
       {
-        "lvl0": "Apartment"
+        "lvl0": "House"
       }
     ],
     "category_hierarchy_fr": [
       {
-        "lvl0": "Appartement"
+        "lvl0": "Maison normal"
       }
     ],
-    "category_id": "apartment",
-    "category_name": "Apartamento",
-    "category_name_en": "Apartment",
-    "category_name_fr": "Appartement",
-    "code": "PF30794",
-    "county": "Lisboa",
-    "county_id": "lisboa",
-    "cover_photo": "https://static.portadafrente.com/PF30789/UBenfica_Quarto%20%281%29_1684856746642.jpg",
-    "description": "Benfica foi um dos bairros escolhidos por lisboa para a cidade se reinventar. Nas últimas 3 décadas, aqui tem nascido uma nova realidade. Empresas, universidades, um dos maiores centros comerciais da Europa, o Colombo, e alguns dos melhores hospitais de Portugal, todos eles escolheram este espaço para viver.\r\n\r\nEstamos perante uma nova centralidade, bem servida de acessibilidades, ao lado do pulmão da cidade, o parque de Monsanto, repleto de ciclovias, entre outras comodidades.\r\n\r\nCom apenas 38 apartamentos de tipologia T1 a T4 com varandas e terraços, o Unique Benfica é uma soma de privilégios. Arquitetonicamente destacam-se as linhas elegantes marcadas por uma fachada em pedra mármore com estereotomia distinta;\r\n\r\nSão também de assinalar os azulejos do interior das varandas que surgem em profundidades diferentes, com uma volumetria única, criando uma\r\nsensação de movimento em conjunto com os planos laterais das salas e suites;\r\n\r\nA nobreza dos acabamentos selecionados para cada espaço, a consciência ambiental, a ergonomia e o conforto desta localização, entre outros detalhes, acompanham este verdadeiro luxo. Cada apartamento dispõe de um sistema de climatização com renovação do ar, temperatura controlada e aquecimento das águas sanitárias, através de bomba de calor com painéis fotovoltaicos.\r\n\r\nJardim de enquadramento com relvado\r\nPiscina aquecida e zona deck adjacente\r\nSauna Ginásio\r\nGaragem com boxes\r\nArrecadações\r\n\r\nSubindo até à cobertura, ainda encontramos dois T3 e dois T4, em formato duplex, com terraços privativos, piscina e zona ajardinada. Regalias próprias\r\nde quem está mais perto do céu.",
-    "description_en": "Benfica was one of the neighborhoods chosen by Lisbon for the city to reinvent itself. In the last 3 decades, a new reality has been born here. Companies, universities, one of the biggest shopping centers in Europe, Colombo, and some of the best hospitals in Portugal, all of them chose this space to live.\r\n\r\nWe are facing a new centrality, well served by accessibility, next to the lung of the city, the Monsanto park, full of cycle paths, among other amenities.\r\n\r\nWith only 38 T1 to T4 apartments with balconies and terraces, Unique Benfica is a sum of privileges. Architecturally, the elegant lines stand out, marked by a marble stone facade with a distinct stereotomy;\r\n\r\nAlso noteworthy are the tiles inside the verandas that appear at different depths, with a unique volume, creating a\r\nsensation of movement in conjunction with the lateral planes of the rooms and suites;\r\n\r\nThe nobility of the finishes selected for each space, environmental awareness, ergonomics and the comfort of this location, among other details, accompany this true luxury. Each apartment has an air conditioning system with air renewal, controlled temperature and heating of sanitary water, through a heat pump with photovoltaic panels.\r\n\r\nSurrounding garden with lawn\r\nHeated pool and adjacent deck area\r\nGym\r\nSauna\r\nGarage with boxes\r\nStorages\r\n\r\nGoing up to the roof, we still find two T3 and two T4, in duplex format, with private terraces, swimming pool and garden area. Own perks who is closest to heaven.",
-    "description_fr": "Benfica a été l'un des quartiers choisis par Lisbonne pour que la ville se réinvente. Au cours des 3 dernières décennies, une nouvelle réalité est née ici. Les entreprises, les universités, l'un des plus grands centres commerciaux d'Europe, Colombo, et certains des meilleurs hôpitaux du Portugal, ont tous choisi cet espace pour vivre.\r\n\r\nNous sommes face à une nouvelle centralité, bien desservie par l'accessibilité, à côté du poumon de la ville, le parc Monsanto, plein de pistes cyclables, entre autres commodités.\r\n\r\nAvec seulement 38 appartements du 2 à 5 pièces avec balcons et terrasses, Unique Benfica est une somme de privilèges. Sur le plan architectural, les lignes élégantes se distinguent, marquées par une façade en pierre de marbre avec une stéréotomie distincte ;\r\n\r\nA noter également les tuiles à l'intérieur des vérandas qui apparaissent à différentes profondeurs, avec un volume unique, créant un sensation de mouvement en conjonction avec les plans latéraux des chambres et des suites;\r\n\r\nLa noblesse des finitions choisies pour chaque espace, la conscience environnementale, l'ergonomie et le confort de cet emplacement, entre autres détails, accompagnent ce vrai luxe. Chaque appartement dispose d'un système de climatisation avec renouvellement d'air, température contrôlée et chauffage de l'eau sanitaire, grâce à une pompe à chaleur avec panneaux photovoltaïques.\r\n\r\nJardin environnant avec pelouse\r\nPiscine chauffée et terrasse adjacente\r\nSalle de sport sauna\r\nGarage avec box\r\nStockage\r\n\r\nEn montant sur le toit, on trouve encore deux 4 pièces et deux 5 pièces, en format duplex, avec terrasses privatives, piscine et coin jardin.",
+    "category_id": "house",
+    "category_name": "Moradia",
+    "category_name_en": "House",
+    "category_name_fr": "Maison normal",
+    "code": "PF33238",
+    "county": "Oeiras",
+    "county_id": "oeiras",
+    "cover_photo": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_08_1712222218781.jpg",
+    "description": "Com uma magnífica exclusiva vista frontal de mar, viva com privacidade e tranquilidade nas Villas da Quinta das Giestas, um conjunto de 10 casas únicas, onde cada unidade possui uma piscina privativa, ginásio e rooftop exclusivo. Aqui, é possível relaxar e sentir a brisa no rosto, envolvido em verde, privacidade e segurança, enquanto ainda disfruta de um condomínio de excelência, com tudo o que este lhe proporciona.\r\n\r\nVista frontal de mar • Varandas espaçosas • Piscinas privadas • Rooftops • Ginásio• Espaços verdes envolventes • Sala de convívio • Sala de festas • Solário • Parque Infantil • Jardins\r\n\r\nNas Villas da Quinta das Giestas poderá viver com privacidade, estilo e conforto, em conexão com o exterior. Desde os grandes terraços no seguimento das salas debruçadas sobre o mar, até aos rooftops, onde poderá desfrutar de uma piscina privativa, descontrair em redor do calor do fire pit, ou jantar com os amigos contemplando a vista soberba. Para além disso, os spas e piscinas privadas de cada Villla são aquecidas e dispõem de coberturas ocultas e automáticas, que lhe permitem conservar a temperatura e desfrutar das mesmas durante todo o ano.\r\n\r\nAo viver nas Villas das Quintas das Giestas poderá usufruir também dos espaços e estruturas do condomínio privado, como piscina aquecida, ginásio, parque infantil, sala de convívio e de condomínio. Aqui, o dia pode começar com uma caminhada na praia ou no passeio marítimo, ou ainda um passeio pelo bosque privado localizado dentro da Quinta das Giestas, e terminar com um treino no ginásio privativo ou um mergulho na piscina.\r\n\r\nNa Quinta das Giestas, a qualidade e o conforto foram elevados a um novo nível, fazendo uso das mais inovadoras tecnologias da construção e dos mais sofisticados materiais e equipamentos, criando uma nova experiência de habitar. O projeto coloca 4 materiais autênticos em diálogo com o azul do mar e o verde das árvores - betão aparente, madeira, vidro e aço – criando um ambiente sofisticado e intemporal. No exterior, os muros de pedra moldam a paisagem e são trazidos para as fachadas, unificando todo o conceito.\r\n\r\nA Quinta das Giestas está situada no Alto do Lagoal, em Oeiras, localizado entre as colinas do centro de Lisboa e as colinas do Estoril, mesmo em frente a praia de Caxias: um local mágico onde o rio encontra o oceano, com vistas deslumbrantes sobre Lisboa e o mar.",
+    "description_en": "With a magnificent front sea view, live in privacy and tranquillity in the Villas da Quinta das Giestas, a group of 10 unique houses, where each unit has a private pool, gym and exclusive rooftop. Here, you can relax and feel the breeze on your face, surrounded by greenery, privacy and security, while still enjoying a condominium of excellence, with everything it offers.\r\n\r\nFront sea view - Spacious balconies - Private pools - Rooftops - Gym - Surrounding green spaces - Lounge - Party room - Solarium - Children's playground - Gardens\r\n\r\nAt the Quinta das Giestas Villas you can live in privacy, style and comfort, in connection with the outdoors. From the large terraces following the living rooms overlooking the sea, to the rooftops, where you can enjoy a private pool, relax around the warmth of the fire pit, or dine with friends contemplating the superb view. In addition, the spas and private pools in each Villla are heated and have hidden, automatic covers, which allow you to maintain the temperature and enjoy them all year round.\r\n\r\nWhen you live in the Villas of Quintas das Giestas you can also enjoy the spaces and structures of the private condominium, such as the heated swimming pool, gym, children's playground, lounge and condominium. Here, the day can begin with a walk on the beach or seafront promenade, or even a stroll through the private woodland located within Quinta das Giestas, and end with a workout in the private gym or a dip in the pool.\r\n\r\nAt Quinta das Giestas, quality and comfort have been elevated to a new level, making use of the most innovative construction technologies and the most sophisticated materials and equipment, creating a new living experience. The project places four authentic materials in dialogue with the blue of the sea and the green of the trees - exposed concrete, wood, glass and steel - creating a sophisticated and timeless environment. Outside, the stone walls mould the landscape and are brought into the façades, unifying the whole concept.\r\n\r\nQuinta das Giestas is located in Alto do Lagoal, in Oeiras, between the hills of the centre of Lisbon and the hills of Estoril, right in front of Caxias beach: a magical place where the river meets the ocean, with breathtaking views over Lisbon and the sea.",
+    "description_fr": "Entre les collines du centre de Lisbonne et les collines d'Estoril, à Oeiras, se cachent les pentes exclusives de l'Alto do Lagoal - un endroit magique où la rivière rencontre l'océan, avec une vue imprenable sur Lisbonne et la mer, où les anciennes Quintas les zones de loisirs de l'aristocratie ont été remplacées par des Villas et des Chalés de l'élite de Lisbonne.\r\n\r\nQuinta da Giestas est un projet unique et sans précédent à Oeiras, comprenant 60 unités de type T3, T4, T5 et Villas d'une superficie comprise entre 173 et 315 mètres carrés, tous dotés de grandes terrasses et de vues s'étendant du pont sur le Tage et de la tour de Belém jusqu'à la mer en direction de Cascais.. Ici, vous pouvez toujours vous détendre sur la terrasse en écoutant les vagues se briser sur la plage et sentir la brise sur votre visage, entouré de verdure, d'intimité et de sécurité.\r\n\r\nChez Quinta das Giestas, la qualité et le confort ont été élevés à un nouveau niveau, en utilisant les technologies de construction les plus innovantes et les matériaux et équipements les plus sophistiqués, créant une nouvelle expérience de vie. Le projet met en dialogue 4 matériaux authentiques avec le bleu de la mer et le vert des arbres - béton apparent, bois, verre et acier - créant un environnement sophistiqué et intemporel. À l'extérieur, les murs de pierre façonnent le paysage et sont amenés aux façades, unifiant l'ensemble du concept.\r\n\r\nLa copropriété privée offre des installations telles qu'une piscine chauffée, une salle de sport, une aire de jeux pour enfants, des chambres sociales et en copropriété. Ici, la journée peut commencer par une promenade sur la plage ou sur la promenade et se terminer par une séance d'entraînement dans la salle de sport privée ou un plongeon dans la piscine.",
     "equipments": [
       "Ar Condicionado",
       "Arrecadação",
-      "Banheira",
       "Cozinha Equipada",
       "Detector de Fumos",
+      "Detector de Gás",
       "Detector de Incêndio",
       "Detector de Inundação",
-      "Domótica",
       "Elevador",
-      "Estores Electricos",
-      "Exaustor",
-      "Forno",
-      "Frigorífico",
       "Garagem",
       "Ginásio",
-      "Isolamento Acústico",
-      "Isolamento Térmico",
       "Jardim",
-      "Máquina de Lavar Louça",
-      "Máquina de Lavar Roupa",
-      "Máquina de Secar Roupa",
-      "Painéis fotovoltaicos",
+      "Parque infantil",
       "Piscina",
-      "Piscina aquecida",
-      "Placa Vitrocerâmica",
-      "Porta Alta Segurança",
-      "Portão Eléctrico",
+      "Piso Radiante",
+      "Roupeiros",
+      "Salão de Festas",
       "Video Porteiro",
-      "Vidros Duplos",
-      "Microondas",
-      "Carregamento Veículos Eléctricos",
-      "Varanda",
-      "Vídeo vigilância"
+      "Vidros Duplos"
     ],
     "equipments_en": [
       "Air Conditioning",
       "Storage Room",
-      "Bathtub",
       "Equipped kitchen",
       "Smoke Detector",
+      "Gas Detector",
       "Fire Detector",
       "Flood detector",
-      "Home automation",
       "Elevator",
-      "Electric blinds",
-      "Exhaust",
-      "Oven",
-      "Fridge",
       "Garage",
       "Gym",
-      "Acoustic Insulation",
-      "Thermal Insulation",
       "Garden",
-      "Dishwasher",
-      "Washing Machine",
-      "Drier machine",
-      "Photovoltaic panels",
+      "Playground",
       "Swimming Pool",
-      "Heated Swimming Pool",
-      "Vitroceramic Cooktop",
-      "High Security Door",
-      "Electric gate",
+      "Radiant Floor Heating",
+      "Wardrobes",
+      "Ballroom",
       "Video Doorman",
-      "Double Glazed",
-      "Microwave Oven",
-      "EV charging station",
-      "Balcony",
-      "Video surveillance"
+      "Double Glazed"
     ],
     "equipments_fr": [
       "Climatisation",
       "Rangement",
-      "Baignoire",
       "Cuisine équipée",
       "Détecteur de fumée",
+      "Détecteur de gaz",
       "Détecteur d'incendie",
       "Détecteur d'inondation",
-      "Automatisation de la maison",
       "Ascenseur",
-      "Stores électriques",
-      "Échappement",
-      "Four",
-      "Frigo",
       "Garage",
       "Gym",
-      "Isolation sonore",
-      "Isolation thermique",
       "Jardin",
-      "Lave-vaisselle",
-      "Machine à laver",
-      "Machine sécheuse",
-      "Panneaux photovoltaïques",
+      "Terrain de jeux",
       "Piscine",
-      "Piscine chauffée",
-      "Table de cuisson vitrocéramique",
-      "Porte haute sécurité",
-      "Portail électrique",
+      "Chauffage radiant au sol",
+      "Armoires",
+      "Salle de bal",
       "Portier vidéo",
-      "Double vitrage",
-      "Micro-ondes",
-      "Borne de recharge pour voitures électriques",
-      "Balcon",
-      "Vidéosurveillance"
+      "Double vitrage"
     ],
-    "floor": 1,
-    "fraction": "B1C",
-    "gross_private_area": 149.4,
-    "id": "a0c3Y00000WOhLKQA1",
-    "is_exclusive": false,
+    "floor": null,
+    "fraction": "Villa 4",
+    "gross_private_area": 310,
+    "id": "a0cTg000001PSN8IAO",
+    "is_exclusive": true,
     "languages": ["pt", "en", "fr"],
-    "last_updated": "2025-02-12T23:40:05.414Z",
-    "latitude": 38.752586359999995,
+    "last_updated": "2025-02-13T08:03:33.878Z",
+    "latitude": 38.699735679999996,
     "location_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
         "lvl1": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa",
         "lvl2": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa",
-        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa",
-        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa > Benfica",
-        "lvl5": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa > Benfica > Alto dos Moinhos"
+        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras",
+        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Caxias",
+        "lvl5": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Caxias > Alto do Lagoal"
       }
     ],
-    "longitude": -9.1797912,
-    "outdoor_area": 24.1,
-    "parent_property_id": "a0c3Y00000WOhKvQAL",
-    "parish": "Benfica",
+    "longitude": -9.280214820000001,
+    "outdoor_area": 145.95,
+    "parent_property_id": "a0cTg000002S2aRIAS",
+    "parish": "Caxias",
     "parish_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Benfica"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Caxias"
       }
     ],
     "parish_hierarchy_en": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Benfica"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Caxias"
       }
     ],
     "parish_hierarchy_fr": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Benfica"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Caxias"
       }
     ],
-    "parish_id": "lisboa_benfica",
-    "parking_spaces": 2,
-    "phone": "+351 213 806 110",
+    "parish_id": "oeiras_caxias",
+    "parking_spaces": 4,
+    "phone": "+351 214 688 891",
     "photos": [
       {
         "main_photo": true,
         "sequence": 1,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Quarto%20%281%29_1684856746642.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_08_1712222218781.jpg"
       },
       {
         "main_photo": false,
         "sequence": 2,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Piscina_Jardim%20%281%29_1684856746640.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_03_1712222218777.jpg"
       },
       {
         "main_photo": false,
         "sequence": 3,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica%20_Vista_Piscina_Est%C3%A1dio%20%281%29_1684856746643.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_02__-hq-width-4000px_1712222218776.jpg"
       },
       {
         "main_photo": false,
         "sequence": 4,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Fachada%20nascente%20%281%29_1684856746644.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_06_1712222218778.jpg"
       },
       {
         "main_photo": false,
         "sequence": 5,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Varanda_1684856746643.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_07__-hq-width-4000px%20%281%29_1712222218779.jpg"
       },
       {
         "main_photo": false,
         "sequence": 6,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Sala2_carpintarias%20lacadas%20branco_1684856746643.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_05__-hq-width-4000px_1712222218777.jpg"
       },
       {
         "main_photo": false,
         "sequence": 7,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Sala2_carpintarias%20carvalho_1684856746643.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_11__-hq-width-4000px_1712222218783.jpg"
       },
       {
         "main_photo": false,
         "sequence": 8,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Sala_1684856746643.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_10__-hq-width-4000px_1712222218782.jpg"
       },
       {
         "main_photo": false,
         "sequence": 9,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica%20_Cozinha_Branca%20%281%29_1684856746643.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_12_1712222218784.jpg"
       },
       {
         "main_photo": false,
         "sequence": 10,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Cozinha_madeira%20%281%29_1684856746644.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_09__-hq-width-4000px_1712222218782.jpg"
       },
       {
         "main_photo": false,
         "sequence": 11,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Entrada%20%281%29_1684856746644.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_16_P1_Sala__1712222218774.jpg"
       },
       {
         "main_photo": false,
         "sequence": 12,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_IS%20%281%29_1684856746645.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_15_P0_Escritorio__1712222218773.jpg"
       },
       {
         "main_photo": false,
         "sequence": 13,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Garagem%20%281%29_1684856746645.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_06_P1_Sala_1712222218795.jpg"
       },
       {
         "main_photo": false,
         "sequence": 14,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Fachada-vista%20aerea%20%281%29_1684856746644.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_05_P1_Sala__1712222218794.jpg"
       },
       {
         "main_photo": false,
         "sequence": 15,
-        "url": "https://static.portadafrente.com/PF30789/UBenfica_Piscina_Cobertura%20%281%29_1684856746637.jpg"
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_07_P1_Sala__1712222218796.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 16,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_14_P3_Claraboia_1712222218772.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 17,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_01_P1_Cozinha__1712222218785.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 18,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_02_P1_Cozinha__1712222218786.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 19,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_03_P1_Cozinha__1712222218790.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 20,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_04_P1_Elevador_Escada_1712222218792.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 21,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_09_P2_SuiteM__1712222218797.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 22,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_12_P2_Suite3__1712222218799.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 23,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_10_P2_SuiteM_IS__1712222218797.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 24,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_11_P2_SuiteM_IS__1712222218798.jpg"
+      },
+      {
+        "main_photo": false,
+        "sequence": 25,
+        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_13_P2_Suite3_IS__1712222218769.jpg"
       }
     ],
-    "plan_url": "https://portadafrente.my.salesforce.com/sfc/p/1t000000D6v6/a/3Y000002b1Hm/xkN5rMdSqkvHBCb.rPmqaxHS.VoLVtqIu5nk1Np4Tb4",
-    "postal_code": "1500-359",
-    "price": 1100000,
-    "price_on_application": false,
-    "published_at": "2023-05-23",
+    "plan_url": "https://portadafrente.my.salesforce.com/sfc/p/1t000000D6v6/a/Tg000000AJm9/UugdnhSuxSAnVv9.Z16kdy7KB1unOCmVcfcpw590Yyg",
+    "postal_code": "2760-020",
+    "price": 0,
+    "price_on_application": true,
     "revelance_score": null,
-    "rooms": 3,
-    "slug_url": "apartamento-t3-lisboa-venda-a0c3Y00000WOhLKQA1",
-    "slug_url_en": "3-bedroom-apartment-lisboa-venda-a0c3Y00000WOhLKQA1",
-    "slug_url_fr": "appartement-4-pieces-lisboa-venda-a0c3Y00000WOhLKQA1",
+    "rooms": 5,
+    "slug_url": "moradia-t5-oeiras-venda-a0cTg000001PSN8IAO",
+    "slug_url_en": "5-bedroom-house-oeiras-venda-a0cTg000001PSN8IAO",
+    "slug_url_fr": "maison-normal-6-pieces-oeiras-venda-a0cTg000001PSN8IAO",
     "state_id": "under-construction",
     "sub_category_name": "",
-    "surroundings": [
-      "Aeroporto",
-      "Auto-Estrada",
-      "Banco",
-      "Bombeiros",
-      "Campo de Golfe",
-      "Centro Comercial",
-      "Centro da Cidade",
-      "Escola",
-      "Espaços Verdes",
-      "Farmácia",
-      "Ginásio",
-      "Hipermercado",
-      "Hospital",
-      "Orientação Solar Nascente",
-      "Orientação Solar Poente",
-      "Piscinas",
-      "Polícia",
-      "Posto de Combustível",
-      "Transportes Públicos",
-      "Vista para Cidade",
-      "Zona Comercial",
-      "Estacionamento"
-    ],
-    "surroundings_en": [
-      "Airport",
-      "Freeway",
-      "Bank",
-      "Fire department",
-      "Golf course",
-      "Shopping center",
-      "Town centre",
-      "School",
-      "Green spaces",
-      "Pharmacy",
-      "Gym",
-      "Hypermarket",
-      "Hospital",
-      "Rising Solar Orientation",
-      "Solar Orientation West",
-      "Pools",
-      "Police",
-      "Gas station",
-      "Public Transportation",
-      "City View",
-      "Commercial Area",
-      "Parking"
-    ],
-    "surroundings_fr": [
-      "Aéroport",
-      "Autoroute",
-      "Banque",
-      "Pompiers",
-      "Terrain de golf",
-      "Centre commercial",
-      "Centre-ville",
-      "École",
-      "Espaces verts",
-      "Pharmacie",
-      "Gym",
-      "grande surface",
-      "Hôpital",
-      "Orientation solaire croissante",
-      "Orientation solaire Ouest",
-      "Piscines",
-      "Police",
-      "Station-essence",
-      "Transport public",
-      "Vue de la ville",
-      "Zone commerciale",
-      "Parking"
-    ],
-    "title": "Apartamento T3, Lisboa",
-    "title_en": "3 Bedroom Apartment, Lisboa",
-    "title_fr": "Appartement 4 pièces, Lisboa",
+    "surroundings": ["Espaços Verdes", "Praia", "Vista para Mar"],
+    "surroundings_en": ["Green spaces", "Beach", "Sea View"],
+    "surroundings_fr": ["Espaces verts", "Plage", "Vue sur la mer"],
+    "title": "Moradia T5, Oeiras",
+    "title_en": "5 Bedroom House, Oeiras",
+    "title_fr": "Maison normal 6 pièces, Oeiras",
     "updated_at": "2025-01-24",
-    "zone": "Alto dos Moinhos",
+    "zone": "Alto do Lagoal",
     "zone_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Alto dos Moinhos"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Alto do Lagoal"
       }
     ],
     "zone_hierarchy_en": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Alto dos Moinhos"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Alto do Lagoal"
       }
     ],
     "zone_hierarchy_fr": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
-        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Alto dos Moinhos"
+        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
+        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Alto do Lagoal"
       }
     ],
-    "zone_id": "lisboa_alto-dos-moinhos"
+    "zone_id": "oeiras_alto-do-lagoal"
   },
   "highlight": {},
   "highlights": [],

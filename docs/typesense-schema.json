@@ -1,5 +1,5 @@
 {
-  "created_at": 1739403568,
+  "created_at": 1739433748,
   "default_sorting_field": "",
   "enable_nested_fields": true,
   "fields": [
@@ -892,16 +892,16 @@
       "type": "object[]"
     },
     {
-      "facet": false,
+      "facet": true,
       "index": true,
       "infix": false,
       "locale": "",
       "name": "_geoloc",
       "optional": true,
-      "sort": false,
+      "sort": true,
       "stem": false,
       "store": true,
-      "type": "object"
+      "type": "geopoint"
     },
     {
       "facet": false,
@@ -909,30 +909,6 @@
       "infix": false,
       "locale": "pt",
       "name": "areas.category",
-      "optional": true,
-      "sort": false,
-      "stem": false,
-      "store": true,
-      "type": "string[]"
-    },
-    {
-      "facet": true,
-      "index": true,
-      "infix": false,
-      "locale": "",
-      "name": "zone_hierarchy.lvl2",
-      "optional": true,
-      "sort": false,
-      "stem": false,
-      "store": true,
-      "type": "string[]"
-    },
-    {
-      "facet": true,
-      "index": true,
-      "infix": false,
-      "locale": "",
-      "name": "zone_hierarchy.lvl1",
       "optional": true,
       "sort": false,
       "stem": false,
@@ -957,6 +933,30 @@
       "infix": false,
       "locale": "en",
       "name": "parish_hierarchy_en.lvl1",
+      "optional": true,
+      "sort": false,
+      "stem": false,
+      "store": true,
+      "type": "string[]"
+    },
+    {
+      "facet": true,
+      "index": true,
+      "infix": false,
+      "locale": "en",
+      "name": "zone_hierarchy_en.lvl0",
+      "optional": true,
+      "sort": false,
+      "stem": false,
+      "store": true,
+      "type": "string[]"
+    },
+    {
+      "facet": true,
+      "index": true,
+      "infix": false,
+      "locale": "",
+      "name": "zone_hierarchy.lvl1",
       "optional": true,
       "sort": false,
       "stem": false,
@@ -1147,30 +1147,6 @@
       "facet": true,
       "index": true,
       "infix": false,
-      "locale": "en",
-      "name": "zone_hierarchy_en.lvl0",
-      "optional": true,
-      "sort": false,
-      "stem": false,
-      "store": true,
-      "type": "string[]"
-    },
-    {
-      "facet": false,
-      "index": true,
-      "infix": false,
-      "locale": "",
-      "name": "_geoloc.lat",
-      "optional": true,
-      "sort": true,
-      "stem": false,
-      "store": true,
-      "type": "float"
-    },
-    {
-      "facet": true,
-      "index": true,
-      "infix": false,
       "locale": "",
       "name": "location_hierarchy.lvl5",
       "optional": true,
@@ -1202,18 +1178,6 @@
       "stem": false,
       "store": true,
       "type": "string[]"
-    },
-    {
-      "facet": false,
-      "index": true,
-      "infix": false,
-      "locale": "",
-      "name": "_geoloc.lng",
-      "optional": true,
-      "sort": true,
-      "stem": false,
-      "store": true,
-      "type": "float"
     },
     {
       "facet": false,
@@ -1300,6 +1264,18 @@
       "type": "string[]"
     },
     {
+      "facet": true,
+      "index": true,
+      "infix": false,
+      "locale": "",
+      "name": "zone_hierarchy.lvl2",
+      "optional": true,
+      "sort": false,
+      "stem": false,
+      "store": true,
+      "type": "string[]"
+    },
+    {
       "facet": false,
       "index": true,
       "infix": false,
@@ -1360,8 +1336,8 @@
       "type": "string[]"
     }
   ],
-  "name": "properties_1739403567535",
-  "num_documents": 1400,
+  "name": "properties_1739433747515",
+  "num_documents": 2000,
   "symbols_to_index": [],
   "token_separators": []
 }

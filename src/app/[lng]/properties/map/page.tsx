@@ -63,7 +63,11 @@ export default function PropertiesMapPage() {
     <div className="container mx-auto px-4 py-8">
       {viewToggle}
       <InstantSearchNext indexName={indexName} searchClient={searchClient}>
-        <Configure hitsPerPage={36} getRankingInfo={true} numericFilters={[]} />
+        <Configure
+          hitsPerPage={36}
+          getRankingInfo={true}
+          aroundLatLngViaIP={true}
+        />
         <div className="mb-6">
           <SearchBox
             placeholder={t("searchPlaceholder")}

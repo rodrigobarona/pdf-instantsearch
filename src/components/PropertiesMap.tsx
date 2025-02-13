@@ -1,5 +1,5 @@
-import React from "react";
-import { useHits, useGeoSearch } from "react-instantsearch-hooks-web";
+import React, { useState } from "react";
+import { useHits, useGeoSearch, useSearchBox } from "react-instantsearch";
 import {
   MapContainer,
   TileLayer,
@@ -7,12 +7,7 @@ import {
   Popup,
   useMapEvents,
 } from "react-leaflet";
-import type {
-  LatLngBounds,
-  LatLngExpression,
-  LeafletEvent,
-  Map as LeafletMap,
-} from "leaflet";
+import type { LatLngExpression, LeafletEvent } from "leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import Image from "next/image";
@@ -50,43 +45,58 @@ interface PropertyHit extends BaseHit {
   last_updated: string;
 }
 
-function MapEvents({
-  onBoundsChanged,
-}: {
-  onBoundsChanged: (bounds: LatLngBounds) => void;
-}) {
-  useMapEvents({
-    moveend(e: LeafletEvent) {
-      onBoundsChanged((e.target as LeafletMap).getBounds());
-    },
-    zoomend(e: LeafletEvent) {
-      onBoundsChanged((e.target as LeafletMap).getBounds());
-    },
-    dragend(e: LeafletEvent) {
-      onBoundsChanged((e.target as LeafletMap).getBounds());
-    },
+function MapEvents() {
+  const { query, refine: refineQuery } = useSearchBox();
+  const {
+    items,
+    refine: refineItems,
+    currentRefinement,
+    clearMapRefinement,
+  } = useGeoSearch();
+  const [previousQuery, setPreviousQuery] = useState(query);
+  const [skipViewEffect, setSkipViewEffect] = useState(false);
+
+  const onViewChange = ({ target }: LeafletEvent) => {
+    setSkipViewEffect(true);
+
+    if (query.length > 0) {
+      refineQuery("");
+    }
+
+    refineItems({
+      northEast: target.getBounds().getNorthEast(),
+      southWest: target.getBounds().getSouthWest(),
+    });
+  };
+
+  const map = useMapEvents({
+    zoomend: onViewChange,
+    dragend: onViewChange,
   });
+
+  // Center map on first result when query changes
+  if (query !== previousQuery) {
+    if (currentRefinement) {
+      clearMapRefinement();
+    }
+
+    if (items.length > 0 && !skipViewEffect) {
+      map.setView({
+        lat: items[0]._geoloc.lat,
+        lng: items[0]._geoloc.lng,
+      });
+    }
+
+    setSkipViewEffect(false);
+    setPreviousQuery(query);
+  }
+
   return null;
 }
 
 function PropertiesMap() {
   const { hits } = useHits<PropertyHit>();
-  const { refine } = useGeoSearch();
-
-  // Center on Portugal (for example, the Lisbon region)
   const defaultCenter: LatLngExpression = [38.736946, -9.142685];
-
-  // Update search when map bounds change
-  const handleBoundsChange = (bounds: LatLngBounds) => {
-    const ne = bounds.getNorthEast();
-    const sw = bounds.getSouthWest();
-
-    // Use _geoloc field for geo search
-    refine({
-      northEast: { lat: ne.lat, lng: ne.lng },
-      southWest: { lat: sw.lat, lng: sw.lng },
-    });
-  };
 
   return (
     <MapContainer
@@ -99,7 +109,7 @@ function PropertiesMap() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MapEvents onBoundsChanged={handleBoundsChange} />
+      <MapEvents />
       {hits.map((hit) => {
         if (!hit._geoloc) return null;
         const position: [number, number] = [hit._geoloc.lat, hit._geoloc.lng];

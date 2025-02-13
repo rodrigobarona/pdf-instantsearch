@@ -39,6 +39,7 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     // Updated based on your Typesense schema (using valid fields from the schema)
     query_by: "title,description,category_name",
   },
+  geoLocationField: "_geoloc", // This is the field that contains the geolocation data
 });
 
 export const searchClient = typesenseInstantsearchAdapter.searchClient;
