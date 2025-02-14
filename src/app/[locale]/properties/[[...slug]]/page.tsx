@@ -31,6 +31,8 @@ export default function PropertiesPage() {
   const [mounted, setMounted] = useState(false);
   const t = useTranslations("search");
   const [isMapModalOpen, setIsMapModalOpen] = useState(false);
+  const [sentinelRef, setSentinelRef] = useState<HTMLDivElement | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -45,6 +47,39 @@ export default function PropertiesPage() {
       console.log("Initial search query:", query);
     }
   }, []);
+
+  useEffect(() => {
+    if (!sentinelRef) return;
+
+    const observer = new IntersectionObserver(
+      async (entries) => {
+        const target = entries[0];
+        if (target.isIntersecting && !isLoading) {
+          setIsLoading(true);
+          const showMoreButton = document.querySelector(
+            ".ais-InfiniteHits-loadMore"
+          ) as HTMLButtonElement | null;
+
+          if (showMoreButton && !showMoreButton.disabled) {
+            showMoreButton.click();
+          }
+          // Reset loading state after a short delay
+          setTimeout(() => setIsLoading(false), 300);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "1500px", // Increased to start loading much earlier
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(sentinelRef);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [sentinelRef, isLoading]);
 
   if (!mounted) {
     return null;
@@ -564,25 +599,26 @@ export default function PropertiesPage() {
           <Configure hitsPerPage={36} />
 
           <InfiniteHits<PropertyHit>
+            showPrevious={false}
             hitComponent={({ hit }) => (
               <PropertyHitComponent hit={hit} locale={currentLocale} />
             )}
             classNames={{
               root: "mt-6",
               list: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+              loadMore: "hidden",
             }}
           />
 
-          <Pagination
-            classNames={{
-              root: "mt-8",
-              list: "flex justify-center items-center space-x-2",
-              item: "inline-flex",
-              link: "px-4 py-2 border rounded hover:bg-gray-50",
-              selectedItem: "bg-blue-500 text-white hover:bg-blue-600",
-              disabledItem: "opacity-50 cursor-not-allowed",
-            }}
-          />
+          {/* Loading indicator and sentinel */}
+          <div className="relative py-4">
+            <div ref={setSentinelRef} style={{ height: "1px" }} />
+            {isLoading && (
+              <div className="flex justify-center">
+                <div className="w-6 h-6 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

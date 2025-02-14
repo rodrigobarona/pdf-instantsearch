@@ -20,11 +20,11 @@ interface MapModalProps {
 export default function MapModal({ isOpen, onClose }: MapModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="w-[95vw] h-[95dvh] max-w-none">
+      <DialogContent className="w-[55vw] h-[55dvh] max-w-none">
         <DialogHeader>
           <DialogTitle>Map</DialogTitle>
         </DialogHeader>
-        <div className="w-full h-[87dvh]">
+        <div className="w-full h-[45dvh]">
           <PropertiesMap />
         </div>
       </DialogContent>
