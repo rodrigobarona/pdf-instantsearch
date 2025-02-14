@@ -41,7 +41,8 @@ export function PropertyHitComponent({ hit, locale }: PropertyHitProps) {
         {hit[`title_${locale}` as keyof PropertyHit] || hit.title}
       </h2>
       <p className="text-gray-600">
-        {hit[`category_name_${locale}` as keyof PropertyHit] || hit.category_name}
+        {hit[`category_name_${locale}` as keyof PropertyHit] ||
+          hit.category_name}
       </p>
       <p className="text-gray-500">{hit.county}</p>
       <p className="text-lg font-bold mt-2">€{hit.price.toLocaleString()}</p>

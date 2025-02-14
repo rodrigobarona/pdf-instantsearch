@@ -33,6 +33,7 @@
     "react-dom": "^19.0.0",
     "react-instantsearch": "^7.15.3",
     "react-instantsearch-nextjs": "^0.4.4",
+    "react-instantsearch-router-nextjs": "^7.15.3",
     "react-leaflet": "^5.0.0",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",

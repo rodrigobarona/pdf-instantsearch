@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /comprar/
+Allow: /aluguer/
+Allow: /comprar/*/
+Allow: /aluguer/*/
+Disallow: /*?*
+Allow: * 
