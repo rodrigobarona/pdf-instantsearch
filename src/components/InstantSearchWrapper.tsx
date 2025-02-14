@@ -94,8 +94,12 @@ const routerNext = {
         routeState: RouterState;
         location: Location;
       }): string {
-        const urlParts = location.href.match(/^(.*?)\/?$/);
-        const baseUrl = `${urlParts ? urlParts[1] : ""}/`;
+        const { origin, pathname } = new URL(location.href);
+        let basePath = pathname;
+        if (basePath.endsWith("/page")) {
+          basePath = basePath.replace(/\/page$/, "");
+        }
+        const baseUrl = `${origin}${basePath}/`;
 
         // Build the path segments
         const pathSegments = [];
