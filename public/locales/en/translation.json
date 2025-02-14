@@ -3,8 +3,8 @@
   "searchPlaceholder": "Search properties...",
   "search": "Search",
   "businessType": {
-    "sale": "For Sale",
-    "lease": "For Rent"
+    "sale": "Buy",
+    "lease": "Rent"
   },
   "businessTypeFilter": "Business Type",
   "price": "Price",

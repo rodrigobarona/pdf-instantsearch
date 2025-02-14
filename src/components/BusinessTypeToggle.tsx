@@ -47,8 +47,8 @@ export function BusinessTypeToggle({
         className={cx(
           "px-4 py-2 border border-gray-300 rounded-none",
           value.isRefined
-            ? "bg-blue-600 text-white border-blue-600 hover:border-gray-900"
-            : "bg-white text-gray-700 hover:bg-gray-50",
+            ? "bg-red-600 text-white/70 border-red-800 hover:border-gray-900"
+            : "bg-white text-gray-700 hover:bg-gray-50 font-bold",
           classNames.buttonOff
         )}
         onClick={() => refine({ isRefined: true })}
@@ -60,8 +60,8 @@ export function BusinessTypeToggle({
         className={cx(
           "px-4 py-2 border border-gray-300 rounded-none",
           !value.isRefined
-            ? "bg-blue-600 text-white border-blue-600 hover:border-gray-900"
-            : "bg-white text-gray-700 hover:bg-gray-50",
+            ? "bg-red-600 text-white/70 border-red-800 hover:border-gray-900"
+            : "bg-white text-gray-700 hover:bg-gray-50 font-bold",
           classNames.buttonOn
         )}
         onClick={() => refine({ isRefined: false })}

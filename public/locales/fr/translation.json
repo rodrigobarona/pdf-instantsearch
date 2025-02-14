@@ -3,8 +3,8 @@
   "searchPlaceholder": "Rechercher des propriétés...",
   "search": "Chercher",
   "businessType": {
-    "sale": "À Vendre",
-    "lease": "À Louer"
+    "sale": "Acheter",
+    "lease": "Louer"
   },
   "businessTypeFilter": "Type de business",
   "price": "Prix",

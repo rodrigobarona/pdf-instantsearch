@@ -44,18 +44,18 @@ export function AutocompleteBox() {
     <div className="relative w-full" aria-label="Property search">
       <form
         onSubmit={handleSubmit}
-        className="relative flex items-center w-full"
+        className="relative flex items-center w-full text-slate-900"
       >
         <input
           {...getInputProps({
             placeholder: t("searchPlaceholder"),
             className:
-              "w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500",
+              "w-full px-4 py-2 rounded-none border focus:outline-none focus:ring-2 focus:ring-blue-500",
           })}
         />
         <button
           type="submit"
-          className="absolute right-0 w-20 h-10 bg-blue-500 text-white flex items-center justify-center rounded-r-lg"
+          className="absolute right-0 w-20 h-10 bg-blue-500 text-white flex items-center justify-center rounded-none"
         >
           {t("search")}
         </button>
