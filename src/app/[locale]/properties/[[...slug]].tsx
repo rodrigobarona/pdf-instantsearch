@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { useTranslation } from "react-i18next";
-import "@/config/i18n";
+import { useTranslations } from "next-intl";
 import {
   SearchBox,
   Configure,
@@ -18,7 +17,7 @@ import {
   HierarchicalMenu,
   Breadcrumb,
   useMenu,
-  MenuProps,
+  type MenuProps,
 } from "react-instantsearch";
 import { indexName } from "@/config/typesense";
 import {
@@ -30,7 +29,7 @@ import MapModal from "@/components/MapModal";
 
 function CustomBusinessTypeMenu(props: MenuProps) {
   const { items, refine } = useMenu(props);
-  const { t } = useTranslation();
+  const t = useTranslations("businessType");
 
   // Ensure default selection if nothing is selected
   React.useEffect(() => {
@@ -65,20 +64,14 @@ function CustomBusinessTypeMenu(props: MenuProps) {
 }
 
 export default function PropertiesPage() {
-  const { lng } = useParams<{ lng: string }>();
+  const { locale } = useParams<{ locale: string }>();
   const [mounted, setMounted] = useState(false);
-  const { t, i18n } = useTranslation();
+  const t = useTranslations("search");
   const [isMapModalOpen, setIsMapModalOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  useEffect(() => {
-    if (lng && i18n.language !== lng) {
-      i18n.changeLanguage(lng);
-    }
-  }, [lng, i18n]);
 
   useEffect(() => {
     // Get query from URL on mount
@@ -113,7 +106,7 @@ export default function PropertiesPage() {
     </div>
   );
 
-  const currentLng = i18n.language || "pt";
+  const currentLocale = locale || "pt";
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -603,7 +596,7 @@ export default function PropertiesPage() {
 
           <InfiniteHits<PropertyHit>
             hitComponent={({ hit }) => (
-              <PropertyHitComponent hit={hit} lng={currentLng} />
+              <PropertyHitComponent hit={hit} locale={currentLocale} />
             )}
             classNames={{
               root: "mt-6",

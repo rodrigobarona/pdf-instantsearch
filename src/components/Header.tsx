@@ -1,58 +1,46 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { useTranslation } from "react-i18next";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { useTranslations } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
+import { LANGUAGES, LANGUAGES_LABELS } from "@/config/constants";
 
-const languages = [
-  { code: "en", name: "English" },
-  { code: "fr", name: "Français" },
-  { code: "pt", name: "Português" },
-];
+const languages = [...LANGUAGES].map((lang) => ({
+  code: lang,
+  name: LANGUAGES_LABELS[lang],
+}));
 
-export function Header() {
+type HeaderProps = {
+  locale: string;
+};
+
+export function Header({ locale }: HeaderProps) {
+  const t = useTranslations("Header");
   const pathname = usePathname();
   const router = useRouter();
-  const { i18n } = useTranslation();
 
-  const currentLang = pathname.split("/")[1] || "pt";
-
-  const handleLanguageChange = async (newLang: string) => {
-    // Change i18next language
-    await i18n.changeLanguage(newLang);
-
-    // Update URL
-    const newPathname = pathname.replace(`/${currentLang}`, `/${newLang}`);
+  const handleLanguageChange = (newLocale: string) => {
+    // Replace the locale prefix in the pathname and navigate
+    const newPathname = pathname.replace(`/${locale}`, `/${newLocale}`);
     router.push(newPathname);
   };
 
   return (
     <header className="border-b">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href={`/${currentLang}`} className="text-xl font-bold">
-          Porta da Frente Christie&apos;s
+        <Link href={`/${locale}`} className="text-xl font-bold">
+          {t("title")}
         </Link>
-
         <div className="w-32">
-          <Select value={currentLang} onValueChange={handleLanguageChange}>
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {languages.map((lang) => (
-                <SelectItem key={lang.code} value={lang.code}>
-                  {lang.name}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          <select
+            value={locale}
+            onChange={(e) => handleLanguageChange(e.target.value)}
+          >
+            {languages.map((lang) => (
+              <option key={lang.code} value={lang.code}>
+                {lang.name}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
     </header>

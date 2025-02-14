@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 export type PropertyHit = {
   title: string;
   title_en?: string;
@@ -16,12 +17,12 @@ export type PropertyHit = {
   rooms: number;
 };
 
-interface PropertyHitProps {
+type PropertyHitProps = {
   hit: PropertyHit;
-  lng: string;
-}
+  locale: string;
+};
 
-export function PropertyHitComponent({ hit, lng }: PropertyHitProps) {
+export function PropertyHitComponent({ hit, locale }: PropertyHitProps) {
   return (
     <div className="p-4 border rounded-lg shadow hover:shadow-md transition-shadow">
       <Image
@@ -37,10 +38,10 @@ export function PropertyHitComponent({ hit, lng }: PropertyHitProps) {
         <p className="text-gray-500">{hit.business_type_id}</p>
       </div>
       <h2 className="text-xl font-semibold">
-        {hit[`title_${lng}` as keyof PropertyHit] || hit.title}
+        {hit[`title_${locale}` as keyof PropertyHit] || hit.title}
       </h2>
       <p className="text-gray-600">
-        {hit[`category_name_${lng}` as keyof PropertyHit] || hit.category_name}
+        {hit[`category_name_${locale}` as keyof PropertyHit] || hit.category_name}
       </p>
       <p className="text-gray-500">{hit.county}</p>
       <p className="text-lg font-bold mt-2">€{hit.price.toLocaleString()}</p>

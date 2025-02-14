@@ -2,7 +2,7 @@
 
 import type { FormEvent } from "react";
 import { type PropertyHit, useAutocomplete } from "@/hooks/useAutocomplete";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 import { useRouter, useParams } from "next/navigation";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -12,7 +12,7 @@ import { INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES } from "@/config/constants";
 import { SearchIcon } from "lucide-react";
 
 export function AutocompleteBox() {
-  const { t } = useTranslation();
+  const t = useTranslations("HomePage");
   const router = useRouter();
   const { lng } = useParams<{ lng: string }>();
   const { query, refine: setQuery } = useSearchBox();

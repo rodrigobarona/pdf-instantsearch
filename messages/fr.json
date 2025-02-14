@@ -1,0 +1,24 @@
+{
+  "title": "Porta da Frente Christie's",
+  "HomePage": {
+    "findYourDreamHome": "Trouvez la Maison de Vos Rêves",
+    "searchPlaceholder": "Rechercher des propriétés...",
+    "search": "Chercher",
+    "businessType": {
+      "sale": "Acheter",
+      "lease": "Louer"
+    }
+  },
+  "search": {
+    "businessTypeFilter": "Type de business",
+    "price": "Prix",
+    "room": "Chambre",
+    "rooms": "Chambres",
+    "location": "Localisation",
+    "clearFilters": "Effacer les filtres",
+    "relevance": "Pertinence",
+    "priceLowToHigh": "Prix : Faible à élevé",
+    "priceHighToLow": "Prix : Élevé à faible",
+    "locationParish": "Location"
+  }
+}

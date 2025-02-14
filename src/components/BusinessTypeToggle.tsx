@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-import { useTranslation } from "react-i18next";
+import type React from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "./ui/button";
 import { useToggleRefinement } from "react-instantsearch";
 import cx from "clsx";
@@ -29,7 +29,7 @@ export function BusinessTypeToggle({
   translations = {},
   ...props
 }: BusinessTypeToggleProps) {
-  const { t } = useTranslation();
+  const t = useTranslations("businessType");
   // Use the toggle connector with the passed attribute and labels.
   const { value, refine } = useToggleRefinement({ attribute, on, off });
 

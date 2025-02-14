@@ -1,0 +1,24 @@
+{
+  "title": "Porta da Frente Christie's",
+  "HomePage": {
+    "findYourDreamHome": "Find Your Dream Home",
+    "searchPlaceholder": "Search properties...",
+    "search": "Search",
+    "businessType": {
+      "sale": "Buy",
+      "lease": "Rent"
+    }
+  },
+  "search": {
+    "businessTypeFilter": "Business Type",
+    "price": "Price",
+    "room": "room",
+    "rooms": "rooms",
+    "location": "Location",
+    "clearFilters": "Clear Filters",
+    "relevance": "Most Relevant",
+    "priceLowToHigh": "Price: Low to High",
+    "priceHighToLow": "Price: High to Low",
+    "locationParish": "Location"
+  }
+}

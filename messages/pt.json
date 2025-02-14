@@ -1,0 +1,24 @@
+{
+  "title": "Porta da Frente Christie's",
+  "HomePage": {
+    "findYourDreamHome": "Encontre a Casa dos Seus Sonhos",
+    "searchPlaceholder": "Procurar imóveis...",
+    "search": "Buscar",
+    "businessType": {
+      "sale": "Comprar",
+      "lease": "Alugar"
+    }
+  },
+  "search": {
+    "businessTypeFilter": "Tipo de negócio",
+    "price": "Preço",
+    "room": "Quarto",
+    "rooms": "Quartos",
+    "location": "Localização",
+    "clearFilters": "Limpar Filtros",
+    "relevance": "Relevância",
+    "priceLowToHigh": "Preço: Baixo para Alto",
+    "priceHighToLow": "Preço: Alto para Baixo",
+    "locationParish": "Localização"
+  }
+}
