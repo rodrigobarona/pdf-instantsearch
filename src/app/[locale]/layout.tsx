@@ -2,9 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { searchClient } from "@/config/typesense";
-import { indexName } from "@/config/typesense";
-import { InstantSearchNext } from "react-instantsearch-nextjs";
+import InstantSearchWrapper from "@/components/InstantSearchWrapper";
 import { LANGUAGES } from "@/config/constants";
 
 export function generateStaticParams() {
@@ -37,26 +35,7 @@ export default async function LocaleLayout({
       <head />
       <body>
         <NextIntlClientProvider messages={messages}>
-          <InstantSearchNext
-            indexName={indexName}
-            searchClient={searchClient}
-            routing={{
-              router: {
-                cleanUrlOnDispose: false,
-                windowTitle(routeState) {
-                  const indexState = routeState.indexName || {};
-                  return indexState.query
-                    ? `Porta da Frente Christie's - Results for: ${indexState.query}`
-                    : "Porta da Frente Christie's - Results page";
-                },
-              },
-            }}
-            future={{
-              preserveSharedStateOnUnmount: true,
-            }}
-          >
-            {children}
-          </InstantSearchNext>
+          <InstantSearchWrapper>{children}</InstantSearchWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

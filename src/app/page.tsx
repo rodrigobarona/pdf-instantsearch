@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-// Default page component that redirects to the default locale
+// This page only renders when the app is built statically (output: 'export')
 export default function RootPage() {
-  redirect("/pt"); // Redirect to default language
+  redirect("/pt");
 }

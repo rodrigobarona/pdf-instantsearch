@@ -37,7 +37,8 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   },
   additionalSearchParameters: {
     // Updated based on your Typesense schema (using valid fields from the schema)
-    query_by: "title,description,category_name",
+    query_by:
+      "title,description,category_name, address, sub_category_name, parish, county, zone, bathrooms, rooms, parking, price",
   },
   geoLocationField: "_geoloc", // This is the field that contains the geolocation data
 });
