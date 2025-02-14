@@ -1,5 +1,7 @@
 {
-  "title": "Porta da Frente Christie's",
+  "Header": {
+    "title": "Porta da Frente Christie's"
+  },
   "HomePage": {
     "findYourDreamHome": "Trouvez la Maison de Vos Rêves",
     "searchPlaceholder": "Rechercher des propriétés...",
@@ -9,11 +11,17 @@
       "lease": "Louer"
     }
   },
+  "businessTypeToggle": {
+    "sale": "Acheter",
+    "lease": "Louer"
+  },
   "search": {
+    "searchPlaceholder": "Rechercher des propriétés...",
     "businessTypeFilter": "Type de business",
     "price": "Prix",
     "room": "Chambre",
     "rooms": "Chambres",
+    "bathroom": "Salle de bain",
     "location": "Localisation",
     "clearFilters": "Effacer les filtres",
     "relevance": "Pertinence",

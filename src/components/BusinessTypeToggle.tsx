@@ -29,13 +29,13 @@ export function BusinessTypeToggle({
   translations = {},
   ...props
 }: BusinessTypeToggleProps) {
-  const t = useTranslations("businessType");
+  const t = useTranslations("businessTypeToggle");
   // Use the toggle connector with the passed attribute and labels.
   const { value, refine } = useToggleRefinement({ attribute, on, off });
 
   // Allow override of button labels via translations, defaulting to t(on)/t(off).
-  const onLabel = translations.on || t(`businessType.${on}`);
-  const offLabel = translations.off || t(`businessType.${off}`);
+  const onLabel = translations.on || t(`${on}`);
+  const offLabel = translations.off || t(`${off}`);
 
   return (
     <div

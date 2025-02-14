@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import InstantSearchWrapper from "@/components/InstantSearchWrapper";
 import { LANGUAGES } from "@/config/constants";
+import { Header } from "@/components/Header";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -33,8 +34,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head />
-      <body>
+      <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
+          <Header locale={locale} />
           <InstantSearchWrapper>{children}</InstantSearchWrapper>
         </NextIntlClientProvider>
       </body>

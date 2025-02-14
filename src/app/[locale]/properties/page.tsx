@@ -16,52 +16,15 @@ import {
   InfiniteHits,
   HierarchicalMenu,
   Breadcrumb,
-  useMenu,
-  type MenuProps,
 } from "react-instantsearch";
 import { indexName } from "@/config/typesense";
 import {
   PropertyHitComponent,
   type PropertyHit,
 } from "@/components/PropertyHit";
-import { Button } from "@/components/ui/button";
+
 import MapModal from "@/components/MapModal";
-
-function CustomBusinessTypeMenu(props: MenuProps) {
-  const { items, refine } = useMenu(props);
-  const t = useTranslations("businessType");
-
-  // Ensure default selection if nothing is selected
-  React.useEffect(() => {
-    const hasSelection = items.some((item) => item.isRefined);
-    if (!hasSelection && items.length > 0) {
-      refine(items[0].value);
-    }
-  }, [items, refine]);
-
-  return (
-    <div className="w-full">
-      <div className="flex flex-row gap-2 justify-between">
-        {items.map((item) => (
-          <Button
-            type="button"
-            key={item.value}
-            onClick={() => refine(item.value)}
-            className={`flex items-center justify-center w-full p-2 ${
-              item.isRefined
-                ? "bg-blue-500 text-white"
-                : "bg-blue-200 hover:bg-blue-300 text-black"
-            } rounded transition-colors`}
-          >
-            <span className="text-sm">
-              {t(`businessType.${item.value.toLowerCase()}`)}
-            </span>
-          </Button>
-        ))}
-      </div>
-    </div>
-  );
-}
+import { BusinessTypeToggle } from "@/components/BusinessTypeToggle";
 
 export default function PropertiesPage() {
   const { locale } = useParams<{ locale: string }>();
@@ -151,10 +114,16 @@ export default function PropertiesPage() {
               <h3 className="text-lg font-semibold mb-3">
                 {t("businessTypeFilter")}
               </h3>
-              <CustomBusinessTypeMenu
+              <BusinessTypeToggle
                 attribute="business_type_id"
-                sortBy={["count"]}
-                limit={2}
+                off="sale"
+                on="lease"
+                classNames={{
+                  root: "flex gap-2 w-full",
+                  buttonOn: "bg-blue-500 text-white w-full",
+                  buttonOff:
+                    "bg-gray-200 text-gray-700 hover:bg-gray-300 w-full",
+                }}
               />
             </div>
 

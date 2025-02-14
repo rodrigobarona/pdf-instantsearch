@@ -4,7 +4,7 @@ import type { FormEvent } from "react";
 import { type PropertyHit, useAutocomplete } from "@/hooks/useAutocomplete";
 import { useTranslations } from "next-intl";
 import { useRouter, useParams } from "next/navigation";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchBox, useHierarchicalMenu } from "react-instantsearch";
@@ -14,7 +14,7 @@ import { SearchIcon } from "lucide-react";
 export function AutocompleteBox() {
   const t = useTranslations("HomePage");
   const router = useRouter();
-  const { lng } = useParams<{ lng: string }>();
+  const { locale } = useParams<{ locale: string }>();
   const { query, refine: setQuery } = useSearchBox();
   const { items: parishes } = useHierarchicalMenu({
     attributes: INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES,
@@ -28,15 +28,15 @@ export function AutocompleteBox() {
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
     router.push(
-      `/${lng}/properties${query ? `?q=${encodeURIComponent(query)}` : ""}${
+      `/${locale}/properties${query ? `?q=${encodeURIComponent(query)}` : ""}${
         currentParish ? `&parish=${encodeURIComponent(currentParish)}` : ""
       }`
     );
   };
 
   const getLocalizedField = (hit: PropertyHit, field: string) => {
-    if (lng === "pt") return hit[field];
-    const localizedField = hit[`${field}_${lng}`];
+    if (locale === "pt") return hit[field];
+    const localizedField = hit[`${field}_${locale}`];
     return localizedField || hit[field]; // Fallback to default if translation not available
   };
 
@@ -66,7 +66,7 @@ export function AutocompleteBox() {
           {recentSearches.length > 0 && (
             <div className="p-2 border-b border-gray-100">
               <div className="text-xs font-medium text-gray-500 px-2 mb-1">
-                Recent Searches
+                {t("recentSearches")}
               </div>
               {recentSearches.map((search) => (
                 <Button
@@ -82,7 +82,7 @@ export function AutocompleteBox() {
                   <span>{search.label}</span>
                   {search.category && (
                     <span className="text-xs text-gray-500">
-                      in {search.category}
+                      {t("inCategory", { category: search.category })}
                     </span>
                   )}
                 </Button>
@@ -105,7 +105,7 @@ export function AutocompleteBox() {
                 className="w-full text-left p-0 hover:bg-gray-50 transition-colors h-auto border-b-2 border-gray-100 rounded-none"
               >
                 <Link
-                  href={`/${lng}/property/${getLocalizedField(
+                  href={`/${locale}/property/${getLocalizedField(
                     hit,
                     "slug_url"
                   )}`}
