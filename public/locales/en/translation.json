@@ -17,5 +17,11 @@
   "priceHighToLow": "Price: High to Low",
   "locationParish": "Location",
   "buy": "Buy",
-  "rent": "Rent"
+  "rent": "Rent",
+  "bedrooms": "Bedrooms",
+  "bathrooms": "Bathrooms",
+  "description": "Description",
+  "features": "Features",
+  "contactAgent": "Contact Agent",
+  "similarProperties": "Similar Properties"
 }
