@@ -73,14 +73,14 @@ export function AutocompleteBox() {
                 <Button
                   key={search.timestamp}
                   onClick={() => {
-                    setQuery(search.query);
+                    setQuery(search.label);
                   }}
                   className="w-full text-left p-2 hover:bg-gray-50 flex items-center gap-2"
                 >
                   <span className="text-gray-400">
                     <SearchIcon className="h-4 w-4" />
                   </span>
-                  <span>{search.query}</span>
+                  <span>{search.label}</span>
                   {search.category && (
                     <span className="text-xs text-gray-500">
                       in {search.category}
