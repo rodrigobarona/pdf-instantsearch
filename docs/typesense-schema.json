@@ -1,5 +1,5 @@
 {
-  "created_at": 1739433748,
+  "created_at": 1739568794,
   "default_sorting_field": "",
   "enable_nested_fields": true,
   "fields": [
@@ -904,6 +904,18 @@
       "type": "geopoint"
     },
     {
+      "facet": true,
+      "index": true,
+      "infix": false,
+      "locale": "",
+      "name": "investment",
+      "optional": true,
+      "sort": false,
+      "stem": false,
+      "store": true,
+      "type": "string[]"
+    },
+    {
       "facet": false,
       "index": true,
       "infix": false,
@@ -1336,8 +1348,8 @@
       "type": "string[]"
     }
   ],
-  "name": "properties_1739433747515",
-  "num_documents": 2000,
+  "name": "properties_1739568793724",
+  "num_documents": 2783,
   "symbols_to_index": [],
   "token_separators": []
 }

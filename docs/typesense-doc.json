@@ -1,434 +1,313 @@
 {
   "document": {
-    "_geoloc": [38.699735679999996, -9.280214820000001],
-    "address": "Av. Salvador Allende",
-    "alternate_zone": "Caxias",
+    "_geoloc": [38.72627698, -9.1443092],
+    "address": "Rua Bernardo Lima  1  4ºEsqº",
+    "alternate_zone": "Marquês de Pombal",
     "areas": [
       {
-        "area": 12.8,
-        "category": "Suite",
-        "display_name": "Suite 3"
+        "category": "Hall"
       },
       {
-        "area": 3.8,
-        "category": "Lavabo"
+        "category": "Sala"
       },
       {
-        "area": 12.6,
-        "category": "Suite",
-        "display_name": "Suite 2"
-      },
-      {
-        "area": 26.8,
-        "category": "Suite",
-        "display_name": "Master Suite"
-      },
-      {
-        "area": 21,
         "category": "Cozinha"
       },
       {
-        "area": 5.1,
-        "category": "Casa de Banho"
+        "category": "Lavandaria",
+        "display_name": "Marquise"
       },
       {
-        "area": 51.7,
+        "category": "Cozinha"
+      },
+      {
         "category": "Sala"
       },
       {
-        "area": 4.4,
-        "category": "Casa de Banho"
-      },
-      {
-        "area": 3.4,
-        "category": "Casa de Banho"
-      },
-      {
-        "area": 6.4,
-        "category": "Hall"
-      },
-      {
-        "area": 7.5,
-        "category": "Lavandaria"
-      },
-      {
-        "area": 8.05,
-        "category": "Hall"
-      },
-      {
-        "area": 15.5,
-        "category": "Estacionamento"
-      },
-      {
-        "area": 3.1,
-        "category": "Arrecadação"
-      },
-      {
-        "area": 9.6,
-        "category": "Varanda"
-      },
-      {
-        "area": 7.3,
-        "category": "Casa de Banho"
-      },
-      {
-        "area": 3.5,
-        "category": "Casa de Banho"
-      },
-      {
-        "area": 22.15,
         "category": "Sala"
       },
       {
-        "area": 17.5,
-        "category": "Suite",
-        "display_name": "Suite 1"
+        "category": "Quarto"
       },
       {
-        "area": 17,
-        "category": "Suite",
-        "display_name": "Suite 4"
+        "category": "Casa de Banho"
       },
       {
-        "area": 15.5,
-        "category": "Estacionamento"
+        "category": "Sótão"
       },
       {
-        "area": 15.5,
-        "category": "Estacionamento"
-      },
-      {
-        "area": 21.3,
-        "category": "Terraço"
-      },
-      {
-        "area": 15.8,
-        "category": "Terraço"
-      },
-      {
-        "area": 104,
-        "category": "Terraço"
-      },
-      {
-        "area": 6.65,
-        "category": "Zonas de Circulação"
-      },
-      {
-        "area": 13.3,
-        "category": "Hall"
-      },
-      {
-        "area": 2.05,
-        "category": "Hall"
-      },
-      {
-        "area": 10.75,
-        "category": "Estacionamento"
+        "category": "Quarto"
       }
     ],
-    "availability_id": "reservado-visivel-no-site",
-    "bathrooms": 5,
+    "availability_id": "disponivel",
+    "bathrooms": 1,
     "business_type_id": "sale",
     "category_hierarchy": [
       {
-        "lvl0": "Moradia"
+        "lvl0": "Apartamento"
       }
     ],
     "category_hierarchy_en": [
       {
-        "lvl0": "House"
+        "lvl0": "Apartment"
       }
     ],
     "category_hierarchy_fr": [
       {
-        "lvl0": "Maison normal"
+        "lvl0": "Appartement"
       }
     ],
-    "category_id": "house",
-    "category_name": "Moradia",
-    "category_name_en": "House",
-    "category_name_fr": "Maison normal",
-    "code": "PF33238",
-    "county": "Oeiras",
-    "county_id": "oeiras",
-    "cover_photo": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_08_1712222218781.jpg",
-    "description": "Com uma magnífica exclusiva vista frontal de mar, viva com privacidade e tranquilidade nas Villas da Quinta das Giestas, um conjunto de 10 casas únicas, onde cada unidade possui uma piscina privativa, ginásio e rooftop exclusivo. Aqui, é possível relaxar e sentir a brisa no rosto, envolvido em verde, privacidade e segurança, enquanto ainda disfruta de um condomínio de excelência, com tudo o que este lhe proporciona.\r\n\r\nVista frontal de mar • Varandas espaçosas • Piscinas privadas • Rooftops • Ginásio• Espaços verdes envolventes • Sala de convívio • Sala de festas • Solário • Parque Infantil • Jardins\r\n\r\nNas Villas da Quinta das Giestas poderá viver com privacidade, estilo e conforto, em conexão com o exterior. Desde os grandes terraços no seguimento das salas debruçadas sobre o mar, até aos rooftops, onde poderá desfrutar de uma piscina privativa, descontrair em redor do calor do fire pit, ou jantar com os amigos contemplando a vista soberba. Para além disso, os spas e piscinas privadas de cada Villla são aquecidas e dispõem de coberturas ocultas e automáticas, que lhe permitem conservar a temperatura e desfrutar das mesmas durante todo o ano.\r\n\r\nAo viver nas Villas das Quintas das Giestas poderá usufruir também dos espaços e estruturas do condomínio privado, como piscina aquecida, ginásio, parque infantil, sala de convívio e de condomínio. Aqui, o dia pode começar com uma caminhada na praia ou no passeio marítimo, ou ainda um passeio pelo bosque privado localizado dentro da Quinta das Giestas, e terminar com um treino no ginásio privativo ou um mergulho na piscina.\r\n\r\nNa Quinta das Giestas, a qualidade e o conforto foram elevados a um novo nível, fazendo uso das mais inovadoras tecnologias da construção e dos mais sofisticados materiais e equipamentos, criando uma nova experiência de habitar. O projeto coloca 4 materiais autênticos em diálogo com o azul do mar e o verde das árvores - betão aparente, madeira, vidro e aço – criando um ambiente sofisticado e intemporal. No exterior, os muros de pedra moldam a paisagem e são trazidos para as fachadas, unificando todo o conceito.\r\n\r\nA Quinta das Giestas está situada no Alto do Lagoal, em Oeiras, localizado entre as colinas do centro de Lisboa e as colinas do Estoril, mesmo em frente a praia de Caxias: um local mágico onde o rio encontra o oceano, com vistas deslumbrantes sobre Lisboa e o mar.",
-    "description_en": "With a magnificent front sea view, live in privacy and tranquillity in the Villas da Quinta das Giestas, a group of 10 unique houses, where each unit has a private pool, gym and exclusive rooftop. Here, you can relax and feel the breeze on your face, surrounded by greenery, privacy and security, while still enjoying a condominium of excellence, with everything it offers.\r\n\r\nFront sea view - Spacious balconies - Private pools - Rooftops - Gym - Surrounding green spaces - Lounge - Party room - Solarium - Children's playground - Gardens\r\n\r\nAt the Quinta das Giestas Villas you can live in privacy, style and comfort, in connection with the outdoors. From the large terraces following the living rooms overlooking the sea, to the rooftops, where you can enjoy a private pool, relax around the warmth of the fire pit, or dine with friends contemplating the superb view. In addition, the spas and private pools in each Villla are heated and have hidden, automatic covers, which allow you to maintain the temperature and enjoy them all year round.\r\n\r\nWhen you live in the Villas of Quintas das Giestas you can also enjoy the spaces and structures of the private condominium, such as the heated swimming pool, gym, children's playground, lounge and condominium. Here, the day can begin with a walk on the beach or seafront promenade, or even a stroll through the private woodland located within Quinta das Giestas, and end with a workout in the private gym or a dip in the pool.\r\n\r\nAt Quinta das Giestas, quality and comfort have been elevated to a new level, making use of the most innovative construction technologies and the most sophisticated materials and equipment, creating a new living experience. The project places four authentic materials in dialogue with the blue of the sea and the green of the trees - exposed concrete, wood, glass and steel - creating a sophisticated and timeless environment. Outside, the stone walls mould the landscape and are brought into the façades, unifying the whole concept.\r\n\r\nQuinta das Giestas is located in Alto do Lagoal, in Oeiras, between the hills of the centre of Lisbon and the hills of Estoril, right in front of Caxias beach: a magical place where the river meets the ocean, with breathtaking views over Lisbon and the sea.",
-    "description_fr": "Entre les collines du centre de Lisbonne et les collines d'Estoril, à Oeiras, se cachent les pentes exclusives de l'Alto do Lagoal - un endroit magique où la rivière rencontre l'océan, avec une vue imprenable sur Lisbonne et la mer, où les anciennes Quintas les zones de loisirs de l'aristocratie ont été remplacées par des Villas et des Chalés de l'élite de Lisbonne.\r\n\r\nQuinta da Giestas est un projet unique et sans précédent à Oeiras, comprenant 60 unités de type T3, T4, T5 et Villas d'une superficie comprise entre 173 et 315 mètres carrés, tous dotés de grandes terrasses et de vues s'étendant du pont sur le Tage et de la tour de Belém jusqu'à la mer en direction de Cascais.. Ici, vous pouvez toujours vous détendre sur la terrasse en écoutant les vagues se briser sur la plage et sentir la brise sur votre visage, entouré de verdure, d'intimité et de sécurité.\r\n\r\nChez Quinta das Giestas, la qualité et le confort ont été élevés à un nouveau niveau, en utilisant les technologies de construction les plus innovantes et les matériaux et équipements les plus sophistiqués, créant une nouvelle expérience de vie. Le projet met en dialogue 4 matériaux authentiques avec le bleu de la mer et le vert des arbres - béton apparent, bois, verre et acier - créant un environnement sophistiqué et intemporel. À l'extérieur, les murs de pierre façonnent le paysage et sont amenés aux façades, unifiant l'ensemble du concept.\r\n\r\nLa copropriété privée offre des installations telles qu'une piscine chauffée, une salle de sport, une aire de jeux pour enfants, des chambres sociales et en copropriété. Ici, la journée peut commencer par une promenade sur la plage ou sur la promenade et se terminer par une séance d'entraînement dans la salle de sport privée ou un plongeon dans la piscine.",
+    "category_id": "apartment",
+    "category_name": "Apartamento",
+    "category_name_en": "Apartment",
+    "category_name_fr": "Appartement",
+    "code": "PF36072",
+    "county": "Lisboa",
+    "county_id": "lisboa",
+    "cover_photo": "https://static.portadafrente.com/PF36072/PF36072-01_1739497348086.jpg",
+    "description": "Apartamento T2 totalmente remodelado em prédio Clássico Pombalino com elevador.\r\nDistribui-se da seguinte forma:\r\n- Hall\r\n- Sala \r\n- Cozinha equipada, aberta para a sala\r\n- Marquise transformada em zona de tratamento de roupa \r\n- 1º Quarto com roupeiro\r\n- 2º Quarto com roupeiro\r\n- Casa de banho completa com janela\r\n\r\nCom muito pouco uso após a sua remodelação este apartamento encontra-se em excelente estado de conservação. Foi alvo de uma remodelação muito cuidada com a preocupação de oferecer amplos espaços na zona social, utilizando a delimitação dos ambientes através de tetos falsos e iluminação. A utilização do pavimento de madeira na preocupação de conforto em todo o apartamento conciliando com o estilo Clássico do edifício.\r\nLocalizado no último piso, este apartamento disfruta ainda de uma vista panorâmica sobre a cidade assim como de uma imensa iluminação natural.\r\n\r\nApenas a 7 minutos Walking distance do Marquês de Pombal e Av. da Liberdade, como também do Saldanha e Mercado 31 de Janeiro. Supermercado, farmácia, restaurantes, escolas e muito comércio de rua são as comodidades de viver numa zona calma residêncial mas com tudo á mão.\r\nFacilidade de acesso a transportes públicos (autocarro e Metro).\r\n\r\nA Porta da Frente Christie’s é uma empresa de mediação imobiliária que atua no mercado há mais de duas décadas, focando-se nos melhores imóveis e empreendimentos, quer para venda, quer para arrendamento. A empresa foi selecionada pela prestigiada marca Christie’s Internacional Real Estate para representar Portugal nas zonas de Lisboa, Cascais, Oeiras e Alentejo. A principal missão da Porta da Frente Christie’s é privilegiar um serviço de excelência a todos os nossos clientes.",
+    "description_en": "\"\r\n\r\nFully renovated 2 bedroom apartment in a Classic Pombaline building with an elevator.\r\nIt is distributed as follows:\r\n- Hall\r\n- Living room\r\n- Equipped kitchen, open to the living room\r\n- Marquee converted into a laundry area\r\n- First Bedroom with wardrobe\r\n- Second Bedroom with wardrobe\r\n- Full private bathroom with window\r\n\r\nHaving had very little use after its renovation, this apartment presents an excellent condition. It underwent a very careful renovation, focusing on offering spacious social areas, using suspended ceilings and lighting to define the different spaces. The use of wooden flooring throughout the apartment was chosen for comfort, complementing the Classic style of the building.\r\nLocated on the top floor, this apartment also enjoys panoramic views of the city, as well as abundant natural light.\r\nJust a 7 minutes´ walking distance from Marquês de Pombal, Avenida da Liberdade, as well as Saldanha and the Market 31 de Janeiro. Supermarket, pharmacy, restaurants, schools, and a wide variety of local business are the conveniences of living in a calm residential area with everything close by.\r\nEasy access to public transport (bus and subway).\r\n\r\nPorta da Frente Christie’s is a real estate agency that has been operating in the market for more than two decades. Its focus lays on the highest quality houses and developments, not only in the selling market, but also in the renting market. The company was elected by the prestigious brand Christie’s International Real Estate to represent Portugal in the areas of Lisbon, Cascais, Oeiras and Alentejo. The main purpose of Porta da Frente Christie’s is to offer a top-notch service to our customers.\r\n\"",
+    "description_fr": "\"Appartement 3 pièces entièrement rénové dans un immeuble classique à l’architecture pombaline, avec ascenseur. \r\nComprenant :\r\n- Hall d’entrée\r\n- Salon\r\n- Cuisine équipée, ouverte sur le salon\r\n- Véranda aménagée en coin buanderie \r\n- 1ère chambre avec placard \r\n- 2ème chambre avec placard \r\n– Salle de bain commune avec fenêtre \r\n\r\nAppartement très peu utilisé à la suite des travaux de rénovation, en parfait état. Il a fait l'objet d'une rénovation très soignée dans le but d’agrandir la pièce de vie, délimitant les espaces grâce à des plafonds suspendus et à un éclairage bien conçu. Le parquet est conforme au souci de confort de tout l'appartement, en parfaite harmonie avec le style classique de l'immeuble. \r\nSitué au dernier étage, cet appartement bénéficie encore d'une vue panoramique sur la ville ainsi que d'une belle lumière du jour. \r\n\r\nÀ seulement 7 minutes à pied de Marquês de Pombal et de l’avenue Liberdade, ainsi que de Saldanha et du marché 31 de Janeiro, d’un supermarché, d’une pharmacie, de restaurants, d’établissements scolaires et des rues commerçantes. L’avantage de vivre dans un quartier résidentiel calme, mais avec tout à portée de main.\r\nAccès facile aux transports en commun (bus et métro).\r\n\r\nPorta da Frente Christie's est une agence immobilière qui opère sur le marché depuis plus de deux décennies, se concentrant sur les meilleurs biens immobiliers, complexes résidentiels et ensembles immobiliers, au niveau de la vente et de la location. L'agence a été sélectionnée par la prestigieuse marque Christie's International Real Estate pour la représenter au Portugal, dans les régions de Lisbonne, Cascais, Oeiras et Alentejo. La mission principale de Porta da Frente Christie's est d'assurer un service d'excellence à tous ses clients.\r\n\"",
     "equipments": [
       "Ar Condicionado",
-      "Arrecadação",
       "Cozinha Equipada",
-      "Detector de Fumos",
-      "Detector de Gás",
-      "Detector de Incêndio",
-      "Detector de Inundação",
       "Elevador",
-      "Garagem",
-      "Ginásio",
-      "Jardim",
-      "Parque infantil",
-      "Piscina",
-      "Piso Radiante",
+      "Exaustor",
+      "Forno",
+      "Frigorífico",
+      "Máquina de Lavar Louça",
+      "Máquina de Lavar Roupa",
       "Roupeiros",
-      "Salão de Festas",
-      "Video Porteiro",
       "Vidros Duplos"
     ],
     "equipments_en": [
       "Air Conditioning",
-      "Storage Room",
       "Equipped kitchen",
-      "Smoke Detector",
-      "Gas Detector",
-      "Fire Detector",
-      "Flood detector",
       "Elevator",
-      "Garage",
-      "Gym",
-      "Garden",
-      "Playground",
-      "Swimming Pool",
-      "Radiant Floor Heating",
+      "Exhaust",
+      "Oven",
+      "Fridge",
+      "Dishwasher",
+      "Washing Machine",
       "Wardrobes",
-      "Ballroom",
-      "Video Doorman",
       "Double Glazed"
     ],
     "equipments_fr": [
       "Climatisation",
-      "Rangement",
       "Cuisine équipée",
-      "Détecteur de fumée",
-      "Détecteur de gaz",
-      "Détecteur d'incendie",
-      "Détecteur d'inondation",
       "Ascenseur",
-      "Garage",
-      "Gym",
-      "Jardin",
-      "Terrain de jeux",
-      "Piscine",
-      "Chauffage radiant au sol",
+      "Échappement",
+      "Four",
+      "Frigo",
+      "Lave-vaisselle",
+      "Machine à laver",
       "Armoires",
-      "Salle de bal",
-      "Portier vidéo",
       "Double vitrage"
     ],
-    "floor": null,
-    "fraction": "Villa 4",
-    "gross_private_area": 310,
-    "id": "a0cTg000001PSN8IAO",
-    "is_exclusive": true,
+    "floor": 4,
+    "fraction": "I",
+    "gross_private_area": 129,
+    "id": "a0cTg000005y4InIAI",
+    "is_exclusive": false,
     "languages": ["pt", "en", "fr"],
-    "last_updated": "2025-02-13T08:03:33.878Z",
-    "latitude": 38.699735679999996,
+    "last_updated": "2025-02-14T21:39:27.802Z",
+    "latitude": 38.72627698,
     "location_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
         "lvl1": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa",
         "lvl2": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa",
-        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras",
-        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Caxias",
-        "lvl5": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Oeiras > Caxias > Alto do Lagoal"
+        "lvl3": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa",
+        "lvl4": "Área Metropolitana de Lisboa > Área Metropolitana de Lisboa > Lisboa > Lisboa > Santo Antonio"
       }
     ],
-    "longitude": -9.280214820000001,
-    "outdoor_area": 145.95,
-    "parent_property_id": "a0cTg000002S2aRIAS",
-    "parish": "Caxias",
+    "longitude": -9.1443092,
+    "parish": "Santo Antonio",
     "parish_hierarchy": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Caxias"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Santo Antonio"
       }
     ],
     "parish_hierarchy_en": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Caxias"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Santo Antonio"
       }
     ],
     "parish_hierarchy_fr": [
       {
         "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Caxias"
+        "lvl1": "Área Metropolitana de Lisboa > Lisboa",
+        "lvl2": "Área Metropolitana de Lisboa > Lisboa > Santo Antonio"
       }
     ],
-    "parish_id": "oeiras_caxias",
-    "parking_spaces": 4,
-    "phone": "+351 214 688 891",
+    "parish_id": "lisboa_santo-antonio",
+    "parking_spaces": 0,
+    "phone": "+351 213 806 110",
     "photos": [
       {
         "main_photo": true,
         "sequence": 1,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_08_1712222218781.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-01_1739497348086.jpg"
       },
       {
         "main_photo": false,
         "sequence": 2,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_03_1712222218777.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-02_1739497348086.jpg"
       },
       {
         "main_photo": false,
         "sequence": 3,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_02__-hq-width-4000px_1712222218776.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-03_1739497348086.jpg"
       },
       {
         "main_photo": false,
         "sequence": 4,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_06_1712222218778.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-04_1739497348087.jpg"
       },
       {
         "main_photo": false,
         "sequence": 5,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_07__-hq-width-4000px%20%281%29_1712222218779.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-05_1739497348087.jpg"
       },
       {
         "main_photo": false,
         "sequence": 6,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_05__-hq-width-4000px_1712222218777.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-06_1739497348087.jpg"
       },
       {
         "main_photo": false,
         "sequence": 7,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_11__-hq-width-4000px_1712222218783.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-07_1739497348088.jpg"
       },
       {
         "main_photo": false,
         "sequence": 8,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_10__-hq-width-4000px_1712222218782.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-08_1739497348088.jpg"
       },
       {
         "main_photo": false,
         "sequence": 9,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_12_1712222218784.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-09_1739497348088.jpg"
       },
       {
         "main_photo": false,
         "sequence": 10,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Ext_09__-hq-width-4000px_1712222218782.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-10_1739497348088.jpg"
       },
       {
         "main_photo": false,
         "sequence": 11,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_16_P1_Sala__1712222218774.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-11_1739497348089.jpg"
       },
       {
         "main_photo": false,
         "sequence": 12,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_15_P0_Escritorio__1712222218773.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-12_1739497348089.jpg"
       },
       {
         "main_photo": false,
         "sequence": 13,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_06_P1_Sala_1712222218795.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-13_1739497348089.jpg"
       },
       {
         "main_photo": false,
         "sequence": 14,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_05_P1_Sala__1712222218794.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-14_1739497348089.jpg"
       },
       {
         "main_photo": false,
         "sequence": 15,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_07_P1_Sala__1712222218796.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-15_1739497348090.jpg"
       },
       {
         "main_photo": false,
         "sequence": 16,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_14_P3_Claraboia_1712222218772.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-16_1739497348090.jpg"
       },
       {
         "main_photo": false,
         "sequence": 17,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_01_P1_Cozinha__1712222218785.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-18_1739497348090.jpg"
       },
       {
         "main_photo": false,
         "sequence": 18,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_02_P1_Cozinha__1712222218786.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-17_1739497348090.jpg"
       },
       {
         "main_photo": false,
         "sequence": 19,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_03_P1_Cozinha__1712222218790.jpg"
+        "url": "https://static.portadafrente.com/PF36072/20_1737852971342.jpg"
       },
       {
         "main_photo": false,
         "sequence": 20,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_04_P1_Elevador_Escada_1712222218792.jpg"
+        "url": "https://static.portadafrente.com/PF36072/2_1737852558875.jpg"
       },
       {
         "main_photo": false,
         "sequence": 21,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_09_P2_SuiteM__1712222218797.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-19_1739497348091.jpg"
       },
       {
         "main_photo": false,
         "sequence": 22,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_12_P2_Suite3__1712222218799.jpg"
+        "url": "https://static.portadafrente.com/PF36072/19_1737852971342.jpg"
       },
       {
         "main_photo": false,
         "sequence": 23,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_10_P2_SuiteM_IS__1712222218797.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 24,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_11_P2_SuiteM_IS__1712222218798.jpg"
-      },
-      {
-        "main_photo": false,
-        "sequence": 25,
-        "url": "https://static.portadafrente.com/PF33230/Quinta_Giestas_Int_13_P2_Suite3_IS__1712222218769.jpg"
+        "url": "https://static.portadafrente.com/PF36072/PF36072-20_1739497348091.jpg"
       }
     ],
-    "plan_url": "https://portadafrente.my.salesforce.com/sfc/p/1t000000D6v6/a/Tg000000AJm9/UugdnhSuxSAnVv9.Z16kdy7KB1unOCmVcfcpw590Yyg",
-    "postal_code": "2760-020",
-    "price": 0,
-    "price_on_application": true,
+    "postal_code": "1150-074",
+    "price": 599000,
+    "price_on_application": false,
+    "published_at": "2025-01-30",
     "revelance_score": null,
-    "rooms": 5,
-    "slug_url": "moradia-t5-oeiras-venda-a0cTg000001PSN8IAO",
-    "slug_url_en": "5-bedroom-house-oeiras-venda-a0cTg000001PSN8IAO",
-    "slug_url_fr": "maison-normal-6-pieces-oeiras-venda-a0cTg000001PSN8IAO",
-    "state_id": "under-construction",
-    "sub_category_name": "",
-    "surroundings": ["Espaços Verdes", "Praia", "Vista para Mar"],
-    "surroundings_en": ["Green spaces", "Beach", "Sea View"],
-    "surroundings_fr": ["Espaces verts", "Plage", "Vue sur la mer"],
-    "title": "Moradia T5, Oeiras",
-    "title_en": "5 Bedroom House, Oeiras",
-    "title_fr": "Maison normal 6 pièces, Oeiras",
-    "updated_at": "2025-01-24",
-    "zone": "Alto do Lagoal",
+    "rooms": 2,
+    "slug_url": "t2-em-predio-classico-pombalino-venda-a0cTg000005y4InIAI",
+    "slug_url_en": "2-bedroom-apartment-lisboa-venda-a0cTg000005y4InIAI",
+    "slug_url_fr": "appartement-3-pieces-lisboa-venda-a0cTg000005y4InIAI",
+    "state_id": "used",
+    "sub_category_id": "apartamento",
+    "sub_category_name": "Apartamento",
+    "sub_category_name_en": "Apartment",
+    "sub_category_name_fr": "Appartement",
+    "surroundings": [],
+    "surroundings_en": [],
+    "surroundings_fr": [],
+    "title": "T2 em prédio Clássico Pombalino",
+    "title_en": "2 Bedroom Apartment, Lisboa",
+    "title_fr": "Appartement 3 pièces, Lisboa",
+    "updated_at": "2025-02-14",
+    "video_url": "https://www.youtube.com/embed/9BGAwFBfWvM",
+    "virtual_tour_url": "https://my.matterport.com/show/?m=ZYRPf9RWEHM",
     "zone_hierarchy": [
       {
-        "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Alto do Lagoal"
+        "lvl0": "",
+        "lvl1": "",
+        "lvl2": ""
       }
     ],
     "zone_hierarchy_en": [
       {
-        "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Alto do Lagoal"
+        "lvl0": "",
+        "lvl1": "",
+        "lvl2": ""
       }
     ],
     "zone_hierarchy_fr": [
       {
-        "lvl0": "Área Metropolitana de Lisboa",
-        "lvl1": "Área Metropolitana de Lisboa > Oeiras",
-        "lvl2": "Área Metropolitana de Lisboa > Oeiras > Alto do Lagoal"
+        "lvl0": "",
+        "lvl1": "",
+        "lvl2": ""
       }
-    ],
-    "zone_id": "oeiras_alto-do-lagoal"
+    ]
   },
   "highlight": {},
   "highlights": [],

@@ -123,51 +123,11 @@ export default function PropertiesPage() {
                   "w-full px-4 py-2 text-sm bg-red-500 text-white rounded hover:bg-red-600 transition-colors",
               }}
             />
-
-            {/* Price Range */}
+            {/* Investment */}
             <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">{t("price")}</h3>
-              <RangeInput
-                attribute="price"
-                precision={0}
-                classNames={{
-                  root: "space-y-4",
-                  form: "flex items-center gap-4",
-                  input:
-                    "w-full px-3 py-2 border rounded focus:ring-2 focus:ring-blue-500",
-                  submit:
-                    "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600",
-                }}
-              />
-            </div>
-
-            <hr className="my-6" />
-
-            {/* Business Type - with custom component */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">
-                {t("businessTypeFilter")}
-              </h3>
-              <BusinessTypeToggle
-                attribute="business_type_id"
-                off="sale"
-                on="lease"
-                classNames={{
-                  root: "flex gap-2 w-full",
-                  buttonOn: "bg-blue-500 text-white w-full",
-                  buttonOff:
-                    "bg-gray-200 text-gray-700 hover:bg-gray-300 w-full",
-                }}
-              />
-            </div>
-
-            <hr className="my-6" />
-
-            {/* County */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">County</h3>
+              <h3 className="text-lg font-semibold mb-3">Investment</h3>
               <RefinementList
-                attribute="county"
+                attribute="investment"
                 searchable={true}
                 showMore={true}
                 sortBy={["count:desc", "name:asc"]}
@@ -194,332 +154,405 @@ export default function PropertiesPage() {
                     "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
                 }}
               />
-            </div>
+              {/* Price Range */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">{t("price")}</h3>
+                <RangeInput
+                  attribute="price"
+                  precision={0}
+                  classNames={{
+                    root: "space-y-4",
+                    form: "flex items-center gap-4",
+                    input:
+                      "w-full px-3 py-2 border rounded focus:ring-2 focus:ring-blue-500",
+                    submit:
+                      "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600",
+                  }}
+                />
+              </div>
 
-            <hr className="my-6" />
+              <hr className="my-6" />
 
-            {/* Parish */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">Parish</h3>
-              <RefinementList
-                attribute="parish"
-                showMore={true}
-                searchable={true}
-                sortBy={["count:desc", "name:asc"]}
-                limit={10}
-                showMoreLimit={1000}
-                classNames={{
-                  root: "space-y-2",
-                  noRefinementRoot: "text-gray-500 italic",
-                  searchBox: "relative",
-                  noResults: "text-gray-500 text-sm italic px-2",
-                  list: "space-y-1 max-h-[500px] overflow-y-auto",
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  label:
-                    "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
-                  checkbox:
-                    "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
-                  labelText: "flex-1",
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
-            <hr className="my-6" />
+              {/* Business Type - with custom component */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">
+                  {t("businessTypeFilter")}
+                </h3>
+                <BusinessTypeToggle
+                  attribute="business_type_id"
+                  off="sale"
+                  on="lease"
+                  classNames={{
+                    root: "flex gap-2 w-full",
+                    buttonOn: "bg-blue-500 text-white w-full",
+                    buttonOff:
+                      "bg-gray-200 text-gray-700 hover:bg-gray-300 w-full",
+                  }}
+                />
+              </div>
 
-            {/* Zone */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">Zone</h3>
-              <RefinementList
-                attribute="zone"
-                showMore={true}
-                searchable={true}
-                sortBy={["count:desc", "name:asc"]}
-                limit={10}
-                showMoreLimit={1000}
-                classNames={{
-                  root: "space-y-2",
-                  noRefinementRoot: "text-gray-500 italic",
-                  searchBox: "relative",
-                  noResults: "text-gray-500 text-sm italic px-2",
-                  list: "space-y-1 max-h-[500px] overflow-y-auto",
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  label:
-                    "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
-                  checkbox:
-                    "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
-                  labelText: "flex-1",
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
+              <hr className="my-6" />
 
-            <hr className="my-6" />
+              {/* County */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">County</h3>
+                <RefinementList
+                  attribute="county"
+                  searchable={true}
+                  showMore={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
+                  classNames={{
+                    root: "space-y-2 ",
+                    noRefinementRoot: "text-gray-500 italic",
+                    searchBox: "relative",
+                    noResults: "text-gray-500 text-sm italic px-2",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    label:
+                      "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
+                    checkbox:
+                      "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+                    labelText: "flex-1",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
 
-            {/* Location Hierarchy */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">
-                FULL Location Hierarchy
-              </h3>
-              <p className="text-sm text-blue-500 mb-3">
-                NUTS II - NUTS III - DISTRITO - CONCELHO - FRAGUESIA - ZONA
-              </p>
-              <HierarchicalMenu
-                attributes={[
-                  "location_hierarchy.lvl0", // NUT II
-                  "location_hierarchy.lvl1", // NUT III
-                  "location_hierarchy.lvl2", // DISTRITO
-                  "location_hierarchy.lvl3", // CONCELHO
-                  "location_hierarchy.lvl4", // FRAGUESIA
-                  "location_hierarchy.lvl5", // ZONA
-                ]}
-                sortBy={["name"]}
-                showParentLevel={true}
-                classNames={{
-                  root: "space-y-2 -ml-3",
-                  noRefinementRoot: "text-gray-500 italic",
-                  list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  parentItem: "mb-2", // Increased spacing for parent items
-                  link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
-                  selectedItemLink:
-                    "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
-                  label: "flex-1", // Allow label to take remaining space
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
+              <hr className="my-6" />
 
-            <hr className="my-6" />
+              {/* Parish */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">Parish</h3>
+                <RefinementList
+                  attribute="parish"
+                  showMore={true}
+                  searchable={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
+                  classNames={{
+                    root: "space-y-2",
+                    noRefinementRoot: "text-gray-500 italic",
+                    searchBox: "relative",
+                    noResults: "text-gray-500 text-sm italic px-2",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    label:
+                      "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
+                    checkbox:
+                      "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+                    labelText: "flex-1",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
+              <hr className="my-6" />
 
-            {/* Parish Hierarchy */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">Parish Hierarchy</h3>
-              <p className="text-sm text-blue-500 mb-3">
-                NUTS II - CONCELHO - FRAGUESIA
-              </p>
-              <HierarchicalMenu
-                attributes={[
-                  "parish_hierarchy.lvl0", // NUT II
-                  "parish_hierarchy.lvl1", // CONCELHO
-                  "parish_hierarchy.lvl2", // FRAGUESIA
-                ]}
-                sortBy={["name"]}
-                showParentLevel={true}
-                classNames={{
-                  root: "space-y-2 -ml-3",
-                  noRefinementRoot: "text-gray-500 italic",
-                  list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  parentItem: "mb-2", // Increased spacing for parent items
-                  link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
-                  selectedItemLink:
-                    "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
-                  label: "flex-1", // Allow label to take remaining space
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
+              {/* Zone */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">Zone</h3>
+                <RefinementList
+                  attribute="zone"
+                  showMore={true}
+                  searchable={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
+                  classNames={{
+                    root: "space-y-2",
+                    noRefinementRoot: "text-gray-500 italic",
+                    searchBox: "relative",
+                    noResults: "text-gray-500 text-sm italic px-2",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    label:
+                      "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
+                    checkbox:
+                      "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+                    labelText: "flex-1",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
 
-            <hr className="my-6" />
+              <hr className="my-6" />
 
-            {/* Zone Hierarchy */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">Zone Hierarchy</h3>
-              <p className="text-sm text-blue-500 mb-3">
-                NUTS II - CONCELHO - ZONE
-              </p>
-              <HierarchicalMenu
-                attributes={[
-                  "zone_hierarchy.lvl0", // NUT II
-                  "zone_hierarchy.lvl1", // CONCELHO
-                  "zone_hierarchy.lvl2", // ZONE
-                ]}
-                sortBy={["name"]}
-                showParentLevel={true}
-                classNames={{
-                  root: "space-y-2 -ml-3",
-                  noRefinementRoot: "text-gray-500 italic",
-                  list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  parentItem: "mb-2", // Increased spacing for parent items
-                  link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
-                  selectedItemLink:
-                    "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
-                  label: "flex-1", // Allow label to take remaining space
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
+              {/* Location Hierarchy */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">
+                  FULL Location Hierarchy
+                </h3>
+                <p className="text-sm text-blue-500 mb-3">
+                  NUTS II - NUTS III - DISTRITO - CONCELHO - FRAGUESIA - ZONA
+                </p>
+                <HierarchicalMenu
+                  attributes={[
+                    "location_hierarchy.lvl0", // NUT II
+                    "location_hierarchy.lvl1", // NUT III
+                    "location_hierarchy.lvl2", // DISTRITO
+                    "location_hierarchy.lvl3", // CONCELHO
+                    "location_hierarchy.lvl4", // FRAGUESIA
+                    "location_hierarchy.lvl5", // ZONA
+                  ]}
+                  sortBy={["name"]}
+                  showParentLevel={true}
+                  classNames={{
+                    root: "space-y-2 -ml-3",
+                    noRefinementRoot: "text-gray-500 italic",
+                    list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    parentItem: "mb-2", // Increased spacing for parent items
+                    link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
+                    selectedItemLink:
+                      "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
+                    label: "flex-1", // Allow label to take remaining space
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
 
-            <hr className="my-6" />
+              <hr className="my-6" />
 
-            {/* Category */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">Category</h3>
-              <RefinementList
-                attribute="category_name"
-                searchable={true}
-                showMore={true}
-                sortBy={["count:desc", "name:asc"]}
-                limit={10}
-                showMoreLimit={1000}
-                classNames={{
-                  root: "space-y-2",
-                  noRefinementRoot: "text-gray-500 italic",
-                  searchBox: "relative",
-                  noResults: "text-gray-500 text-sm italic px-2",
-                  list: "space-y-1",
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  label:
-                    "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
-                  checkbox:
-                    "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
-                  labelText: "flex-1",
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
+              {/* Parish Hierarchy */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">Parish Hierarchy</h3>
+                <p className="text-sm text-blue-500 mb-3">
+                  NUTS II - CONCELHO - FRAGUESIA
+                </p>
+                <HierarchicalMenu
+                  attributes={[
+                    "parish_hierarchy.lvl0", // NUT II
+                    "parish_hierarchy.lvl1", // CONCELHO
+                    "parish_hierarchy.lvl2", // FRAGUESIA
+                  ]}
+                  sortBy={["name"]}
+                  showParentLevel={true}
+                  classNames={{
+                    root: "space-y-2 -ml-3",
+                    noRefinementRoot: "text-gray-500 italic",
+                    list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    parentItem: "mb-2", // Increased spacing for parent items
+                    link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
+                    selectedItemLink:
+                      "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
+                    label: "flex-1", // Allow label to take remaining space
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
 
-            <hr className="my-6" />
+              <hr className="my-6" />
 
-            {/* Sub Category */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">Sub Category</h3>
-              <RefinementList
-                attribute="sub_category_name"
-                searchable={true}
-                showMore={true}
-                sortBy={["count:desc", "name:asc"]}
-                limit={10}
-                showMoreLimit={1000}
-                classNames={{
-                  root: "space-y-2",
-                  noRefinementRoot: "text-gray-500 italic",
-                  searchBox: "relative",
-                  noResults: "text-gray-500 text-sm italic px-2",
-                  list: "space-y-1 max-h-[500px] overflow-y-auto",
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  label:
-                    "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
-                  checkbox:
-                    "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
-                  labelText: "flex-1",
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
+              {/* Zone Hierarchy */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">Zone Hierarchy</h3>
+                <p className="text-sm text-blue-500 mb-3">
+                  NUTS II - CONCELHO - ZONE
+                </p>
+                <HierarchicalMenu
+                  attributes={[
+                    "zone_hierarchy.lvl0", // NUT II
+                    "zone_hierarchy.lvl1", // CONCELHO
+                    "zone_hierarchy.lvl2", // ZONE
+                  ]}
+                  sortBy={["name"]}
+                  showParentLevel={true}
+                  classNames={{
+                    root: "space-y-2 -ml-3",
+                    noRefinementRoot: "text-gray-500 italic",
+                    list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    parentItem: "mb-2", // Increased spacing for parent items
+                    link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
+                    selectedItemLink:
+                      "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
+                    label: "flex-1", // Allow label to take remaining space
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
 
-            <hr className="my-6" />
+              <hr className="my-6" />
 
-            {/* Category Hierarchy */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">Category Hierarchy</h3>
-              <p className="text-sm text-blue-500 mb-3">
-                CATEGORY - SUBCATEGORY
-              </p>
-              <HierarchicalMenu
-                attributes={[
-                  "category_hierarchy.lvl0",
-                  "category_hierarchy.lvl1",
-                ]}
-                sortBy={["name"]}
-                showParentLevel={true}
-                classNames={{
-                  root: "space-y-2 -ml-3",
-                  noRefinementRoot: "text-gray-500 italic",
-                  list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  parentItem: "mb-2", // Increased spacing for parent items
-                  link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
-                  selectedItemLink:
-                    "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
-                  label: "flex-1", // Allow label to take remaining space
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
-            </div>
+              {/* Category */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">Category</h3>
+                <RefinementList
+                  attribute="category_name"
+                  searchable={true}
+                  showMore={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
+                  classNames={{
+                    root: "space-y-2",
+                    noRefinementRoot: "text-gray-500 italic",
+                    searchBox: "relative",
+                    noResults: "text-gray-500 text-sm italic px-2",
+                    list: "space-y-1",
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    label:
+                      "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
+                    checkbox:
+                      "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+                    labelText: "flex-1",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
 
-            <hr className="my-6" />
+              <hr className="my-6" />
 
-            {/* Rooms */}
-            <div className="mt-6">
-              <h3 className="text-lg font-semibold mb-3">{t("rooms")}</h3>
-              <RefinementList
-                attribute="rooms"
-                searchable={true}
-                showMore={true}
-                sortBy={["count:desc", "name:asc"]}
-                limit={10}
-                showMoreLimit={1000}
-                classNames={{
-                  root: "space-y-2",
-                  noRefinementRoot: "text-gray-500 italic",
-                  searchBox: "relative",
-                  noResults: "text-gray-500 text-sm italic px-2",
-                  list: "space-y-1 max-h-[500px] overflow-y-auto",
-                  item: "relative",
-                  selectedItem: "font-medium text-blue-600",
-                  label:
-                    "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
-                  checkbox:
-                    "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
-                  labelText: "flex-1",
-                  count:
-                    "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
-                  showMore:
-                    "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
-                  disabledShowMore:
-                    "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
-                }}
-              />
+              {/* Sub Category */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">Sub Category</h3>
+                <RefinementList
+                  attribute="sub_category_name"
+                  searchable={true}
+                  showMore={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
+                  classNames={{
+                    root: "space-y-2",
+                    noRefinementRoot: "text-gray-500 italic",
+                    searchBox: "relative",
+                    noResults: "text-gray-500 text-sm italic px-2",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    label:
+                      "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
+                    checkbox:
+                      "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+                    labelText: "flex-1",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
+
+              <hr className="my-6" />
+
+              {/* Category Hierarchy */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">
+                  Category Hierarchy
+                </h3>
+                <p className="text-sm text-blue-500 mb-3">
+                  CATEGORY - SUBCATEGORY
+                </p>
+                <HierarchicalMenu
+                  attributes={[
+                    "category_hierarchy.lvl0",
+                    "category_hierarchy.lvl1",
+                  ]}
+                  sortBy={["name"]}
+                  showParentLevel={true}
+                  classNames={{
+                    root: "space-y-2 -ml-3",
+                    noRefinementRoot: "text-gray-500 italic",
+                    list: "space-y-1 pl-2", // Slightly increased padding for better hierarchy visibility
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    parentItem: "mb-2", // Increased spacing for parent items
+                    link: "flex items-center justify-between py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 text-sm",
+                    selectedItemLink:
+                      "bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium",
+                    label: "flex-1", // Allow label to take remaining space
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
+
+              <hr className="my-6" />
+
+              {/* Rooms */}
+              <div className="mt-6">
+                <h3 className="text-lg font-semibold mb-3">{t("rooms")}</h3>
+                <RefinementList
+                  attribute="rooms"
+                  searchable={true}
+                  showMore={true}
+                  sortBy={["count:desc", "name:asc"]}
+                  limit={10}
+                  showMoreLimit={1000}
+                  classNames={{
+                    root: "space-y-2",
+                    noRefinementRoot: "text-gray-500 italic",
+                    searchBox: "relative",
+                    noResults: "text-gray-500 text-sm italic px-2",
+                    list: "space-y-1 max-h-[500px] overflow-y-auto",
+                    item: "relative",
+                    selectedItem: "font-medium text-blue-600",
+                    label:
+                      "flex items-center space-x-2 text-sm py-1 px-2 rounded hover:bg-gray-100 transition-colors text-gray-700 hover:text-gray-900 cursor-pointer",
+                    checkbox:
+                      "rounded border-gray-300 text-blue-500 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2",
+                    labelText: "flex-1",
+                    count:
+                      "ml-2 text-xs text-gray-500 rounded-full bg-gray-100 px-2 py-0.5",
+                    showMore:
+                      "w-full text-sm text-blue-600 hover:text-blue-700 mt-2 cursor-pointer py-1 px-2 rounded hover:bg-gray-50 transition-colors text-center",
+                    disabledShowMore:
+                      "w-full text-sm text-gray-400 mt-2 cursor-not-allowed py-1 px-2 rounded text-center",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
