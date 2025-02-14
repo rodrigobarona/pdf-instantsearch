@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import {
   SearchBox,
   Configure,
-  Pagination,
   RefinementList,
   RangeInput,
   SortBy,
