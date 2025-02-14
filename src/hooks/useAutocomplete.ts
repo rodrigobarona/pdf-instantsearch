@@ -1,8 +1,11 @@
-import { useConnector } from "react-instantsearch";
 import connectAutocomplete from "instantsearch.js/es/connectors/autocomplete/connectAutocomplete";
 import type { BaseHit } from "instantsearch.js";
 import type { AutocompleteConnectorParams } from "instantsearch.js/es/connectors/autocomplete/connectAutocomplete";
-import { useSearchBox, useHierarchicalMenu } from "react-instantsearch";
+import {
+  useConnector,
+  useSearchBox,
+  useHierarchicalMenu,
+} from "react-instantsearch";
 import { useCallback, useEffect, useState } from "react";
 import { INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES } from "@/config/constants";
 import { debounce } from "lodash";

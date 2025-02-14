@@ -17,14 +17,14 @@ import {
   InfiniteHits,
   HierarchicalMenu,
   Breadcrumb,
+  useMenu,
+  MenuProps,
 } from "react-instantsearch";
 import { indexName } from "@/config/typesense";
 import {
   PropertyHitComponent,
   type PropertyHit,
 } from "@/components/PropertyHit";
-import type { MenuProps } from "react-instantsearch";
-import { useMenu } from "react-instantsearch";
 import { Button } from "@/components/ui/button";
 import MapModal from "@/components/MapModal";
 

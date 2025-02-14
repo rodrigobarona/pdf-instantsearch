@@ -34,8 +34,8 @@ export function BusinessTypeToggle({
   const { value, refine } = useToggleRefinement({ attribute, on, off });
 
   // Allow override of button labels via translations, defaulting to t(on)/t(off).
-  const onLabel = translations.on || t(on);
-  const offLabel = translations.off || t(off);
+  const onLabel = translations.on || t(`businessType.${on}`);
+  const offLabel = translations.off || t(`businessType.${off}`);
 
   return (
     <div
@@ -49,11 +49,11 @@ export function BusinessTypeToggle({
           value.isRefined
             ? "bg-blue-600 text-white border-blue-600 hover:border-gray-900"
             : "bg-white text-gray-700 hover:bg-gray-50",
-          classNames.buttonOn
+          classNames.buttonOff
         )}
         onClick={() => refine({ isRefined: true })}
       >
-        {onLabel}
+        {offLabel}
       </Button>
       <Button
         type="button"
@@ -62,11 +62,11 @@ export function BusinessTypeToggle({
           !value.isRefined
             ? "bg-blue-600 text-white border-blue-600 hover:border-gray-900"
             : "bg-white text-gray-700 hover:bg-gray-50",
-          classNames.buttonOff
+          classNames.buttonOn
         )}
         onClick={() => refine({ isRefined: false })}
       >
-        {offLabel}
+        {onLabel}
       </Button>
     </div>
   );

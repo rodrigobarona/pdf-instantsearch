@@ -14,7 +14,6 @@ export default function RootLayout({
     <InstantSearchNext
       indexName={indexName}
       searchClient={searchClient}
-      insights={true}
       routing={{
         router: {
           cleanUrlOnDispose: false,

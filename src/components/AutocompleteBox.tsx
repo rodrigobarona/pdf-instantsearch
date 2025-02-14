@@ -7,8 +7,7 @@ import { useRouter, useParams } from "next/navigation";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { useSearchBox } from "react-instantsearch";
-import { useHierarchicalMenu } from "react-instantsearch";
+import { useSearchBox, useHierarchicalMenu } from "react-instantsearch";
 import { INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES } from "@/config/constants";
 import { SearchIcon } from "lucide-react";
 

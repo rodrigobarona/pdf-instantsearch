@@ -15,9 +15,5 @@
   "relevance": "Most Relevant",
   "priceLowToHigh": "Price: Low to High",
   "priceHighToLow": "Price: High to Low",
-  "locationParish": "Location",
-  "buy": "Buy",
-  "rent": "Rent",
-  "off": "Buy",
-  "on": "Rent"
+  "locationParish": "Location"
 }
