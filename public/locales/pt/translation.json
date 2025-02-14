@@ -17,11 +17,5 @@
   "priceHighToLow": "Preço: Alto para Baixo",
   "locationParish": "Localização",
   "buy": "Comprar",
-  "rent": "Alugar",
-  "bedrooms": "Quartos",
-  "bathrooms": "Banheiros",
-  "description": "Descrição",
-  "features": "Características",
-  "contactAgent": "Contatar Agente",
-  "similarProperties": "Imóveis Similares"
+  "rent": "Alugar"
 }

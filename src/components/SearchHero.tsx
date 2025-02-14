@@ -50,7 +50,6 @@ export function SearchHero() {
       indexName={indexName}
       searchClient={searchClient}
       routing={true}
-      insights={true}
       future={{
         preserveSharedStateOnUnmount: true,
       }}

@@ -17,11 +17,5 @@
   "priceHighToLow": "Prix : Élevé à faible",
   "locationParish": "Location",
   "buy": "Acheter",
-  "rent": "Louer",
-  "bedrooms": "Chambres",
-  "bathrooms": "Salles de bain",
-  "description": "Description",
-  "features": "Caractéristiques",
-  "contactAgent": "Contactez l'agent",
-  "similarProperties": "Propriétés Similaires"
+  "rent": "Louer"
 }
