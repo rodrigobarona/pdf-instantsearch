@@ -1,12 +1,12 @@
 "use client";
 
-import { InstantSearch, useToggleRefinement } from "react-instantsearch";
-import { searchClient, indexName } from "@/config/typesense";
 import { useTranslation } from "react-i18next";
 import { AutocompleteBox } from "./AutocompleteBox";
 import { Button } from "./ui/button";
+import { useToggleRefinement } from "react-instantsearch";
 
-function CustomToggleRefinement(props: {
+
+function BusinessTypeToggle(props: {
   attribute: string;
   on: string;
   off: string;
@@ -18,10 +18,10 @@ function CustomToggleRefinement(props: {
     <div className="flex mb-4">
       <Button
         type="button"
-        className={`px-4 py-2 border border-gray-300 ${
+        className={`px-4 py-2 border border-gray-300 rounded-none ${
           !value.isRefined
-            ? "bg-blue-600 text-white border-blue-600"
-            : "bg-white text-gray-700 hover:bg-gray-50"
+            ? "bg-blue-600 text-white border-blue-600 hover:border-gray-900"
+            : "bg-white text-gray-700 hover:bg-gray-50 "
         }`}
         onClick={() => refine({ isRefined: true })}
       >
@@ -29,10 +29,10 @@ function CustomToggleRefinement(props: {
       </Button>
       <Button
         type="button"
-        className={`px-4 py-2 border border-gray-300 border-l-0 ${
+        className={`px-4 py-2 border border-gray-300 rounded-none ${
           value.isRefined
-            ? "bg-blue-600 text-white border-blue-600"
-            : "bg-white text-gray-700 hover:bg-gray-50"
+            ? "bg-blue-600 text-white border-blue-600 hover:border-gray-900"
+            : "bg-white text-gray-700 hover:bg-gray-50 "
         }`}
         onClick={() => refine({ isRefined: false })}
       >
@@ -42,29 +42,22 @@ function CustomToggleRefinement(props: {
   );
 }
 
+
+
 export function SearchHero() {
   const { t } = useTranslation();
 
   return (
-    <InstantSearch
-      indexName={indexName}
-      searchClient={searchClient}
-      routing={true}
-      future={{
-        preserveSharedStateOnUnmount: true,
-      }}
-    >
-      <div className="flex flex-col items-center justify-center min-h-[60vh]">
-        <h1 className="text-4xl font-bold mb-8">{t("findYourDreamHome")}</h1>
-        <div className="w-full max-w-2xl">
-          <CustomToggleRefinement
-            attribute="business_type_id"
-            off="sale"
-            on="lease"
-          />
-          <AutocompleteBox />
-        </div>
+    <div className="flex flex-col items-center justify-center min-h-[80dvh] bg-gray-100">
+      <h1 className="text-4xl font-bold mb-8">{t("findYourDreamHome")}</h1>
+      <div className="w-full max-w-2xl">
+        <BusinessTypeToggle
+          attribute="business_type_id"
+          off="sale"
+          on="lease"
+        />
+        <AutocompleteBox />
       </div>
-    </InstantSearch>
+    </div>
   );
 }

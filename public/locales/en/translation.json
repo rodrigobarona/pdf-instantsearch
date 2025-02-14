@@ -17,5 +17,7 @@
   "priceHighToLow": "Price: High to Low",
   "locationParish": "Location",
   "buy": "Buy",
-  "rent": "Rent"
+  "rent": "Rent",
+  "off": "Buy",
+  "on": "Rent"
 }
