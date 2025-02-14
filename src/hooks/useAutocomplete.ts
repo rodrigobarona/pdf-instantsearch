@@ -3,15 +3,10 @@ import connectAutocomplete from "instantsearch.js/es/connectors/autocomplete/con
 import type { BaseHit } from "instantsearch.js";
 import type { AutocompleteConnectorParams } from "instantsearch.js/es/connectors/autocomplete/connectAutocomplete";
 import { useSearchBox, useHierarchicalMenu } from "react-instantsearch";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState, useEffect, useMemo } from "react";
 import { INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES } from "@/config/constants";
-import { debounce } from "lodash";
-
-type AutocompleteResult = {
-  indices: Array<{ hits: Array<PropertyHit> }>;
-  refine: (value: string) => void;
-  $$type: "ais.autocomplete";
-};
+import { createLocalStorageRecentSearchesPlugin } from "@algolia/autocomplete-plugin-recent-searches";
+import type { Hit } from "instantsearch.js";
 
 export type PropertyHit = BaseHit & {
   objectID: string;
@@ -36,57 +31,48 @@ export type PropertyHit = BaseHit & {
   parish_hierarchy?: Array<{ lvl2: string }>;
 };
 
-type RecentSearch = {
-  label: string;
+const RECENT_SEARCHES_KEY = "recent_property_searches";
+const MAX_RECENT_SEARCHES = 5;
+
+// Define a type for recent searches items.
+export type RecentSearchesItem = {
+  query: string;
   category?: string;
   timestamp: number;
 };
 
-const RECENT_SEARCHES_KEY = "recent_property_searches";
-const MAX_RECENT_SEARCHES = 5;
+// Define a type for highlighted recent search items.
+type HighlightedRecentSearchesItem = {
+  item: RecentSearchesItem;
+};
 
-export function useAutocomplete() {
+// Define the autocomplete result type.
+type AutocompleteResult = {
+  indices: Array<{ hits: Array<Hit<PropertyHit>> }>;
+  refine: (value: string) => void;
+  $$type: "ais.autocomplete";
+};
+
+export function useAutocomplete(
+  props?: Parameters<typeof connectAutocomplete>[0]
+) {
   const { query, refine: setQuery } = useSearchBox();
   const { items: categories } = useHierarchicalMenu({
     attributes: INSTANT_SEARCH_HIERARCHICAL_ATTRIBUTES,
   });
-  const [recentSearches, setRecentSearches] = useState<RecentSearch[]>([]);
   const [inputValue, setInputValue] = useState(query || "");
 
   const result = useConnector<AutocompleteConnectorParams, AutocompleteResult>(
     connectAutocomplete,
-    {}
+    { ...props }
   ) as AutocompleteResult;
 
-  // Load recent searches on mount
-  useEffect(() => {
-    const stored = localStorage.getItem(RECENT_SEARCHES_KEY);
-    if (stored) {
-      setRecentSearches(JSON.parse(stored));
-    }
-  }, []);
-
-  const saveRecentSearch = useCallback(
-    (searchQuery: string, category?: string) => {
-      const newSearch: RecentSearch = {
-        label: searchQuery,
-        category,
-        timestamp: Date.now(),
-      };
-
-      setRecentSearches((prev) => {
-        const filtered = prev.filter((item) => item.label !== searchQuery);
-        const updated = [newSearch, ...filtered].slice(0, MAX_RECENT_SEARCHES);
-        localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(updated));
-        return updated;
-      });
+  const debouncedSetQuery = useCallback(
+    (value: string) => {
+      setQuery(value);
     },
-    []
+    [setQuery]
   );
-
-  const debouncedSetQuery = debounce((value: string) => {
-    setQuery(value);
-  }, 150);
 
   const getInputProps = useCallback(
     (props: Record<string, unknown> = {}) => ({
@@ -105,20 +91,64 @@ export function useAutocomplete() {
       className,
       onClick: () => {
         setQuery(item.query || "");
-        if (item.query) {
-          saveRecentSearch(item.query, item.zone_hierarchy?.[0]?.lvl0);
-        }
+        // Let the plugin handle adding the recent search.
       },
     }),
-    [setQuery, saveRecentSearch]
+    [setQuery]
   );
+
+  // Create state for resolved recent searches.
+  const [resolvedRecentSearches, setResolvedRecentSearches] = useState<
+    RecentSearchesItem[]
+  >([]);
+
+  const recentSearchesPlugin = useMemo(
+    () =>
+      createLocalStorageRecentSearchesPlugin({
+        key: RECENT_SEARCHES_KEY,
+        limit: MAX_RECENT_SEARCHES,
+        transformSource({ source }) {
+          return {
+            ...source,
+            onSelect({ item }) {
+              // If the query is null, fall back to the current inputValue.
+              const searchItem = item as { query?: string };
+              if (!searchItem.query) {
+                searchItem.query = inputValue;
+              }
+              setQuery(searchItem.query);
+            },
+          };
+        },
+      }),
+    [inputValue, setQuery]
+  );
+
+  const getAllRecentSearches = recentSearchesPlugin.data?.getAll;
+  useEffect(() => {
+    if (getAllRecentSearches) {
+      Promise.resolve(getAllRecentSearches())
+        .then((res) => {
+          // Map the returned items to ensure each has a 'query' property.
+          const items = (res as unknown as HighlightedRecentSearchesItem[]).map(
+            (highlighted) => ({
+              query: highlighted.item.query || "",
+              category: highlighted.item.category,
+              timestamp: highlighted.item.timestamp,
+            })
+          );
+          setResolvedRecentSearches(items);
+        })
+        .catch(() => setResolvedRecentSearches([]));
+    }
+  }, [getAllRecentSearches]);
 
   return {
     inputValue,
     getInputProps,
     getItemProps,
     hits: result.indices?.[0]?.hits || [],
-    recentSearches,
+    recentSearches: resolvedRecentSearches,
     categories,
   };
 }
