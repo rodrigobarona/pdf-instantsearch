@@ -130,7 +130,7 @@ export default function PropertiesPage() {
                 attribute="investment"
                 searchable={true}
                 showMore={true}
-                sortBy={["name:asc"]}
+                sortBy={["name:asc", "count:desc"]}
                 limit={10}
                 showMoreLimit={1000}
                 classNames={{
